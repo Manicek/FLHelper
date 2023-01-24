@@ -1,0 +1,48 @@
+//
+// © 2023 Manicek
+//
+
+import Foundation
+
+enum Die {
+    case d6
+    case d8
+    case d10
+    case d12
+    
+    var canBeLowered: Bool {
+        self != .d6
+    }
+    
+    var canBeIncreased: Bool {
+        self != .d12
+    }
+    
+    var lowerDie: Die? {
+        switch self {
+        case .d6: return nil
+        case .d8: return .d6
+        case .d10: return .d8
+        case .d12: return .d10
+        }
+    }
+    
+    var higherDie: Die? {
+        switch self {
+        case .d6: return .d8
+        case .d8: return .d10
+        case .d10: return .d12
+        case .d12: return nil
+        }
+    }
+    
+    static func succesesForRoll(_ roll: Int) -> Int {
+        switch roll {
+        case 6, 7: return 1
+        case 8, 9: return 2
+        case 10, 11: return 3
+        case 12: return 4
+        default: return 0
+        }
+    }
+}

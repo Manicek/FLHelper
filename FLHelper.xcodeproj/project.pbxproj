@@ -1,0 +1,778 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF4431D02980518C00890D7C /* Die.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431CF2980518C00890D7C /* Die.swift */; };
+		FF4431D22980530B00890D7C /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431D12980530B00890D7C /* Animal.swift */; };
+		FF4431D92980553100890D7C /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431D82980553100890D7C /* Entity.swift */; };
+		FF4431DB298055AB00890D7C /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431DA298055AB00890D7C /* Attribute.swift */; };
+		FF4431DD2980566100890D7C /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431DC2980566100890D7C /* Skill.swift */; };
+		FF4431E02980591C00890D7C /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431DF2980591C00890D7C /* AnimalType.swift */; };
+		FF4431E22980629500890D7C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431E12980629500890D7C /* Item.swift */; };
+		FF4431E4298062B000890D7C /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431E3298062B000890D7C /* Weight.swift */; };
+		FF4431E62980638500890D7C /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431E52980638500890D7C /* Weapon.swift */; };
+		FF4431E8298063E200890D7C /* Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431E7298063E200890D7C /* Range.swift */; };
+		FF4431EA298064BD00890D7C /* PlayerCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431E9298064BD00890D7C /* PlayerCharacter.swift */; };
+		FF4431EC2980676800890D7C /* Armor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431EB2980676800890D7C /* Armor.swift */; };
+		FF4431EE29806AD500890D7C /* Supply.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431ED29806AD500890D7C /* Supply.swift */; };
+		FF4431F029806AF900890D7C /* RawMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431EF29806AF900890D7C /* RawMaterial.swift */; };
+		FF4431F229806B4B00890D7C /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431F129806B4B00890D7C /* Tool.swift */; };
+		FF9E9C6C29804D83002FD2FE /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E9C6B29804D83002FD2FE /* Character.swift */; };
+		FF9E9C6E29804DCB002FD2FE /* Kin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E9C6D29804DCB002FD2FE /* Kin.swift */; };
+		FF9E9C7029804EFF002FD2FE /* Profession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E9C6F29804EFF002FD2FE /* Profession.swift */; };
+		FF9E9C7229804FCE002FD2FE /* Talent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E9C7129804FCE002FD2FE /* Talent.swift */; };
+		FFA971512980306D009FF258 /* FLHelperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA971502980306D009FF258 /* FLHelperApp.swift */; };
+		FFA971532980306D009FF258 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA971522980306D009FF258 /* ContentView.swift */; };
+		FFA971552980306E009FF258 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA971542980306E009FF258 /* Assets.xcassets */; };
+		FFA971582980306E009FF258 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA971572980306E009FF258 /* Preview Assets.xcassets */; };
+		FFA971622980306E009FF258 /* FLHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA971612980306E009FF258 /* FLHelperTests.swift */; };
+		FFA9716C2980306E009FF258 /* FLHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9716B2980306E009FF258 /* FLHelperUITests.swift */; };
+		FFA9716E2980306E009FF258 /* FLHelperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9716D2980306E009FF258 /* FLHelperUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFA9715E2980306E009FF258 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFA971452980306D009FF258 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFA9714C2980306D009FF258;
+			remoteInfo = FLHelper;
+		};
+		FFA971682980306E009FF258 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFA971452980306D009FF258 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFA9714C2980306D009FF258;
+			remoteInfo = FLHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF4431CF2980518C00890D7C /* Die.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Die.swift; sourceTree = "<group>"; };
+		FF4431D12980530B00890D7C /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		FF4431D82980553100890D7C /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		FF4431DA298055AB00890D7C /* Attribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attribute.swift; sourceTree = "<group>"; };
+		FF4431DC2980566100890D7C /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		FF4431DF2980591C00890D7C /* AnimalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalType.swift; sourceTree = "<group>"; };
+		FF4431E12980629500890D7C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		FF4431E3298062B000890D7C /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
+		FF4431E52980638500890D7C /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
+		FF4431E7298063E200890D7C /* Range.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Range.swift; sourceTree = "<group>"; };
+		FF4431E9298064BD00890D7C /* PlayerCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCharacter.swift; sourceTree = "<group>"; };
+		FF4431EB2980676800890D7C /* Armor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Armor.swift; sourceTree = "<group>"; };
+		FF4431ED29806AD500890D7C /* Supply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supply.swift; sourceTree = "<group>"; };
+		FF4431EF29806AF900890D7C /* RawMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawMaterial.swift; sourceTree = "<group>"; };
+		FF4431F129806B4B00890D7C /* Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
+		FF9E9C6B29804D83002FD2FE /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		FF9E9C6D29804DCB002FD2FE /* Kin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kin.swift; sourceTree = "<group>"; };
+		FF9E9C6F29804EFF002FD2FE /* Profession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profession.swift; sourceTree = "<group>"; };
+		FF9E9C7129804FCE002FD2FE /* Talent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Talent.swift; sourceTree = "<group>"; };
+		FFA9714D2980306D009FF258 /* FLHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA971502980306D009FF258 /* FLHelperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLHelperApp.swift; sourceTree = "<group>"; };
+		FFA971522980306D009FF258 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FFA971542980306E009FF258 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFA971572980306E009FF258 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FFA9715D2980306E009FF258 /* FLHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FLHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA971612980306E009FF258 /* FLHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLHelperTests.swift; sourceTree = "<group>"; };
+		FFA971672980306E009FF258 /* FLHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FLHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA9716B2980306E009FF258 /* FLHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLHelperUITests.swift; sourceTree = "<group>"; };
+		FFA9716D2980306E009FF258 /* FLHelperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLHelperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFA9714A2980306D009FF258 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFA9715A2980306E009FF258 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFA971642980306E009FF258 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF4431CD2980515A00890D7C /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				FF4431E12980629500890D7C /* Item.swift */,
+				FF4431E3298062B000890D7C /* Weight.swift */,
+				FF4431E52980638500890D7C /* Weapon.swift */,
+				FF4431EB2980676800890D7C /* Armor.swift */,
+				FF4431ED29806AD500890D7C /* Supply.swift */,
+				FF4431EF29806AF900890D7C /* RawMaterial.swift */,
+				FF4431F129806B4B00890D7C /* Tool.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		FF4431CE2980518300890D7C /* General */ = {
+			isa = PBXGroup;
+			children = (
+				FF4431CF2980518C00890D7C /* Die.swift */,
+				FF4431D82980553100890D7C /* Entity.swift */,
+				FF4431DA298055AB00890D7C /* Attribute.swift */,
+				FF4431DC2980566100890D7C /* Skill.swift */,
+				FF4431E7298063E200890D7C /* Range.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		FF4431D7298054AC00890D7C /* Monsters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Monsters;
+			sourceTree = "<group>";
+		};
+		FF4431DE2980590D00890D7C /* Animals */ = {
+			isa = PBXGroup;
+			children = (
+				FF4431D12980530B00890D7C /* Animal.swift */,
+				FF4431DF2980591C00890D7C /* AnimalType.swift */,
+			);
+			path = Animals;
+			sourceTree = "<group>";
+		};
+		FF9E9C6129804D03002FD2FE /* Players */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Players;
+			sourceTree = "<group>";
+		};
+		FF9E9C6229804D11002FD2FE /* Places */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Places;
+			sourceTree = "<group>";
+		};
+		FF9E9C6329804D1C002FD2FE /* Talents */ = {
+			isa = PBXGroup;
+			children = (
+				FF9E9C7129804FCE002FD2FE /* Talent.swift */,
+			);
+			path = Talents;
+			sourceTree = "<group>";
+		};
+		FF9E9C6429804D27002FD2FE /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tables;
+			sourceTree = "<group>";
+		};
+		FF9E9C6529804D2D002FD2FE /* NPCs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NPCs;
+			sourceTree = "<group>";
+		};
+		FF9E9C6629804D33002FD2FE /* Encounters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Encounters;
+			sourceTree = "<group>";
+		};
+		FF9E9C6729804D3B002FD2FE /* Combat */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Combat;
+			sourceTree = "<group>";
+		};
+		FF9E9C6829804D53002FD2FE /* Spells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Spells;
+			sourceTree = "<group>";
+		};
+		FF9E9C6929804D60002FD2FE /* Campaign */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Campaign;
+			sourceTree = "<group>";
+		};
+		FF9E9C6A29804D75002FD2FE /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				FF9E9C6B29804D83002FD2FE /* Character.swift */,
+				FF9E9C6D29804DCB002FD2FE /* Kin.swift */,
+				FF9E9C6F29804EFF002FD2FE /* Profession.swift */,
+				FF4431E9298064BD00890D7C /* PlayerCharacter.swift */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
+		FFA971442980306D009FF258 = {
+			isa = PBXGroup;
+			children = (
+				FFA9714F2980306D009FF258 /* FLHelper */,
+				FFA971602980306E009FF258 /* FLHelperTests */,
+				FFA9716A2980306E009FF258 /* FLHelperUITests */,
+				FFA9714E2980306D009FF258 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFA9714E2980306D009FF258 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFA9714D2980306D009FF258 /* FLHelper.app */,
+				FFA9715D2980306E009FF258 /* FLHelperTests.xctest */,
+				FFA971672980306E009FF258 /* FLHelperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFA9714F2980306D009FF258 /* FLHelper */ = {
+			isa = PBXGroup;
+			children = (
+				FF4431DE2980590D00890D7C /* Animals */,
+				FF4431D7298054AC00890D7C /* Monsters */,
+				FF4431CE2980518300890D7C /* General */,
+				FF4431CD2980515A00890D7C /* Items */,
+				FF9E9C6A29804D75002FD2FE /* Character */,
+				FF9E9C6929804D60002FD2FE /* Campaign */,
+				FF9E9C6829804D53002FD2FE /* Spells */,
+				FF9E9C6729804D3B002FD2FE /* Combat */,
+				FF9E9C6629804D33002FD2FE /* Encounters */,
+				FF9E9C6529804D2D002FD2FE /* NPCs */,
+				FF9E9C6429804D27002FD2FE /* Tables */,
+				FF9E9C6329804D1C002FD2FE /* Talents */,
+				FF9E9C6229804D11002FD2FE /* Places */,
+				FF9E9C6129804D03002FD2FE /* Players */,
+				FFA971502980306D009FF258 /* FLHelperApp.swift */,
+				FFA971522980306D009FF258 /* ContentView.swift */,
+				FFA971542980306E009FF258 /* Assets.xcassets */,
+				FFA971562980306E009FF258 /* Preview Content */,
+			);
+			path = FLHelper;
+			sourceTree = "<group>";
+		};
+		FFA971562980306E009FF258 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FFA971572980306E009FF258 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FFA971602980306E009FF258 /* FLHelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFA971612980306E009FF258 /* FLHelperTests.swift */,
+			);
+			path = FLHelperTests;
+			sourceTree = "<group>";
+		};
+		FFA9716A2980306E009FF258 /* FLHelperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FFA9716B2980306E009FF258 /* FLHelperUITests.swift */,
+				FFA9716D2980306E009FF258 /* FLHelperUITestsLaunchTests.swift */,
+			);
+			path = FLHelperUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFA9714C2980306D009FF258 /* FLHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFA971712980306E009FF258 /* Build configuration list for PBXNativeTarget "FLHelper" */;
+			buildPhases = (
+				FFA971492980306D009FF258 /* Sources */,
+				FFA9714A2980306D009FF258 /* Frameworks */,
+				FFA9714B2980306D009FF258 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FLHelper;
+			productName = FLHelper;
+			productReference = FFA9714D2980306D009FF258 /* FLHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFA9715C2980306E009FF258 /* FLHelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFA971742980306E009FF258 /* Build configuration list for PBXNativeTarget "FLHelperTests" */;
+			buildPhases = (
+				FFA971592980306E009FF258 /* Sources */,
+				FFA9715A2980306E009FF258 /* Frameworks */,
+				FFA9715B2980306E009FF258 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFA9715F2980306E009FF258 /* PBXTargetDependency */,
+			);
+			name = FLHelperTests;
+			productName = FLHelperTests;
+			productReference = FFA9715D2980306E009FF258 /* FLHelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FFA971662980306E009FF258 /* FLHelperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFA971772980306E009FF258 /* Build configuration list for PBXNativeTarget "FLHelperUITests" */;
+			buildPhases = (
+				FFA971632980306E009FF258 /* Sources */,
+				FFA971642980306E009FF258 /* Frameworks */,
+				FFA971652980306E009FF258 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFA971692980306E009FF258 /* PBXTargetDependency */,
+			);
+			name = FLHelperUITests;
+			productName = FLHelperUITests;
+			productReference = FFA971672980306E009FF258 /* FLHelperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFA971452980306D009FF258 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					FFA9714C2980306D009FF258 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					FFA9715C2980306E009FF258 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FFA9714C2980306D009FF258;
+					};
+					FFA971662980306E009FF258 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FFA9714C2980306D009FF258;
+					};
+				};
+			};
+			buildConfigurationList = FFA971482980306D009FF258 /* Build configuration list for PBXProject "FLHelper" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFA971442980306D009FF258;
+			productRefGroup = FFA9714E2980306D009FF258 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFA9714C2980306D009FF258 /* FLHelper */,
+				FFA9715C2980306E009FF258 /* FLHelperTests */,
+				FFA971662980306E009FF258 /* FLHelperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFA9714B2980306D009FF258 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA971582980306E009FF258 /* Preview Assets.xcassets in Resources */,
+				FFA971552980306E009FF258 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFA9715B2980306E009FF258 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFA971652980306E009FF258 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFA971492980306D009FF258 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF9E9C7029804EFF002FD2FE /* Profession.swift in Sources */,
+				FF4431E62980638500890D7C /* Weapon.swift in Sources */,
+				FF4431EE29806AD500890D7C /* Supply.swift in Sources */,
+				FF4431F229806B4B00890D7C /* Tool.swift in Sources */,
+				FF4431E8298063E200890D7C /* Range.swift in Sources */,
+				FF4431DD2980566100890D7C /* Skill.swift in Sources */,
+				FF4431F029806AF900890D7C /* RawMaterial.swift in Sources */,
+				FF4431D22980530B00890D7C /* Animal.swift in Sources */,
+				FF4431E02980591C00890D7C /* AnimalType.swift in Sources */,
+				FF4431EA298064BD00890D7C /* PlayerCharacter.swift in Sources */,
+				FF4431E22980629500890D7C /* Item.swift in Sources */,
+				FF4431E4298062B000890D7C /* Weight.swift in Sources */,
+				FF9E9C6E29804DCB002FD2FE /* Kin.swift in Sources */,
+				FF4431EC2980676800890D7C /* Armor.swift in Sources */,
+				FF4431D02980518C00890D7C /* Die.swift in Sources */,
+				FF9E9C6C29804D83002FD2FE /* Character.swift in Sources */,
+				FF4431D92980553100890D7C /* Entity.swift in Sources */,
+				FF4431DB298055AB00890D7C /* Attribute.swift in Sources */,
+				FF9E9C7229804FCE002FD2FE /* Talent.swift in Sources */,
+				FFA971532980306D009FF258 /* ContentView.swift in Sources */,
+				FFA971512980306D009FF258 /* FLHelperApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFA971592980306E009FF258 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA971622980306E009FF258 /* FLHelperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFA971632980306E009FF258 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA9716E2980306E009FF258 /* FLHelperUITestsLaunchTests.swift in Sources */,
+				FFA9716C2980306E009FF258 /* FLHelperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFA9715F2980306E009FF258 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFA9714C2980306D009FF258 /* FLHelper */;
+			targetProxy = FFA9715E2980306E009FF258 /* PBXContainerItemProxy */;
+		};
+		FFA971692980306E009FF258 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFA9714C2980306D009FF258 /* FLHelper */;
+			targetProxy = FFA971682980306E009FF258 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FFA9716F2980306E009FF258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFA971702980306E009FF258 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFA971722980306E009FF258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FLHelper/Preview Content\"";
+				DEVELOPMENT_TEAM = 692WP484NX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.manicek.FLHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFA971732980306E009FF258 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FLHelper/Preview Content\"";
+				DEVELOPMENT_TEAM = 692WP484NX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.manicek.FLHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FFA971752980306E009FF258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 692WP484NX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.manicek.FLHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FLHelper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FLHelper";
+			};
+			name = Debug;
+		};
+		FFA971762980306E009FF258 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 692WP484NX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.manicek.FLHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FLHelper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FLHelper";
+			};
+			name = Release;
+		};
+		FFA971782980306E009FF258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 692WP484NX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.manicek.FLHelperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FLHelper;
+			};
+			name = Debug;
+		};
+		FFA971792980306E009FF258 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 692WP484NX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.manicek.FLHelperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FLHelper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFA971482980306D009FF258 /* Build configuration list for PBXProject "FLHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFA9716F2980306E009FF258 /* Debug */,
+				FFA971702980306E009FF258 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFA971712980306E009FF258 /* Build configuration list for PBXNativeTarget "FLHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFA971722980306E009FF258 /* Debug */,
+				FFA971732980306E009FF258 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFA971742980306E009FF258 /* Build configuration list for PBXNativeTarget "FLHelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFA971752980306E009FF258 /* Debug */,
+				FFA971762980306E009FF258 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFA971772980306E009FF258 /* Build configuration list for PBXNativeTarget "FLHelperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFA971782980306E009FF258 /* Debug */,
+				FFA971792980306E009FF258 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFA971452980306D009FF258 /* Project object */;
+}
