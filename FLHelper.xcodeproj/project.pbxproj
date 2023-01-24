@@ -22,6 +22,12 @@
 		FF4431EE29806AD500890D7C /* Supply.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431ED29806AD500890D7C /* Supply.swift */; };
 		FF4431F029806AF900890D7C /* RawMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431EF29806AF900890D7C /* RawMaterial.swift */; };
 		FF4431F229806B4B00890D7C /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431F129806B4B00890D7C /* Tool.swift */; };
+		FF4431F4298083BA00890D7C /* ArmorOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431F3298083BA00890D7C /* ArmorOption.swift */; };
+		FF4431F62980897300890D7C /* Battlefield.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431F52980897300890D7C /* Battlefield.swift */; };
+		FF4431F82980899100890D7C /* Zone.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431F72980899100890D7C /* Zone.swift */; };
+		FF4431FA298089CA00890D7C /* Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431F9298089CA00890D7C /* Battle.swift */; };
+		FF4431FC298089F500890D7C /* BattleTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431FB298089F500890D7C /* BattleTeam.swift */; };
+		FF44320029808A9000890D7C /* Combatant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431FF29808A9000890D7C /* Combatant.swift */; };
 		FF9E9C6C29804D83002FD2FE /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E9C6B29804D83002FD2FE /* Character.swift */; };
 		FF9E9C6E29804DCB002FD2FE /* Kin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E9C6D29804DCB002FD2FE /* Kin.swift */; };
 		FF9E9C7029804EFF002FD2FE /* Profession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E9C6F29804EFF002FD2FE /* Profession.swift */; };
@@ -68,11 +74,17 @@
 		FF4431ED29806AD500890D7C /* Supply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supply.swift; sourceTree = "<group>"; };
 		FF4431EF29806AF900890D7C /* RawMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawMaterial.swift; sourceTree = "<group>"; };
 		FF4431F129806B4B00890D7C /* Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
+		FF4431F3298083BA00890D7C /* ArmorOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorOption.swift; sourceTree = "<group>"; };
+		FF4431F52980897300890D7C /* Battlefield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battlefield.swift; sourceTree = "<group>"; };
+		FF4431F72980899100890D7C /* Zone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zone.swift; sourceTree = "<group>"; };
+		FF4431F9298089CA00890D7C /* Battle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battle.swift; sourceTree = "<group>"; };
+		FF4431FB298089F500890D7C /* BattleTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleTeam.swift; sourceTree = "<group>"; };
+		FF4431FF29808A9000890D7C /* Combatant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combatant.swift; sourceTree = "<group>"; };
 		FF9E9C6B29804D83002FD2FE /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		FF9E9C6D29804DCB002FD2FE /* Kin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kin.swift; sourceTree = "<group>"; };
 		FF9E9C6F29804EFF002FD2FE /* Profession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profession.swift; sourceTree = "<group>"; };
 		FF9E9C7129804FCE002FD2FE /* Talent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Talent.swift; sourceTree = "<group>"; };
-		FFA9714D2980306D009FF258 /* FLHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA9714D2980306D009FF258 /* FL Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FL Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA971502980306D009FF258 /* FLHelperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLHelperApp.swift; sourceTree = "<group>"; };
 		FFA971522980306D009FF258 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FFA971542980306E009FF258 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,6 +131,7 @@
 				FF4431ED29806AD500890D7C /* Supply.swift */,
 				FF4431EF29806AF900890D7C /* RawMaterial.swift */,
 				FF4431F129806B4B00890D7C /* Tool.swift */,
+				FF4431F3298083BA00890D7C /* ArmorOption.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -197,6 +210,11 @@
 		FF9E9C6729804D3B002FD2FE /* Combat */ = {
 			isa = PBXGroup;
 			children = (
+				FF4431F52980897300890D7C /* Battlefield.swift */,
+				FF4431F72980899100890D7C /* Zone.swift */,
+				FF4431F9298089CA00890D7C /* Battle.swift */,
+				FF4431FB298089F500890D7C /* BattleTeam.swift */,
+				FF4431FF29808A9000890D7C /* Combatant.swift */,
 			);
 			path = Combat;
 			sourceTree = "<group>";
@@ -239,7 +257,7 @@
 		FFA9714E2980306D009FF258 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FFA9714D2980306D009FF258 /* FLHelper.app */,
+				FFA9714D2980306D009FF258 /* FL Helper.app */,
 				FFA9715D2980306E009FF258 /* FLHelperTests.xctest */,
 				FFA971672980306E009FF258 /* FLHelperUITests.xctest */,
 			);
@@ -299,9 +317,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FFA9714C2980306D009FF258 /* FLHelper */ = {
+		FFA9714C2980306D009FF258 /* FL Helper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FFA971712980306E009FF258 /* Build configuration list for PBXNativeTarget "FLHelper" */;
+			buildConfigurationList = FFA971712980306E009FF258 /* Build configuration list for PBXNativeTarget "FL Helper" */;
 			buildPhases = (
 				FFA971492980306D009FF258 /* Sources */,
 				FFA9714A2980306D009FF258 /* Frameworks */,
@@ -311,9 +329,9 @@
 			);
 			dependencies = (
 			);
-			name = FLHelper;
+			name = "FL Helper";
 			productName = FLHelper;
-			productReference = FFA9714D2980306D009FF258 /* FLHelper.app */;
+			productReference = FFA9714D2980306D009FF258 /* FL Helper.app */;
 			productType = "com.apple.product-type.application";
 		};
 		FFA9715C2980306E009FF258 /* FLHelperTests */ = {
@@ -388,7 +406,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FFA9714C2980306D009FF258 /* FLHelper */,
+				FFA9714C2980306D009FF258 /* FL Helper */,
 				FFA9715C2980306E009FF258 /* FLHelperTests */,
 				FFA971662980306E009FF258 /* FLHelperUITests */,
 			);
@@ -434,6 +452,10 @@
 				FF4431DD2980566100890D7C /* Skill.swift in Sources */,
 				FF4431F029806AF900890D7C /* RawMaterial.swift in Sources */,
 				FF4431D22980530B00890D7C /* Animal.swift in Sources */,
+				FF4431FC298089F500890D7C /* BattleTeam.swift in Sources */,
+				FF44320029808A9000890D7C /* Combatant.swift in Sources */,
+				FF4431FA298089CA00890D7C /* Battle.swift in Sources */,
+				FF4431F62980897300890D7C /* Battlefield.swift in Sources */,
 				FF4431E02980591C00890D7C /* AnimalType.swift in Sources */,
 				FF4431EA298064BD00890D7C /* PlayerCharacter.swift in Sources */,
 				FF4431E22980629500890D7C /* Item.swift in Sources */,
@@ -442,6 +464,8 @@
 				FF4431EC2980676800890D7C /* Armor.swift in Sources */,
 				FF4431D02980518C00890D7C /* Die.swift in Sources */,
 				FF9E9C6C29804D83002FD2FE /* Character.swift in Sources */,
+				FF4431F82980899100890D7C /* Zone.swift in Sources */,
+				FF4431F4298083BA00890D7C /* ArmorOption.swift in Sources */,
 				FF4431D92980553100890D7C /* Entity.swift in Sources */,
 				FF4431DB298055AB00890D7C /* Attribute.swift in Sources */,
 				FF9E9C7229804FCE002FD2FE /* Talent.swift in Sources */,
@@ -472,12 +496,12 @@
 /* Begin PBXTargetDependency section */
 		FFA9715F2980306E009FF258 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FFA9714C2980306D009FF258 /* FLHelper */;
+			target = FFA9714C2980306D009FF258 /* FL Helper */;
 			targetProxy = FFA9715E2980306E009FF258 /* PBXContainerItemProxy */;
 		};
 		FFA971692980306E009FF258 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FFA9714C2980306D009FF258 /* FLHelper */;
+			target = FFA9714C2980306D009FF258 /* FL Helper */;
 			targetProxy = FFA971682980306E009FF258 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -533,7 +557,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -587,7 +611,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -745,7 +769,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FFA971712980306E009FF258 /* Build configuration list for PBXNativeTarget "FLHelper" */ = {
+		FFA971712980306E009FF258 /* Build configuration list for PBXNativeTarget "FL Helper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FFA971722980306E009FF258 /* Debug */,

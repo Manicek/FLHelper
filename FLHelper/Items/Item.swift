@@ -11,7 +11,7 @@ class Item {
     var supply: Supply?
     var rawMaterials: [RawMaterial: Int]?
     var quarterDaysToMake: Int?
-    var requiredTalent: Talent?
+    var requiredTalents: [Talent]?
     var requiredTools: [Tool]?
     
     init(
@@ -21,14 +21,16 @@ class Item {
         supply: Supply? = nil,
         rawMaterials: [RawMaterial : Int]? = nil,
         quarterDaysToMake: Int? = nil,
-        requiredTalent: Talent? = nil, requiredTools: [Tool]? = nil) {
+        requiredTalents: [Talent]? = nil,
+        requiredTools: [Tool]? = nil
+    ) {
         self.name = name
         self.weight = weight
         self.price = price
         self.supply = supply
         self.rawMaterials = rawMaterials
         self.quarterDaysToMake = quarterDaysToMake
-        self.requiredTalent = requiredTalent
+        self.requiredTalents = requiredTalents
         self.requiredTools = requiredTools
     }
 }

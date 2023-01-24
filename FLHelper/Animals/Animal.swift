@@ -7,12 +7,25 @@ import Foundation
 class Animal: Entity {
     let type: AnimalType
     
-    init(name: String, type: AnimalType, age: Int, speed: Int, attributes: [Attribute : Int], skills: [Skill : Int]) {
-        self.name = name
+    init(
+        name: String,
+        type: AnimalType,
+        age: Int,
+        speed: Int,
+        attributes: [Attribute: Int],
+        skills: [Skill: Int],
+        talents: [Talent: Int],
+        inventory: [Item]
+    ) {
         self.type = type
-        self.age = age
-        self.speed = speed
-        self.attributes = attributes
-        self.skills = skills
+        super.init(
+            name: name,
+            age: age,
+            speed: speed,
+            attributes: attributes,
+            skills: skills,
+            talents: talents,
+            inventory: inventory
+        )
     }
 }

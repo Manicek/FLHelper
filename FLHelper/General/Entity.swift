@@ -5,10 +5,11 @@
 import Foundation
 
 class Entity {
-    let name: String
+    var name: String
     var age: Int
     var speed: Int
     var attributes: [Attribute: Int]
+    let maxAttributes: [Attribute: Int]
     var skills: [Skill: Int]
     var talents: [Talent: Int]
     var inventory: [Item]
@@ -26,6 +27,7 @@ class Entity {
         self.age = age
         self.speed = speed
         self.attributes = attributes
+        self.maxAttributes = attributes
         self.skills = skills
         self.talents = talents
         self.inventory = inventory
