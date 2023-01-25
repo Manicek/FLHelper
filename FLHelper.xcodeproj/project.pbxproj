@@ -28,14 +28,27 @@
 		FF4431FA298089CA00890D7C /* Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431F9298089CA00890D7C /* Battle.swift */; };
 		FF4431FC298089F500890D7C /* BattleTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431FB298089F500890D7C /* BattleTeam.swift */; };
 		FF44320029808A9000890D7C /* Combatant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431FF29808A9000890D7C /* Combatant.swift */; };
+		FF443203298091A700890D7C /* MainViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF443202298091A700890D7C /* MainViewButton.swift */; };
+		FF44320729809A3B00890D7C /* IMFellGreatPrimer-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF44320529809A3B00890D7C /* IMFellGreatPrimer-Regular.ttf */; };
+		FF44320829809A3B00890D7C /* IMFellGreatPrimer-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF44320629809A3B00890D7C /* IMFellGreatPrimer-Italic.ttf */; };
+		FF44320B29809C2A00890D7C /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF44320A29809C2A00890D7C /* Fonts.swift */; };
+		FF44320E29809D3800890D7C /* SettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF44320D29809D3800890D7C /* SettingsButton.swift */; };
+		FF4432112980AC6C00890D7C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4432102980AC6C00890D7C /* SettingsView.swift */; };
+		FF4432132980ADA500890D7C /* PlayersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4432122980ADA500890D7C /* PlayersView.swift */; };
+		FF4432152980AEB300890D7C /* PlayersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4432142980AEB300890D7C /* PlayersViewModel.swift */; };
+		FF4432192980AF6B00890D7C /* GetPlayerCharactersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4432182980AF6B00890D7C /* GetPlayerCharactersInteractor.swift */; };
+		FF4432272980B1A100890D7C /* Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4432262980B1A100890D7C /* Inject.swift */; };
+		FF4432292980B1B400890D7C /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4432282980B1B400890D7C /* Resolver.swift */; };
+		FF4432312980B5B900890D7C /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = FF4432302980B5B900890D7C /* Swinject */; };
+		FF4432332980B5E500890D7C /* PlayersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4432322980B5E500890D7C /* PlayersRepository.swift */; };
+		FF4432352980B6E000890D7C /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4432342980B6E000890D7C /* Gender.swift */; };
 		FF9E9C6C29804D83002FD2FE /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E9C6B29804D83002FD2FE /* Character.swift */; };
 		FF9E9C6E29804DCB002FD2FE /* Kin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E9C6D29804DCB002FD2FE /* Kin.swift */; };
 		FF9E9C7029804EFF002FD2FE /* Profession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E9C6F29804EFF002FD2FE /* Profession.swift */; };
 		FF9E9C7229804FCE002FD2FE /* Talent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E9C7129804FCE002FD2FE /* Talent.swift */; };
 		FFA971512980306D009FF258 /* FLHelperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA971502980306D009FF258 /* FLHelperApp.swift */; };
-		FFA971532980306D009FF258 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA971522980306D009FF258 /* ContentView.swift */; };
+		FFA971532980306D009FF258 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA971522980306D009FF258 /* MainView.swift */; };
 		FFA971552980306E009FF258 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA971542980306E009FF258 /* Assets.xcassets */; };
-		FFA971582980306E009FF258 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA971572980306E009FF258 /* Preview Assets.xcassets */; };
 		FFA971622980306E009FF258 /* FLHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA971612980306E009FF258 /* FLHelperTests.swift */; };
 		FFA9716C2980306E009FF258 /* FLHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9716B2980306E009FF258 /* FLHelperUITests.swift */; };
 		FFA9716E2980306E009FF258 /* FLHelperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9716D2980306E009FF258 /* FLHelperUITestsLaunchTests.swift */; };
@@ -57,6 +70,19 @@
 			remoteInfo = FLHelper;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FF44322D2980B58700890D7C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FF4431CF2980518C00890D7C /* Die.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Die.swift; sourceTree = "<group>"; };
@@ -80,15 +106,28 @@
 		FF4431F9298089CA00890D7C /* Battle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battle.swift; sourceTree = "<group>"; };
 		FF4431FB298089F500890D7C /* BattleTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleTeam.swift; sourceTree = "<group>"; };
 		FF4431FF29808A9000890D7C /* Combatant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combatant.swift; sourceTree = "<group>"; };
+		FF443202298091A700890D7C /* MainViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewButton.swift; sourceTree = "<group>"; };
+		FF44320529809A3B00890D7C /* IMFellGreatPrimer-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IMFellGreatPrimer-Regular.ttf"; sourceTree = "<group>"; };
+		FF44320629809A3B00890D7C /* IMFellGreatPrimer-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IMFellGreatPrimer-Italic.ttf"; sourceTree = "<group>"; };
+		FF44320929809B8600890D7C /* FL-Helper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "FL-Helper-Info.plist"; sourceTree = "<group>"; };
+		FF44320A29809C2A00890D7C /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		FF44320D29809D3800890D7C /* SettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButton.swift; sourceTree = "<group>"; };
+		FF4432102980AC6C00890D7C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FF4432122980ADA500890D7C /* PlayersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersView.swift; sourceTree = "<group>"; };
+		FF4432142980AEB300890D7C /* PlayersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewModel.swift; sourceTree = "<group>"; };
+		FF4432182980AF6B00890D7C /* GetPlayerCharactersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlayerCharactersInteractor.swift; sourceTree = "<group>"; };
+		FF4432262980B1A100890D7C /* Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inject.swift; sourceTree = "<group>"; };
+		FF4432282980B1B400890D7C /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
+		FF4432322980B5E500890D7C /* PlayersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersRepository.swift; sourceTree = "<group>"; };
+		FF4432342980B6E000890D7C /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 		FF9E9C6B29804D83002FD2FE /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		FF9E9C6D29804DCB002FD2FE /* Kin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kin.swift; sourceTree = "<group>"; };
 		FF9E9C6F29804EFF002FD2FE /* Profession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profession.swift; sourceTree = "<group>"; };
 		FF9E9C7129804FCE002FD2FE /* Talent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Talent.swift; sourceTree = "<group>"; };
 		FFA9714D2980306D009FF258 /* FL Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FL Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA971502980306D009FF258 /* FLHelperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLHelperApp.swift; sourceTree = "<group>"; };
-		FFA971522980306D009FF258 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FFA971522980306D009FF258 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FFA971542980306E009FF258 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FFA971572980306E009FF258 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FFA9715D2980306E009FF258 /* FLHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FLHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA971612980306E009FF258 /* FLHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLHelperTests.swift; sourceTree = "<group>"; };
 		FFA971672980306E009FF258 /* FLHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FLHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4432312980B5B900890D7C /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +184,7 @@
 				FF4431DA298055AB00890D7C /* Attribute.swift */,
 				FF4431DC2980566100890D7C /* Skill.swift */,
 				FF4431E7298063E200890D7C /* Range.swift */,
+				FF4432342980B6E000890D7C /* Gender.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -164,9 +205,84 @@
 			path = Animals;
 			sourceTree = "<group>";
 		};
+		FF44320129808EF900890D7C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FFA971502980306D009FF258 /* FLHelperApp.swift */,
+				FF44320C29809D1B00890D7C /* MainView */,
+				FF443204298099EC00890D7C /* Fonts */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FF443204298099EC00890D7C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FF44320629809A3B00890D7C /* IMFellGreatPrimer-Italic.ttf */,
+				FF44320529809A3B00890D7C /* IMFellGreatPrimer-Regular.ttf */,
+				FF44320A29809C2A00890D7C /* Fonts.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FF44320C29809D1B00890D7C /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				FFA971522980306D009FF258 /* MainView.swift */,
+				FF443202298091A700890D7C /* MainViewButton.swift */,
+				FF44320D29809D3800890D7C /* SettingsButton.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		FF44320F2980AC6500890D7C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FF4432102980AC6C00890D7C /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		FF4432162980AF5800890D7C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FF4432122980ADA500890D7C /* PlayersView.swift */,
+				FF4432142980AEB300890D7C /* PlayersViewModel.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FF4432172980AF6300890D7C /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				FF4431E9298064BD00890D7C /* PlayerCharacter.swift */,
+				FF4432182980AF6B00890D7C /* GetPlayerCharactersInteractor.swift */,
+				FF4432322980B5E500890D7C /* PlayersRepository.swift */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		FF4432252980B19A00890D7C /* Injection */ = {
+			isa = PBXGroup;
+			children = (
+				FF4432262980B1A100890D7C /* Inject.swift */,
+				FF4432282980B1B400890D7C /* Resolver.swift */,
+			);
+			path = Injection;
+			sourceTree = "<group>";
+		};
+		FF44322A2980B58700890D7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FF9E9C6129804D03002FD2FE /* Players */ = {
 			isa = PBXGroup;
 			children = (
+				FF4432172980AF6300890D7C /* domain */,
+				FF4432162980AF5800890D7C /* view */,
 			);
 			path = Players;
 			sourceTree = "<group>";
@@ -239,7 +355,6 @@
 				FF9E9C6B29804D83002FD2FE /* Character.swift */,
 				FF9E9C6D29804DCB002FD2FE /* Kin.swift */,
 				FF9E9C6F29804EFF002FD2FE /* Profession.swift */,
-				FF4431E9298064BD00890D7C /* PlayerCharacter.swift */,
 			);
 			path = Character;
 			sourceTree = "<group>";
@@ -247,10 +362,12 @@
 		FFA971442980306D009FF258 = {
 			isa = PBXGroup;
 			children = (
+				FF44320929809B8600890D7C /* FL-Helper-Info.plist */,
 				FFA9714F2980306D009FF258 /* FLHelper */,
 				FFA971602980306E009FF258 /* FLHelperTests */,
 				FFA9716A2980306E009FF258 /* FLHelperUITests */,
 				FFA9714E2980306D009FF258 /* Products */,
+				FF44322A2980B58700890D7C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -267,6 +384,9 @@
 		FFA9714F2980306D009FF258 /* FLHelper */ = {
 			isa = PBXGroup;
 			children = (
+				FF4432252980B19A00890D7C /* Injection */,
+				FF44320F2980AC6500890D7C /* Settings */,
+				FF44320129808EF900890D7C /* App */,
 				FF4431DE2980590D00890D7C /* Animals */,
 				FF4431D7298054AC00890D7C /* Monsters */,
 				FF4431CE2980518300890D7C /* General */,
@@ -281,20 +401,9 @@
 				FF9E9C6329804D1C002FD2FE /* Talents */,
 				FF9E9C6229804D11002FD2FE /* Places */,
 				FF9E9C6129804D03002FD2FE /* Players */,
-				FFA971502980306D009FF258 /* FLHelperApp.swift */,
-				FFA971522980306D009FF258 /* ContentView.swift */,
 				FFA971542980306E009FF258 /* Assets.xcassets */,
-				FFA971562980306E009FF258 /* Preview Content */,
 			);
 			path = FLHelper;
-			sourceTree = "<group>";
-		};
-		FFA971562980306E009FF258 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				FFA971572980306E009FF258 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		FFA971602980306E009FF258 /* FLHelperTests */ = {
@@ -324,12 +433,16 @@
 				FFA971492980306D009FF258 /* Sources */,
 				FFA9714A2980306D009FF258 /* Frameworks */,
 				FFA9714B2980306D009FF258 /* Resources */,
+				FF44322D2980B58700890D7C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "FL Helper";
+			packageProductDependencies = (
+				FF4432302980B5B900890D7C /* Swinject */,
+			);
 			productName = FLHelper;
 			productReference = FFA9714D2980306D009FF258 /* FL Helper.app */;
 			productType = "com.apple.product-type.application";
@@ -402,6 +515,9 @@
 				Base,
 			);
 			mainGroup = FFA971442980306D009FF258;
+			packageReferences = (
+				FF44322F2980B5B900890D7C /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = FFA9714E2980306D009FF258 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -418,8 +534,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFA971582980306E009FF258 /* Preview Assets.xcassets in Resources */,
+				FF44320829809A3B00890D7C /* IMFellGreatPrimer-Italic.ttf in Resources */,
 				FFA971552980306E009FF258 /* Assets.xcassets in Resources */,
+				FF44320729809A3B00890D7C /* IMFellGreatPrimer-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,32 +561,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4432272980B1A100890D7C /* Inject.swift in Sources */,
 				FF9E9C7029804EFF002FD2FE /* Profession.swift in Sources */,
 				FF4431E62980638500890D7C /* Weapon.swift in Sources */,
+				FF4432292980B1B400890D7C /* Resolver.swift in Sources */,
 				FF4431EE29806AD500890D7C /* Supply.swift in Sources */,
+				FF4432152980AEB300890D7C /* PlayersViewModel.swift in Sources */,
 				FF4431F229806B4B00890D7C /* Tool.swift in Sources */,
 				FF4431E8298063E200890D7C /* Range.swift in Sources */,
 				FF4431DD2980566100890D7C /* Skill.swift in Sources */,
 				FF4431F029806AF900890D7C /* RawMaterial.swift in Sources */,
+				FF4432132980ADA500890D7C /* PlayersView.swift in Sources */,
 				FF4431D22980530B00890D7C /* Animal.swift in Sources */,
+				FF4432332980B5E500890D7C /* PlayersRepository.swift in Sources */,
 				FF4431FC298089F500890D7C /* BattleTeam.swift in Sources */,
+				FF44320B29809C2A00890D7C /* Fonts.swift in Sources */,
 				FF44320029808A9000890D7C /* Combatant.swift in Sources */,
 				FF4431FA298089CA00890D7C /* Battle.swift in Sources */,
 				FF4431F62980897300890D7C /* Battlefield.swift in Sources */,
 				FF4431E02980591C00890D7C /* AnimalType.swift in Sources */,
 				FF4431EA298064BD00890D7C /* PlayerCharacter.swift in Sources */,
 				FF4431E22980629500890D7C /* Item.swift in Sources */,
+				FF443203298091A700890D7C /* MainViewButton.swift in Sources */,
 				FF4431E4298062B000890D7C /* Weight.swift in Sources */,
 				FF9E9C6E29804DCB002FD2FE /* Kin.swift in Sources */,
 				FF4431EC2980676800890D7C /* Armor.swift in Sources */,
 				FF4431D02980518C00890D7C /* Die.swift in Sources */,
 				FF9E9C6C29804D83002FD2FE /* Character.swift in Sources */,
+				FF4432192980AF6B00890D7C /* GetPlayerCharactersInteractor.swift in Sources */,
+				FF44320E29809D3800890D7C /* SettingsButton.swift in Sources */,
 				FF4431F82980899100890D7C /* Zone.swift in Sources */,
 				FF4431F4298083BA00890D7C /* ArmorOption.swift in Sources */,
 				FF4431D92980553100890D7C /* Entity.swift in Sources */,
 				FF4431DB298055AB00890D7C /* Attribute.swift in Sources */,
 				FF9E9C7229804FCE002FD2FE /* Talent.swift in Sources */,
-				FFA971532980306D009FF258 /* ContentView.swift in Sources */,
+				FFA971532980306D009FF258 /* MainView.swift in Sources */,
+				FF4432112980AC6C00890D7C /* SettingsView.swift in Sources */,
+				FF4432352980B6E000890D7C /* Gender.swift in Sources */,
 				FFA971512980306D009FF258 /* FLHelperApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -632,6 +760,7 @@
 				DEVELOPMENT_TEAM = 692WP484NX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FL-Helper-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -662,6 +791,7 @@
 				DEVELOPMENT_TEAM = 692WP484NX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FL-Helper-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -797,6 +927,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FF44322F2980B5B900890D7C /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FF4432302980B5B900890D7C /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF44322F2980B5B900890D7C /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FFA971452980306D009FF258 /* Project object */;
 }

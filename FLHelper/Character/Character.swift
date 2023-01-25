@@ -25,6 +25,7 @@ class Character: Entity {
     init(
         name: String,
         age: Int,
+        gender: Gender,
         speed: Int,
         attributes: [Attribute : Int],
         skills: [Skill : Int],
@@ -52,6 +53,7 @@ class Character: Entity {
         super.init(
             name: name,
             age: age,
+            gender: gender,
             speed: 1,
             attributes: attributes,
             skills: skills,

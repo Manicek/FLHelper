@@ -7,6 +7,7 @@ import Foundation
 class Entity {
     var name: String
     var age: Int
+    var gender: Gender
     var speed: Int
     var attributes: [Attribute: Int]
     let maxAttributes: [Attribute: Int]
@@ -17,6 +18,7 @@ class Entity {
     init(
         name: String,
         age: Int,
+        gender: Gender,
         speed: Int,
         attributes: [Attribute : Int],
         skills: [Skill : Int],
@@ -25,6 +27,7 @@ class Entity {
     ) {
         self.name = name
         self.age = age
+        self.gender = gender
         self.speed = speed
         self.attributes = attributes
         self.maxAttributes = attributes

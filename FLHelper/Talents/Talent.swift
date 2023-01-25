@@ -4,7 +4,7 @@
 
 import Foundation
 
-enum Talent {
+enum Talent: CaseIterable {
     // MARK: - Kin
     case adaptive
     case innerPeace

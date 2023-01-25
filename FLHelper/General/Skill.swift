@@ -4,7 +4,7 @@
 
 import Foundation
 
-enum Skill {
+enum Skill: CaseIterable {
     // MARK: - Strength
     case might
     case endurance

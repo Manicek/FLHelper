@@ -13,7 +13,7 @@ class PlayerCharacter: Character {
     init(
         name: String,
         age: Int,
-        speed: Int,
+        gender: Gender,
         attributes: [Attribute : Int],
         skills: [Skill : Int],
         talents: [Talent : Int],
@@ -22,14 +22,14 @@ class PlayerCharacter: Character {
         profession: Profession,
         reputation: Int,
         money: Int,
-        food: Die? = nil,
-        water: Die? = nil,
-        arrows: Die? = nil,
-        torches: Die? = nil,
-        animal: Animal? = nil,
+        food: Die?,
+        water: Die?,
+        arrows: Die?,
+        torches: Die?,
+        animal: Animal?,
         willpower: Int,
         experience: Int,
-        pride: String? = nil,
+        pride: String?,
         darkSecret: String
     ) {
         self.willpower = willpower
@@ -39,7 +39,8 @@ class PlayerCharacter: Character {
         super.init(
             name: name,
             age: age,
-            speed: speed,
+            gender: gender,
+            speed: 1,
             attributes: attributes,
             skills: skills,
             talents: talents,
