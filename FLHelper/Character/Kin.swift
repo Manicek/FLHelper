@@ -39,4 +39,12 @@ enum Kin {
         case .goblin: return "Skřetka"
         }
     }
+    
+    func czName(gender: Gender) -> String {
+        switch gender {
+        case .male: return czMale
+        case .female: return czFemale
+        case .other: return czMale
+        }
+    }
 }

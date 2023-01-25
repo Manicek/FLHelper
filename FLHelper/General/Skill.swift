@@ -12,8 +12,8 @@ enum Skill: CaseIterable {
     case crafting
     // MARK: - Agility
     case stealth
-    case move
     case sleightOfHand
+    case move
     case marksmanship
     // MARK: - Wits
     case scouting
@@ -22,8 +22,8 @@ enum Skill: CaseIterable {
     case insight
     // MARK: - Empathy
     case manipulation
-    case healing
     case performance
+    case healing
     case animalHandling
     
     var attribute: Attribute {
@@ -32,6 +32,27 @@ enum Skill: CaseIterable {
         case .stealth, .move, .sleightOfHand, .marksmanship: return .agility
         case .scouting, .lore, .survival, .insight: return .wits
         case .manipulation, .healing, .performance, .animalHandling: return .empathy
+        }
+    }
+    
+    var czName: String {
+        switch self {
+        case .might: return "Svaly"
+        case .endurance: return "Výdrž"
+        case .melee: return "Boj zblízka"
+        case .crafting: return "Řemesla"
+        case .stealth: return "Plížení"
+        case .sleightOfHand: return "Zlodějina"
+        case .move: return "Mrštnost"
+        case .marksmanship: return "Střelba"
+        case .scouting: return "Ostražitost"
+        case .lore: return "Příběhy"
+        case .survival: return "Přežití"
+        case .insight: return "Empatie"
+        case .manipulation: return "Manipulace"
+        case .performance: return "Vystupování"
+        case .healing: return "Léčení"
+        case .animalHandling: return "Zvířata"
         }
     }
 }

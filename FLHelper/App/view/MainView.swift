@@ -5,13 +5,19 @@
 import SwiftUI
 
 struct MainView: View {
+    enum Constants {
+        static let settingsLinkSize: CGFloat = 60
+    }
+    
     var body: some View {
         NavigationView {
             VStack(alignment: .leading, spacing: 32) {
                 HStack {
                     Spacer()
                     NavigationLink(destination: SettingsView()) {
-                        SettingsImageView()
+                        Image(systemName: "gearshape.fill")
+                            .font(.system(size: Constants.settingsLinkSize))
+                        .frame(width: Constants.settingsLinkSize, height: Constants.settingsLinkSize)
                     }
                 }
                 
@@ -53,6 +59,9 @@ struct MainView: View {
             }
             .padding(.horizontal, 44)
             .padding(.bottom, 32)
-        }.navigationViewStyle(.stack)
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
+        }
+        .navigationViewStyle(.stack)
     }
 }

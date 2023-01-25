@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF1A869D2981C41B0056076C /* Campaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A869C2981C41B0056076C /* Campaign.swift */; };
+		FF1A86A42981C5920056076C /* FLPlayersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A86A32981C5920056076C /* FLPlayersRepository.swift */; };
+		FF1A86A72981C5FE0056076C /* PlayersInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A86A62981C5FE0056076C /* PlayersInjection.swift */; };
+		FF1A86AE2981CC730056076C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A86AD2981CC730056076C /* MainViewModel.swift */; };
+		FF1A86B12981D3250056076C /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF1A86AF2981D3250056076C /* DataModel.xcdatamodeld */; };
+		FF1A86B62981D4640056076C /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A86B52981D4640056076C /* PersistenceController.swift */; };
+		FF1A86B82981DFBC0056076C /* PlayerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A86B72981DFBC0056076C /* PlayerDetailView.swift */; };
 		FF4431D02980518C00890D7C /* Die.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431CF2980518C00890D7C /* Die.swift */; };
 		FF4431D22980530B00890D7C /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431D12980530B00890D7C /* Animal.swift */; };
 		FF4431D92980553100890D7C /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431D82980553100890D7C /* Entity.swift */; };
@@ -28,11 +35,10 @@
 		FF4431FA298089CA00890D7C /* Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431F9298089CA00890D7C /* Battle.swift */; };
 		FF4431FC298089F500890D7C /* BattleTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431FB298089F500890D7C /* BattleTeam.swift */; };
 		FF44320029808A9000890D7C /* Combatant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431FF29808A9000890D7C /* Combatant.swift */; };
-		FF443203298091A700890D7C /* MainViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF443202298091A700890D7C /* MainViewButton.swift */; };
+		FF443203298091A700890D7C /* MainViewLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF443202298091A700890D7C /* MainViewLinkView.swift */; };
 		FF44320729809A3B00890D7C /* IMFellGreatPrimer-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF44320529809A3B00890D7C /* IMFellGreatPrimer-Regular.ttf */; };
 		FF44320829809A3B00890D7C /* IMFellGreatPrimer-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF44320629809A3B00890D7C /* IMFellGreatPrimer-Italic.ttf */; };
 		FF44320B29809C2A00890D7C /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF44320A29809C2A00890D7C /* Fonts.swift */; };
-		FF44320E29809D3800890D7C /* SettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF44320D29809D3800890D7C /* SettingsButton.swift */; };
 		FF4432112980AC6C00890D7C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4432102980AC6C00890D7C /* SettingsView.swift */; };
 		FF4432132980ADA500890D7C /* PlayersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4432122980ADA500890D7C /* PlayersView.swift */; };
 		FF4432152980AEB300890D7C /* PlayersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4432142980AEB300890D7C /* PlayersViewModel.swift */; };
@@ -85,6 +91,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FF1A869C2981C41B0056076C /* Campaign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campaign.swift; sourceTree = "<group>"; };
+		FF1A86A32981C5920056076C /* FLPlayersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLPlayersRepository.swift; sourceTree = "<group>"; };
+		FF1A86A62981C5FE0056076C /* PlayersInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersInjection.swift; sourceTree = "<group>"; };
+		FF1A86AD2981CC730056076C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		FF1A86B02981D3250056076C /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		FF1A86B52981D4640056076C /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		FF1A86B72981DFBC0056076C /* PlayerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailView.swift; sourceTree = "<group>"; };
 		FF4431CF2980518C00890D7C /* Die.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Die.swift; sourceTree = "<group>"; };
 		FF4431D12980530B00890D7C /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		FF4431D82980553100890D7C /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
@@ -106,12 +119,11 @@
 		FF4431F9298089CA00890D7C /* Battle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battle.swift; sourceTree = "<group>"; };
 		FF4431FB298089F500890D7C /* BattleTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleTeam.swift; sourceTree = "<group>"; };
 		FF4431FF29808A9000890D7C /* Combatant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combatant.swift; sourceTree = "<group>"; };
-		FF443202298091A700890D7C /* MainViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewButton.swift; sourceTree = "<group>"; };
+		FF443202298091A700890D7C /* MainViewLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewLinkView.swift; sourceTree = "<group>"; };
 		FF44320529809A3B00890D7C /* IMFellGreatPrimer-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IMFellGreatPrimer-Regular.ttf"; sourceTree = "<group>"; };
 		FF44320629809A3B00890D7C /* IMFellGreatPrimer-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IMFellGreatPrimer-Italic.ttf"; sourceTree = "<group>"; };
 		FF44320929809B8600890D7C /* FL-Helper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "FL-Helper-Info.plist"; sourceTree = "<group>"; };
 		FF44320A29809C2A00890D7C /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-		FF44320D29809D3800890D7C /* SettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButton.swift; sourceTree = "<group>"; };
 		FF4432102980AC6C00890D7C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		FF4432122980ADA500890D7C /* PlayersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersView.swift; sourceTree = "<group>"; };
 		FF4432142980AEB300890D7C /* PlayersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewModel.swift; sourceTree = "<group>"; };
@@ -161,6 +173,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF1A869B2981C4090056076C /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A86AF2981D3250056076C /* DataModel.xcdatamodeld */,
+				FF1A86B52981D4640056076C /* PersistenceController.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		FF1A869E2981C49A0056076C /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A869C2981C41B0056076C /* Campaign.swift */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		FF1A86A22981C55F0056076C /* data */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A86A32981C5920056076C /* FLPlayersRepository.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		FF1A86A52981C5EE0056076C /* injection */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A86A62981C5FE0056076C /* PlayersInjection.swift */,
+			);
+			path = injection;
+			sourceTree = "<group>";
+		};
 		FF4431CD2980515A00890D7C /* Items */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,7 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				FFA971502980306D009FF258 /* FLHelperApp.swift */,
-				FF44320C29809D1B00890D7C /* MainView */,
+				FF44320C29809D1B00890D7C /* view */,
 				FF443204298099EC00890D7C /* Fonts */,
 			);
 			path = App;
@@ -225,14 +270,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		FF44320C29809D1B00890D7C /* MainView */ = {
+		FF44320C29809D1B00890D7C /* view */ = {
 			isa = PBXGroup;
 			children = (
 				FFA971522980306D009FF258 /* MainView.swift */,
-				FF443202298091A700890D7C /* MainViewButton.swift */,
-				FF44320D29809D3800890D7C /* SettingsButton.swift */,
+				FF443202298091A700890D7C /* MainViewLinkView.swift */,
+				FF1A86AD2981CC730056076C /* MainViewModel.swift */,
 			);
-			path = MainView;
+			path = view;
 			sourceTree = "<group>";
 		};
 		FF44320F2980AC6500890D7C /* Settings */ = {
@@ -248,6 +293,7 @@
 			children = (
 				FF4432122980ADA500890D7C /* PlayersView.swift */,
 				FF4432142980AEB300890D7C /* PlayersViewModel.swift */,
+				FF1A86B72981DFBC0056076C /* PlayerDetailView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -281,6 +327,8 @@
 		FF9E9C6129804D03002FD2FE /* Players */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A86A52981C5EE0056076C /* injection */,
+				FF1A86A22981C55F0056076C /* data */,
 				FF4432172980AF6300890D7C /* domain */,
 				FF4432162980AF5800890D7C /* view */,
 			);
@@ -345,6 +393,7 @@
 		FF9E9C6929804D60002FD2FE /* Campaign */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A869E2981C49A0056076C /* domain */,
 			);
 			path = Campaign;
 			sourceTree = "<group>";
@@ -384,6 +433,7 @@
 		FFA9714F2980306D009FF258 /* FLHelper */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A869B2981C4090056076C /* Database */,
 				FF4432252980B19A00890D7C /* Injection */,
 				FF44320F2980AC6500890D7C /* Settings */,
 				FF44320129808EF900890D7C /* App */,
@@ -562,7 +612,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF4432272980B1A100890D7C /* Inject.swift in Sources */,
+				FF1A86A42981C5920056076C /* FLPlayersRepository.swift in Sources */,
 				FF9E9C7029804EFF002FD2FE /* Profession.swift in Sources */,
+				FF1A86B12981D3250056076C /* DataModel.xcdatamodeld in Sources */,
 				FF4431E62980638500890D7C /* Weapon.swift in Sources */,
 				FF4432292980B1B400890D7C /* Resolver.swift in Sources */,
 				FF4431EE29806AD500890D7C /* Supply.swift in Sources */,
@@ -570,8 +622,11 @@
 				FF4431F229806B4B00890D7C /* Tool.swift in Sources */,
 				FF4431E8298063E200890D7C /* Range.swift in Sources */,
 				FF4431DD2980566100890D7C /* Skill.swift in Sources */,
+				FF1A86AE2981CC730056076C /* MainViewModel.swift in Sources */,
 				FF4431F029806AF900890D7C /* RawMaterial.swift in Sources */,
+				FF1A869D2981C41B0056076C /* Campaign.swift in Sources */,
 				FF4432132980ADA500890D7C /* PlayersView.swift in Sources */,
+				FF1A86B62981D4640056076C /* PersistenceController.swift in Sources */,
 				FF4431D22980530B00890D7C /* Animal.swift in Sources */,
 				FF4432332980B5E500890D7C /* PlayersRepository.swift in Sources */,
 				FF4431FC298089F500890D7C /* BattleTeam.swift in Sources */,
@@ -582,20 +637,21 @@
 				FF4431E02980591C00890D7C /* AnimalType.swift in Sources */,
 				FF4431EA298064BD00890D7C /* PlayerCharacter.swift in Sources */,
 				FF4431E22980629500890D7C /* Item.swift in Sources */,
-				FF443203298091A700890D7C /* MainViewButton.swift in Sources */,
+				FF443203298091A700890D7C /* MainViewLinkView.swift in Sources */,
 				FF4431E4298062B000890D7C /* Weight.swift in Sources */,
 				FF9E9C6E29804DCB002FD2FE /* Kin.swift in Sources */,
 				FF4431EC2980676800890D7C /* Armor.swift in Sources */,
 				FF4431D02980518C00890D7C /* Die.swift in Sources */,
 				FF9E9C6C29804D83002FD2FE /* Character.swift in Sources */,
 				FF4432192980AF6B00890D7C /* GetPlayerCharactersInteractor.swift in Sources */,
-				FF44320E29809D3800890D7C /* SettingsButton.swift in Sources */,
+				FF1A86A72981C5FE0056076C /* PlayersInjection.swift in Sources */,
 				FF4431F82980899100890D7C /* Zone.swift in Sources */,
 				FF4431F4298083BA00890D7C /* ArmorOption.swift in Sources */,
 				FF4431D92980553100890D7C /* Entity.swift in Sources */,
 				FF4431DB298055AB00890D7C /* Attribute.swift in Sources */,
 				FF9E9C7229804FCE002FD2FE /* Talent.swift in Sources */,
 				FFA971532980306D009FF258 /* MainView.swift in Sources */,
+				FF1A86B82981DFBC0056076C /* PlayerDetailView.swift in Sources */,
 				FF4432112980AC6C00890D7C /* SettingsView.swift in Sources */,
 				FF4432352980B6E000890D7C /* Gender.swift in Sources */,
 				FFA971512980306D009FF258 /* FLHelperApp.swift in Sources */,
@@ -946,6 +1002,19 @@
 			productName = Swinject;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		FF1A86AF2981D3250056076C /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FF1A86B02981D3250056076C /* DataModel.xcdatamodel */,
+			);
+			currentVersion = FF1A86B02981D3250056076C /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FFA971452980306D009FF258 /* Project object */;
 }

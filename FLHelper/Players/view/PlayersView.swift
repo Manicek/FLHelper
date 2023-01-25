@@ -9,9 +9,21 @@ struct PlayersView: View {
     
     var body: some View {
         ForEach(viewModel.playerCharacters, id: \.name) { character in
-            VStack {
-                Text(character.name)
-                Text(character.gender == .male ? character.kin.czMale : character.kin.czFemale)
+            ScrollView {
+                VStack {
+                    NavigationLink(destination: PlayerDetailView(player: character)) {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 20)
+                                .foregroundColor(.accentColor)
+                            HStack {
+                                Text(character.name)
+                                    .appFont(32)
+                                Image(character.gender.iconName)
+                            }.frame(maxWidth: .infinity)
+                        }
+                    }
+                }
+                .padding(.horizontal, 20)
             }
         }
     }

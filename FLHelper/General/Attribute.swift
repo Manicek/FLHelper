@@ -14,4 +14,13 @@ enum Attribute {
     case agility
     case wits
     case empathy
+    
+    var czName: String {
+        switch self {
+        case .strength: return "Síla"
+        case .agility: return "Obratnost"
+        case .wits: return "Bystrost"
+        case .empathy: return "Osobnost"
+        }
+    }
 }
