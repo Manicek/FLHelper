@@ -4,7 +4,7 @@
 
 import Foundation
 
-enum Attribute {
+enum Attribute: CaseIterable {
     enum Constants {
         static let creationMinimum = 0
         static let creationMaximum = 4
