@@ -58,6 +58,10 @@
 		FFA971622980306E009FF258 /* FLHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA971612980306E009FF258 /* FLHelperTests.swift */; };
 		FFA9716C2980306E009FF258 /* FLHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9716B2980306E009FF258 /* FLHelperUITests.swift */; };
 		FFA9716E2980306E009FF258 /* FLHelperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA9716D2980306E009FF258 /* FLHelperUITestsLaunchTests.swift */; };
+		FFD2DCF629831B97001EFCAA /* AttributesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD2DCF529831B97001EFCAA /* AttributesView.swift */; };
+		FFD2DCF929831BB5001EFCAA /* SkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD2DCF829831BB5001EFCAA /* SkillsView.swift */; };
+		FFD2DCFB29831D91001EFCAA /* IMFellGreatPrimer-RegularSC.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFD2DCFA29831D91001EFCAA /* IMFellGreatPrimer-RegularSC.ttf */; };
+		FFD2DCFD29832A1F001EFCAA /* TalentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD2DCFC29832A1F001EFCAA /* TalentsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +149,10 @@
 		FFA971672980306E009FF258 /* FLHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FLHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA9716B2980306E009FF258 /* FLHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLHelperUITests.swift; sourceTree = "<group>"; };
 		FFA9716D2980306E009FF258 /* FLHelperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLHelperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FFD2DCF529831B97001EFCAA /* AttributesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributesView.swift; sourceTree = "<group>"; };
+		FFD2DCF829831BB5001EFCAA /* SkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsView.swift; sourceTree = "<group>"; };
+		FFD2DCFA29831D91001EFCAA /* IMFellGreatPrimer-RegularSC.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IMFellGreatPrimer-RegularSC.ttf"; sourceTree = "<group>"; };
+		FFD2DCFC29832A1F001EFCAA /* TalentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalentsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +271,7 @@
 		FF443204298099EC00890D7C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				FFD2DCFA29831D91001EFCAA /* IMFellGreatPrimer-RegularSC.ttf */,
 				FF44320629809A3B00890D7C /* IMFellGreatPrimer-Italic.ttf */,
 				FF44320529809A3B00890D7C /* IMFellGreatPrimer-Regular.ttf */,
 				FF44320A29809C2A00890D7C /* Fonts.swift */,
@@ -401,9 +410,8 @@
 		FF9E9C6A29804D75002FD2FE /* Character */ = {
 			isa = PBXGroup;
 			children = (
-				FF9E9C6B29804D83002FD2FE /* Character.swift */,
-				FF9E9C6D29804DCB002FD2FE /* Kin.swift */,
-				FF9E9C6F29804EFF002FD2FE /* Profession.swift */,
+				FFD2DCF729831BA1001EFCAA /* domain */,
+				FFD2DCF429831B8E001EFCAA /* view */,
 			);
 			path = Character;
 			sourceTree = "<group>";
@@ -471,6 +479,26 @@
 				FFA9716D2980306E009FF258 /* FLHelperUITestsLaunchTests.swift */,
 			);
 			path = FLHelperUITests;
+			sourceTree = "<group>";
+		};
+		FFD2DCF429831B8E001EFCAA /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FFD2DCF529831B97001EFCAA /* AttributesView.swift */,
+				FFD2DCF829831BB5001EFCAA /* SkillsView.swift */,
+				FFD2DCFC29832A1F001EFCAA /* TalentsView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FFD2DCF729831BA1001EFCAA /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				FF9E9C6B29804D83002FD2FE /* Character.swift */,
+				FF9E9C6D29804DCB002FD2FE /* Kin.swift */,
+				FF9E9C6F29804EFF002FD2FE /* Profession.swift */,
+			);
+			path = domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -587,6 +615,7 @@
 				FF44320829809A3B00890D7C /* IMFellGreatPrimer-Italic.ttf in Resources */,
 				FFA971552980306E009FF258 /* Assets.xcassets in Resources */,
 				FF44320729809A3B00890D7C /* IMFellGreatPrimer-Regular.ttf in Resources */,
+				FFD2DCFB29831D91001EFCAA /* IMFellGreatPrimer-RegularSC.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +652,7 @@
 				FF4431E8298063E200890D7C /* Range.swift in Sources */,
 				FF4431DD2980566100890D7C /* Skill.swift in Sources */,
 				FF1A86AE2981CC730056076C /* MainViewModel.swift in Sources */,
+				FFD2DCFD29832A1F001EFCAA /* TalentsView.swift in Sources */,
 				FF4431F029806AF900890D7C /* RawMaterial.swift in Sources */,
 				FF1A869D2981C41B0056076C /* Campaign.swift in Sources */,
 				FF4432132980ADA500890D7C /* PlayersView.swift in Sources */,
@@ -635,6 +665,7 @@
 				FF4431FA298089CA00890D7C /* Battle.swift in Sources */,
 				FF4431F62980897300890D7C /* Battlefield.swift in Sources */,
 				FF4431E02980591C00890D7C /* AnimalType.swift in Sources */,
+				FFD2DCF629831B97001EFCAA /* AttributesView.swift in Sources */,
 				FF4431EA298064BD00890D7C /* PlayerCharacter.swift in Sources */,
 				FF4431E22980629500890D7C /* Item.swift in Sources */,
 				FF443203298091A700890D7C /* MainViewLinkView.swift in Sources */,
@@ -646,6 +677,7 @@
 				FF4432192980AF6B00890D7C /* GetPlayerCharactersInteractor.swift in Sources */,
 				FF1A86A72981C5FE0056076C /* PlayersInjection.swift in Sources */,
 				FF4431F82980899100890D7C /* Zone.swift in Sources */,
+				FFD2DCF929831BB5001EFCAA /* SkillsView.swift in Sources */,
 				FF4431F4298083BA00890D7C /* ArmorOption.swift in Sources */,
 				FF4431D92980553100890D7C /* Entity.swift in Sources */,
 				FF4431DB298055AB00890D7C /* Attribute.swift in Sources */,

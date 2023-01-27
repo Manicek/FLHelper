@@ -19,9 +19,19 @@ struct PlayerDetailView: View {
             }
             .frame(maxWidth: .infinity, alignment: .center)
                 
-            AttributesView(max: player.maxAttributes, current: player.attributes)
-                .fixedSize(horizontal: true, vertical: true)
-                .padding(.bottom, 12)
+            HStack(spacing: 20) {
+                AttributesView(max: player.maxAttributes, current: player.attributes)
+                    .fixedSize(horizontal: true, vertical: true)
+                    .padding(.bottom, 12)
+                VStack {
+                    PrideSecretRepLineView(title: "Pýcha", value: player.pride ?? "")
+                    PrideSecretRepLineView(title: "Temné tajemstvé", value: player.darkSecret)
+                    PrideSecretRepLineView(title: "Reputace", value: "\(player.reputation)")
+                }
+                TalentsView(talents: player.talents)
+            }
+            
+                
             SkillsView(skills: player.skills)
                 .fixedSize(horizontal: true, vertical: true)
 
@@ -31,7 +41,6 @@ struct PlayerDetailView: View {
 //            var isCold: Bool = false
 //        talents: [Talent : Int],
 //        inventory: [Item],
-//        reputation: Int,
 //        money: Int,
 //        food: Die?,
 //        water: Die?,
@@ -40,96 +49,23 @@ struct PlayerDetailView: View {
 //        animal: Animal?,
 //        willpower: Int,
 //        experience: Int,
-//        pride: String?,
-//        darkSecret: String
         }
         .padding(.horizontal, 12)
         .padding(.bottom, 24)
     }
 }
 
-// MARK: - LineView
+// MARK: - PrideSecretRepLineView
 
-private struct SkillsView: View {
-    let skills: [Skill: Int]
+private struct PrideSecretRepLineView: View {
+    let title: String
+    let value: String
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 4) {
-            HStack {
-                Text("Dovednosti".uppercased()).playerDetailSectionTitleFont()
-                Spacer()
-                Text("Úroveň".uppercased()).playerDetailSectionSubtitleFont()
-            }
-            ForEach(Skill.allCases, id: \.self) { skill in
-                HStack(alignment: .bottom, spacing: 0) {
-                    Text(skill.czName).playerDetailItemFont()
-                    Text(" (" + skill.attribute.czName.uppercased() + ") ").appFont(16)
-                        .padding(.trailing, 8)
-                    Spacer()
-                    if let playerSkill = skills[skill] {
-                        Text("\(playerSkill)").boldAppFont(24)
-                            .padding(.horizontal, 4)
-                    }
-                }.frame(maxWidth: .infinity)
-            }
-        }
-    }
-}
-
-// MARK: - AttributesView
-
-private struct AttributesView: View {
-    let max: [Attribute: Int]
-    let current: [Attribute: Int]
-    
-    var body: some View {
-        VStack(alignment: .center) {
-            Text("Vlastnosti".uppercased()).playerDetailSectionTitleFont()
-            HStack {
-                VStack(alignment: .leading) {
-                    ForEach(Attribute.allCases, id: \.self) { attribute in
-                        attributeNameView(attribute)
-                    }
-                }
-                .fixedSize()
-                VStack {
-                    ForEach(Attribute.allCases, id: \.self) { attribute in
-                        attributeValueView(attribute)
-                    }
-                }
-                VStack {
-                    ForEach(Attribute.allCases, id: \.self) { attribute in
-                        attributeHeartsView(attribute)
-                    }
-                }
-            }
-        }
-    }
-    
-    private func attributeNameView(_ attribute: Attribute) -> some View {
-        HStack {
-            Text(attribute.czName).playerDetailItemFont()
+        HStack(alignment: .top) {
+            Text(title + ":").appFont(18)
+            Text(value).appFont(18)
             Spacer()
         }
-    }
-    
-    private func attributeValueView(_ attribute: Attribute) -> some View {
-        HStack {
-            Text("\(current[attribute] ?? 2)").boldAppFont(24).padding(.horizontal, 4)
-        }
-    }
-    
-    private func attributeHeartsView(_ attribute: Attribute) -> some View {
-        HStack(alignment: .bottom, spacing: 0) {
-            ForEach((1...(max[attribute] ?? 2)), id: \.self) { value in
-                if value <= (current[attribute] ?? 0) {
-                    Image(systemName: "heart.fill")
-                } else {
-                    Image(systemName: "heart")
-                }
-            }
-            Spacer()
-        }
-        .frame(maxHeight: .infinity)
     }
 }

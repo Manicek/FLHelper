@@ -40,7 +40,7 @@ class FLPlayersRepository: PlayersRepository {
             willpower: 0,
             experience: 0,
             pride: "Nikdy nespadnu z vlka",
-            darkSecret: "Zabil jsem svoji matku"
+            darkSecret: "Zabil jsem svoji matku Zabil jsem svoji matku Zabil jsem svoji matku Zabil jsem svoji matku Zabil jsem svoji matku Zabil jsem svoji matku Zabil jsem svoji matku Zabil jsem svoji matku Zabil jsem svoji matku"
         )
         mrTest.attributes[.strength] = 1
         mrTest.attributes[.agility] = 2
