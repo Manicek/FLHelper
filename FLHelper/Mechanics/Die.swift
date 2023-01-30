@@ -10,6 +10,15 @@ enum Die {
     case d10
     case d12
     
+    var systemImageName: String {
+        switch self {
+        case .d6: return "6.square"
+        case .d8: return "8.square"
+        case .d10: return "10.square"
+        case .d12: return "12.square"
+        }
+    }
+    
     var canBeLowered: Bool {
         self != .d6
     }

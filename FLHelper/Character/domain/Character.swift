@@ -9,18 +9,13 @@ class Character: Entity {
     let profession: Profession
     var reputation: Int
     var money: Int
-    
-    var isSleepy: Bool = false
-    var isThirsty: Bool = false
-    var isHungry: Bool = false
-    var isCold: Bool = false
-    
-    var food: Die?
-    var water: Die?
-    var arrows: Die?
-    var torches: Die?
-    
+    var states: [CharacterState: Bool] = [.sleepy: false, .cold: false, .hungry: false, .thirsty: false]
+    var consumables: [Consumable: Die]
     var animal: Animal?
+    
+    var weapons: [Weapon] {
+        (inventory.filter { $0 is Weapon } as? [Weapon]) ?? []
+    }
     
     init(
         name: String,
@@ -35,20 +30,14 @@ class Character: Entity {
         profession: Profession,
         reputation: Int,
         money: Int,
-        food: Die? = nil,
-        water: Die? = nil,
-        arrows: Die? = nil,
-        torches: Die? = nil,
+        consumables: [Consumable: Die],
         animal: Animal? = nil
     ) {
         self.kin = kin
         self.profession = profession
         self.reputation = reputation
         self.money = money
-        self.food = food
-        self.water = water
-        self.arrows = arrows
-        self.torches = torches
+        self.consumables = consumables
         self.animal = animal
         super.init(
             name: name,

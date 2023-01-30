@@ -42,4 +42,5 @@ extension Text {
     func playerDetailSectionTitleFont() -> some View { scFont(26) }
     func playerDetailSectionSubtitleFont() -> some View { appFont(16) }
     func playerDetailItemFont() -> some View { appFont(24) }
+    func playerDetailTextFont() -> some View { appFont(18) }
 }

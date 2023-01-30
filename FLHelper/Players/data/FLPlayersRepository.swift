@@ -23,10 +23,7 @@ class FLPlayersRepository: PlayersRepository {
             profession: .rider,
             reputation: 1,
             money: 20,
-            food: .d8,
-            water: .d8,
-            arrows: nil,
-            torches: nil,
+            consumables: [.food: .d8, .water: .d8],
             animal: Animal(
                 name: "Vlkos",
                 type: .wolf,
@@ -35,16 +32,16 @@ class FLPlayersRepository: PlayersRepository {
                 speed: 2,
                 attributes: [.strength: 2, .agility: 3],
                 skills: [.move: 2],
-                inventory: [])
-            ,
-            willpower: 0,
-            experience: 0,
+                inventory: []
+            ),
+            willpower: 3,
+            experience: 9,
             pride: "Nikdy nespadnu z vlka",
-            darkSecret: "Zabil jsem svoji matku Zabil jsem svoji matku Zabil jsem svoji matku Zabil jsem svoji matku Zabil jsem svoji matku Zabil jsem svoji matku Zabil jsem svoji matku Zabil jsem svoji matku Zabil jsem svoji matku"
+            darkSecret: "Zabil jsem svoji matku a svedl to na bratra"
         )
         mrTest.attributes[.strength] = 1
         mrTest.attributes[.agility] = 2
-        
+        mrTest.states[.hungry] = true
         return [mrTest]
     }
 }

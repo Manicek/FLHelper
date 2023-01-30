@@ -4,33 +4,11 @@
 
 import Foundation
 
-// MARK: - ArmorType
-
-enum ArmorType {
-    case helmet
-    case body
+class Shield: Item {
+    static let systemImageName = "shield"
+    static let czName = "Štít"
     
-    var systemImageName: String {
-        switch self {
-        case .helmet: return "seal"
-        case .body: return "tshirt"
-        }
-    }
-    
-    var czName: String {
-        switch self {
-        case .helmet: return "Přilbice"
-        case .body: return "Zbroj"
-        }
-    }
-}
-
-// MARK: - Armor
-
-class Armor: Item {
-    var armorRating: Int
-    var type: ArmorType
-    var description: String?
+    var bonus: Int
     
     init(
         name: String,
@@ -41,13 +19,9 @@ class Armor: Item {
         quarterDaysToMake: Int? = nil,
         requiredTalents: [Talent]? = nil,
         requiredTools: [Tool]? = nil,
-        armorRating: Int,
-        type: ArmorType,
-        description: String?
+        bonus: Int
     ) {
-        self.armorRating = armorRating
-        self.type = type
-        self.description = description
+        self.bonus = bonus
         super.init(
             name: name,
             weight: weight,

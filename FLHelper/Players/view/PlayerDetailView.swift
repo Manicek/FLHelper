@@ -15,7 +15,6 @@ struct PlayerDetailView: View {
             HStack(spacing: 12) {
                 Text(player.kin.czName(gender: player.gender)).playerDetailSubtitle()
                 Text(player.profession.czName(gender: player.gender)).playerDetailSubtitle()
-                Text("\(player.age) let").playerDetailSubtitle()
             }
             .frame(maxWidth: .infinity, alignment: .center)
                 
@@ -23,29 +22,22 @@ struct PlayerDetailView: View {
                 AttributesView(max: player.maxAttributes, current: player.attributes)
                     .fixedSize(horizontal: true, vertical: true)
                     .padding(.bottom, 12)
+                StatesView(states: player.states)
                 VStack {
                     PrideSecretRepLineView(title: "Pýcha", value: player.pride ?? "")
                     PrideSecretRepLineView(title: "Temné tajemstvé", value: player.darkSecret)
                     PrideSecretRepLineView(title: "Reputace", value: "\(player.reputation)")
+                    PrideSecretRepLineView(title: "Věk", value: "\(player.age)")
                 }
+                ConsumablesView(consumables: player.consumables)
                 TalentsView(talents: player.talents)
             }
-            
                 
             SkillsView(skills: player.skills)
                 .fixedSize(horizontal: true, vertical: true)
 
-//            var isSleepy: Bool = false
-//            var isThirsty: Bool = false
-//            var isHungry: Bool = false
-//            var isCold: Bool = false
-//        talents: [Talent : Int],
 //        inventory: [Item],
 //        money: Int,
-//        food: Die?,
-//        water: Die?,
-//        arrows: Die?,
-//        torches: Die?,
 //        animal: Animal?,
 //        willpower: Int,
 //        experience: Int,
@@ -63,8 +55,8 @@ private struct PrideSecretRepLineView: View {
     
     var body: some View {
         HStack(alignment: .top) {
-            Text(title + ":").appFont(18)
-            Text(value).appFont(18)
+            Text(title + ":").playerDetailTextFont()
+            Text(value).playerDetailTextFont()
             Spacer()
         }
     }

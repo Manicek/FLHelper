@@ -48,6 +48,14 @@
 		FF4432312980B5B900890D7C /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = FF4432302980B5B900890D7C /* Swinject */; };
 		FF4432332980B5E500890D7C /* PlayersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4432322980B5E500890D7C /* PlayersRepository.swift */; };
 		FF4432352980B6E000890D7C /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4432342980B6E000890D7C /* Gender.swift */; };
+		FF7DDE362987DCA500FD9D43 /* StatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7DDE352987DCA500FD9D43 /* StatesView.swift */; };
+		FF7DDE382987DDBC00FD9D43 /* CharacterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7DDE372987DDBC00FD9D43 /* CharacterState.swift */; };
+		FF7DDE3D2987DF0400FD9D43 /* Consumable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7DDE3C2987DF0400FD9D43 /* Consumable.swift */; };
+		FF7DDE422987F55A00FD9D43 /* ArmorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7DDE412987F55A00FD9D43 /* ArmorView.swift */; };
+		FF7DDE442987F64000FD9D43 /* Shield.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7DDE432987F64000FD9D43 /* Shield.swift */; };
+		FF7DDE4629880D8500FD9D43 /* WillpowerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7DDE4529880D8500FD9D43 /* WillpowerView.swift */; };
+		FF7DDE482988225D00FD9D43 /* ConsumablesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7DDE472988225D00FD9D43 /* ConsumablesView.swift */; };
+		FF7DDE4A2988258900FD9D43 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7DDE492988258900FD9D43 /* Money.swift */; };
 		FF9E9C6C29804D83002FD2FE /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E9C6B29804D83002FD2FE /* Character.swift */; };
 		FF9E9C6E29804DCB002FD2FE /* Kin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E9C6D29804DCB002FD2FE /* Kin.swift */; };
 		FF9E9C7029804EFF002FD2FE /* Profession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E9C6F29804EFF002FD2FE /* Profession.swift */; };
@@ -136,6 +144,14 @@
 		FF4432282980B1B400890D7C /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
 		FF4432322980B5E500890D7C /* PlayersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersRepository.swift; sourceTree = "<group>"; };
 		FF4432342980B6E000890D7C /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		FF7DDE352987DCA500FD9D43 /* StatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesView.swift; sourceTree = "<group>"; };
+		FF7DDE372987DDBC00FD9D43 /* CharacterState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterState.swift; sourceTree = "<group>"; };
+		FF7DDE3C2987DF0400FD9D43 /* Consumable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consumable.swift; sourceTree = "<group>"; };
+		FF7DDE412987F55A00FD9D43 /* ArmorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorView.swift; sourceTree = "<group>"; };
+		FF7DDE432987F64000FD9D43 /* Shield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shield.swift; sourceTree = "<group>"; };
+		FF7DDE4529880D8500FD9D43 /* WillpowerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillpowerView.swift; sourceTree = "<group>"; };
+		FF7DDE472988225D00FD9D43 /* ConsumablesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumablesView.swift; sourceTree = "<group>"; };
+		FF7DDE492988258900FD9D43 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 		FF9E9C6B29804D83002FD2FE /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		FF9E9C6D29804DCB002FD2FE /* Kin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kin.swift; sourceTree = "<group>"; };
 		FF9E9C6F29804EFF002FD2FE /* Profession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profession.swift; sourceTree = "<group>"; };
@@ -225,21 +241,19 @@
 				FF4431EF29806AF900890D7C /* RawMaterial.swift */,
 				FF4431F129806B4B00890D7C /* Tool.swift */,
 				FF4431F3298083BA00890D7C /* ArmorOption.swift */,
+				FF7DDE432987F64000FD9D43 /* Shield.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
 		};
-		FF4431CE2980518300890D7C /* General */ = {
+		FF4431CE2980518300890D7C /* Mechanics */ = {
 			isa = PBXGroup;
 			children = (
 				FF4431CF2980518C00890D7C /* Die.swift */,
-				FF4431D82980553100890D7C /* Entity.swift */,
-				FF4431DA298055AB00890D7C /* Attribute.swift */,
-				FF4431DC2980566100890D7C /* Skill.swift */,
 				FF4431E7298063E200890D7C /* Range.swift */,
-				FF4432342980B6E000890D7C /* Gender.swift */,
+				FF7DDE492988258900FD9D43 /* Money.swift */,
 			);
-			path = General;
+			path = Mechanics;
 			sourceTree = "<group>";
 		};
 		FF4431D7298054AC00890D7C /* Monsters */ = {
@@ -300,6 +314,7 @@
 		FF4432162980AF5800890D7C /* view */ = {
 			isa = PBXGroup;
 			children = (
+				FF7DDE4529880D8500FD9D43 /* WillpowerView.swift */,
 				FF4432122980ADA500890D7C /* PlayersView.swift */,
 				FF4432142980AEB300890D7C /* PlayersViewModel.swift */,
 				FF1A86B72981DFBC0056076C /* PlayerDetailView.swift */,
@@ -333,6 +348,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FF7DDE3A2987DE6700FD9D43 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				FF7DDE3B2987DE6F00FD9D43 /* domain */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FF7DDE3B2987DE6F00FD9D43 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				FF4431D82980553100890D7C /* Entity.swift */,
+				FF4431DA298055AB00890D7C /* Attribute.swift */,
+				FF9E9C7129804FCE002FD2FE /* Talent.swift */,
+				FF4431DC2980566100890D7C /* Skill.swift */,
+				FF4432342980B6E000890D7C /* Gender.swift */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
 		FF9E9C6129804D03002FD2FE /* Players */ = {
 			isa = PBXGroup;
 			children = (
@@ -349,14 +384,6 @@
 			children = (
 			);
 			path = Places;
-			sourceTree = "<group>";
-		};
-		FF9E9C6329804D1C002FD2FE /* Talents */ = {
-			isa = PBXGroup;
-			children = (
-				FF9E9C7129804FCE002FD2FE /* Talent.swift */,
-			);
-			path = Talents;
 			sourceTree = "<group>";
 		};
 		FF9E9C6429804D27002FD2FE /* Tables */ = {
@@ -441,13 +468,14 @@
 		FFA9714F2980306D009FF258 /* FLHelper */ = {
 			isa = PBXGroup;
 			children = (
+				FF7DDE3A2987DE6700FD9D43 /* Entity */,
 				FF1A869B2981C4090056076C /* Database */,
 				FF4432252980B19A00890D7C /* Injection */,
 				FF44320F2980AC6500890D7C /* Settings */,
 				FF44320129808EF900890D7C /* App */,
 				FF4431DE2980590D00890D7C /* Animals */,
 				FF4431D7298054AC00890D7C /* Monsters */,
-				FF4431CE2980518300890D7C /* General */,
+				FF4431CE2980518300890D7C /* Mechanics */,
 				FF4431CD2980515A00890D7C /* Items */,
 				FF9E9C6A29804D75002FD2FE /* Character */,
 				FF9E9C6929804D60002FD2FE /* Campaign */,
@@ -456,7 +484,6 @@
 				FF9E9C6629804D33002FD2FE /* Encounters */,
 				FF9E9C6529804D2D002FD2FE /* NPCs */,
 				FF9E9C6429804D27002FD2FE /* Tables */,
-				FF9E9C6329804D1C002FD2FE /* Talents */,
 				FF9E9C6229804D11002FD2FE /* Places */,
 				FF9E9C6129804D03002FD2FE /* Players */,
 				FFA971542980306E009FF258 /* Assets.xcassets */,
@@ -487,6 +514,9 @@
 				FFD2DCF529831B97001EFCAA /* AttributesView.swift */,
 				FFD2DCF829831BB5001EFCAA /* SkillsView.swift */,
 				FFD2DCFC29832A1F001EFCAA /* TalentsView.swift */,
+				FF7DDE352987DCA500FD9D43 /* StatesView.swift */,
+				FF7DDE412987F55A00FD9D43 /* ArmorView.swift */,
+				FF7DDE472988225D00FD9D43 /* ConsumablesView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -497,6 +527,8 @@
 				FF9E9C6B29804D83002FD2FE /* Character.swift */,
 				FF9E9C6D29804DCB002FD2FE /* Kin.swift */,
 				FF9E9C6F29804EFF002FD2FE /* Profession.swift */,
+				FF7DDE372987DDBC00FD9D43 /* CharacterState.swift */,
+				FF7DDE3C2987DF0400FD9D43 /* Consumable.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -641,9 +673,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF4432272980B1A100890D7C /* Inject.swift in Sources */,
+				FF7DDE4A2988258900FD9D43 /* Money.swift in Sources */,
 				FF1A86A42981C5920056076C /* FLPlayersRepository.swift in Sources */,
 				FF9E9C7029804EFF002FD2FE /* Profession.swift in Sources */,
+				FF7DDE4629880D8500FD9D43 /* WillpowerView.swift in Sources */,
 				FF1A86B12981D3250056076C /* DataModel.xcdatamodeld in Sources */,
+				FF7DDE3D2987DF0400FD9D43 /* Consumable.swift in Sources */,
 				FF4431E62980638500890D7C /* Weapon.swift in Sources */,
 				FF4432292980B1B400890D7C /* Resolver.swift in Sources */,
 				FF4431EE29806AD500890D7C /* Supply.swift in Sources */,
@@ -654,6 +689,7 @@
 				FF1A86AE2981CC730056076C /* MainViewModel.swift in Sources */,
 				FFD2DCFD29832A1F001EFCAA /* TalentsView.swift in Sources */,
 				FF4431F029806AF900890D7C /* RawMaterial.swift in Sources */,
+				FF7DDE382987DDBC00FD9D43 /* CharacterState.swift in Sources */,
 				FF1A869D2981C41B0056076C /* Campaign.swift in Sources */,
 				FF4432132980ADA500890D7C /* PlayersView.swift in Sources */,
 				FF1A86B62981D4640056076C /* PersistenceController.swift in Sources */,
@@ -666,7 +702,9 @@
 				FF4431F62980897300890D7C /* Battlefield.swift in Sources */,
 				FF4431E02980591C00890D7C /* AnimalType.swift in Sources */,
 				FFD2DCF629831B97001EFCAA /* AttributesView.swift in Sources */,
+				FF7DDE362987DCA500FD9D43 /* StatesView.swift in Sources */,
 				FF4431EA298064BD00890D7C /* PlayerCharacter.swift in Sources */,
+				FF7DDE422987F55A00FD9D43 /* ArmorView.swift in Sources */,
 				FF4431E22980629500890D7C /* Item.swift in Sources */,
 				FF443203298091A700890D7C /* MainViewLinkView.swift in Sources */,
 				FF4431E4298062B000890D7C /* Weight.swift in Sources */,
@@ -685,6 +723,8 @@
 				FFA971532980306D009FF258 /* MainView.swift in Sources */,
 				FF1A86B82981DFBC0056076C /* PlayerDetailView.swift in Sources */,
 				FF4432112980AC6C00890D7C /* SettingsView.swift in Sources */,
+				FF7DDE442987F64000FD9D43 /* Shield.swift in Sources */,
+				FF7DDE482988225D00FD9D43 /* ConsumablesView.swift in Sources */,
 				FF4432352980B6E000890D7C /* Gender.swift in Sources */,
 				FFA971512980306D009FF258 /* FLHelperApp.swift in Sources */,
 			);

@@ -22,10 +22,7 @@ class PlayerCharacter: Character {
         profession: Profession,
         reputation: Int,
         money: Int,
-        food: Die?,
-        water: Die?,
-        arrows: Die?,
-        torches: Die?,
+        consumables: [Consumable: Die],
         animal: Animal?,
         willpower: Int,
         experience: Int,
@@ -48,7 +45,8 @@ class PlayerCharacter: Character {
             kin: kin,
             profession: profession,
             reputation: reputation,
-            money: money
+            money: money,
+            consumables: consumables
         )
     }
 }
