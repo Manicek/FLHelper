@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF11091F299D2ED800E9F3FC /* TablesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF11091E299D2ED800E9F3FC /* TablesView.swift */; };
+		FF110924299D2FDF00E9F3FC /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF110923299D2FDF00E9F3FC /* ItemsView.swift */; };
+		FF110927299D300700E9F3FC /* ItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF110926299D300700E9F3FC /* ItemType.swift */; };
+		FF110929299ED7A000E9F3FC /* ItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF110928299ED7A000E9F3FC /* ItemsViewModel.swift */; };
+		FF11092D299ED8A600E9F3FC /* GetBasicItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF11092C299ED8A600E9F3FC /* GetBasicItems.swift */; };
+		FF11092F299EE24100E9F3FC /* CraftingRequirements.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF11092E299EE24100E9F3FC /* CraftingRequirements.swift */; };
+		FF110931299EE3B700E9F3FC /* SpecialRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF110930299EE3B700E9F3FC /* SpecialRequirement.swift */; };
+		FF110933299EE59F00E9F3FC /* WeaponOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF110932299EE59F00E9F3FC /* WeaponOption.swift */; };
+		FF110935299EE61500E9F3FC /* ShieldOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF110934299EE61500E9F3FC /* ShieldOption.swift */; };
 		FF1A869D2981C41B0056076C /* Campaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A869C2981C41B0056076C /* Campaign.swift */; };
 		FF1A86A42981C5920056076C /* FLPlayersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A86A32981C5920056076C /* FLPlayersRepository.swift */; };
 		FF1A86A72981C5FE0056076C /* PlayersInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A86A62981C5FE0056076C /* PlayersInjection.swift */; };
@@ -103,6 +112,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FF11091E299D2ED800E9F3FC /* TablesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesView.swift; sourceTree = "<group>"; };
+		FF110923299D2FDF00E9F3FC /* ItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsView.swift; sourceTree = "<group>"; };
+		FF110926299D300700E9F3FC /* ItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemType.swift; sourceTree = "<group>"; };
+		FF110928299ED7A000E9F3FC /* ItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewModel.swift; sourceTree = "<group>"; };
+		FF11092C299ED8A600E9F3FC /* GetBasicItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBasicItems.swift; sourceTree = "<group>"; };
+		FF11092E299EE24100E9F3FC /* CraftingRequirements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CraftingRequirements.swift; sourceTree = "<group>"; };
+		FF110930299EE3B700E9F3FC /* SpecialRequirement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialRequirement.swift; sourceTree = "<group>"; };
+		FF110932299EE59F00E9F3FC /* WeaponOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponOption.swift; sourceTree = "<group>"; };
+		FF110934299EE61500E9F3FC /* ShieldOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShieldOption.swift; sourceTree = "<group>"; };
 		FF1A869C2981C41B0056076C /* Campaign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campaign.swift; sourceTree = "<group>"; };
 		FF1A86A32981C5920056076C /* FLPlayersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLPlayersRepository.swift; sourceTree = "<group>"; };
 		FF1A86A62981C5FE0056076C /* PlayersInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersInjection.swift; sourceTree = "<group>"; };
@@ -197,6 +215,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF110920299D2F0100E9F3FC /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FF11091E299D2ED800E9F3FC /* TablesView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FF110921299D2F1200E9F3FC /* domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		FF110922299D2FDA00E9F3FC /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FF110923299D2FDF00E9F3FC /* ItemsView.swift */,
+				FF110928299ED7A000E9F3FC /* ItemsViewModel.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FF110925299D300200E9F3FC /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				FF110926299D300700E9F3FC /* ItemType.swift */,
+				FF4431E12980629500890D7C /* Item.swift */,
+				FF4431E3298062B000890D7C /* Weight.swift */,
+				FF4431E52980638500890D7C /* Weapon.swift */,
+				FF4431EB2980676800890D7C /* Armor.swift */,
+				FF4431ED29806AD500890D7C /* Supply.swift */,
+				FF4431EF29806AF900890D7C /* RawMaterial.swift */,
+				FF4431F129806B4B00890D7C /* Tool.swift */,
+				FF4431F3298083BA00890D7C /* ArmorOption.swift */,
+				FF7DDE432987F64000FD9D43 /* Shield.swift */,
+				FF11092E299EE24100E9F3FC /* CraftingRequirements.swift */,
+				FF110930299EE3B700E9F3FC /* SpecialRequirement.swift */,
+				FF110932299EE59F00E9F3FC /* WeaponOption.swift */,
+				FF110934299EE61500E9F3FC /* ShieldOption.swift */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		FF11092A299ED87400E9F3FC /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FF11092C299ED8A600E9F3FC /* GetBasicItems.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		FF11092B299ED88100E9F3FC /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FF4432182980AF6B00890D7C /* GetPlayerCharactersInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
 		FF1A869B2981C4090056076C /* Database */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,15 +312,9 @@
 		FF4431CD2980515A00890D7C /* Items */ = {
 			isa = PBXGroup;
 			children = (
-				FF4431E12980629500890D7C /* Item.swift */,
-				FF4431E3298062B000890D7C /* Weight.swift */,
-				FF4431E52980638500890D7C /* Weapon.swift */,
-				FF4431EB2980676800890D7C /* Armor.swift */,
-				FF4431ED29806AD500890D7C /* Supply.swift */,
-				FF4431EF29806AF900890D7C /* RawMaterial.swift */,
-				FF4431F129806B4B00890D7C /* Tool.swift */,
-				FF4431F3298083BA00890D7C /* ArmorOption.swift */,
-				FF7DDE432987F64000FD9D43 /* Shield.swift */,
+				FF11092A299ED87400E9F3FC /* interactor */,
+				FF110925299D300200E9F3FC /* domain */,
+				FF110922299D2FDA00E9F3FC /* view */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -326,7 +399,6 @@
 			isa = PBXGroup;
 			children = (
 				FF4431E9298064BD00890D7C /* PlayerCharacter.swift */,
-				FF4432182980AF6B00890D7C /* GetPlayerCharactersInteractor.swift */,
 				FF4432322980B5E500890D7C /* PlayersRepository.swift */,
 			);
 			path = domain;
@@ -371,6 +443,7 @@
 		FF9E9C6129804D03002FD2FE /* Players */ = {
 			isa = PBXGroup;
 			children = (
+				FF11092B299ED88100E9F3FC /* interactor */,
 				FF1A86A52981C5EE0056076C /* injection */,
 				FF1A86A22981C55F0056076C /* data */,
 				FF4432172980AF6300890D7C /* domain */,
@@ -389,6 +462,8 @@
 		FF9E9C6429804D27002FD2FE /* Tables */ = {
 			isa = PBXGroup;
 			children = (
+				FF110921299D2F1200E9F3FC /* domain */,
+				FF110920299D2F0100E9F3FC /* view */,
 			);
 			path = Tables;
 			sourceTree = "<group>";
@@ -683,6 +758,7 @@
 				FF4432292980B1B400890D7C /* Resolver.swift in Sources */,
 				FF4431EE29806AD500890D7C /* Supply.swift in Sources */,
 				FF4432152980AEB300890D7C /* PlayersViewModel.swift in Sources */,
+				FF110931299EE3B700E9F3FC /* SpecialRequirement.swift in Sources */,
 				FF4431F229806B4B00890D7C /* Tool.swift in Sources */,
 				FF4431E8298063E200890D7C /* Range.swift in Sources */,
 				FF4431DD2980566100890D7C /* Skill.swift in Sources */,
@@ -694,9 +770,12 @@
 				FF4432132980ADA500890D7C /* PlayersView.swift in Sources */,
 				FF1A86B62981D4640056076C /* PersistenceController.swift in Sources */,
 				FF4431D22980530B00890D7C /* Animal.swift in Sources */,
+				FF110927299D300700E9F3FC /* ItemType.swift in Sources */,
 				FF4432332980B5E500890D7C /* PlayersRepository.swift in Sources */,
 				FF4431FC298089F500890D7C /* BattleTeam.swift in Sources */,
 				FF44320B29809C2A00890D7C /* Fonts.swift in Sources */,
+				FF110929299ED7A000E9F3FC /* ItemsViewModel.swift in Sources */,
+				FF110924299D2FDF00E9F3FC /* ItemsView.swift in Sources */,
 				FF44320029808A9000890D7C /* Combatant.swift in Sources */,
 				FF4431FA298089CA00890D7C /* Battle.swift in Sources */,
 				FF4431F62980897300890D7C /* Battlefield.swift in Sources */,
@@ -705,16 +784,20 @@
 				FF7DDE362987DCA500FD9D43 /* StatesView.swift in Sources */,
 				FF4431EA298064BD00890D7C /* PlayerCharacter.swift in Sources */,
 				FF7DDE422987F55A00FD9D43 /* ArmorView.swift in Sources */,
+				FF11091F299D2ED800E9F3FC /* TablesView.swift in Sources */,
 				FF4431E22980629500890D7C /* Item.swift in Sources */,
+				FF11092D299ED8A600E9F3FC /* GetBasicItems.swift in Sources */,
 				FF443203298091A700890D7C /* MainViewLinkView.swift in Sources */,
 				FF4431E4298062B000890D7C /* Weight.swift in Sources */,
 				FF9E9C6E29804DCB002FD2FE /* Kin.swift in Sources */,
+				FF110933299EE59F00E9F3FC /* WeaponOption.swift in Sources */,
 				FF4431EC2980676800890D7C /* Armor.swift in Sources */,
 				FF4431D02980518C00890D7C /* Die.swift in Sources */,
 				FF9E9C6C29804D83002FD2FE /* Character.swift in Sources */,
 				FF4432192980AF6B00890D7C /* GetPlayerCharactersInteractor.swift in Sources */,
 				FF1A86A72981C5FE0056076C /* PlayersInjection.swift in Sources */,
 				FF4431F82980899100890D7C /* Zone.swift in Sources */,
+				FF11092F299EE24100E9F3FC /* CraftingRequirements.swift in Sources */,
 				FFD2DCF929831BB5001EFCAA /* SkillsView.swift in Sources */,
 				FF4431F4298083BA00890D7C /* ArmorOption.swift in Sources */,
 				FF4431D92980553100890D7C /* Entity.swift in Sources */,
@@ -727,6 +810,7 @@
 				FF7DDE482988225D00FD9D43 /* ConsumablesView.swift in Sources */,
 				FF4432352980B6E000890D7C /* Gender.swift in Sources */,
 				FFA971512980306D009FF258 /* FLHelperApp.swift in Sources */,
+				FF110935299EE61500E9F3FC /* ShieldOption.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

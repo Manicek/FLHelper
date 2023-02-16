@@ -29,7 +29,7 @@ enum ArmorType {
 
 class Armor: Item {
     var armorRating: Int
-    var type: ArmorType
+    var armorType: ArmorType
     var description: String?
     
     init(
@@ -37,26 +37,21 @@ class Armor: Item {
         weight: Weight,
         price: Int,
         supply: Supply? = nil,
-        rawMaterials: [RawMaterial : Int]? = nil,
-        quarterDaysToMake: Int? = nil,
-        requiredTalents: [Talent]? = nil,
-        requiredTools: [Tool]? = nil,
+        craftingRequirements: CraftingRequirements? = nil,
         armorRating: Int,
-        type: ArmorType,
+        armorType: ArmorType,
         description: String?
     ) {
         self.armorRating = armorRating
-        self.type = type
+        self.armorType = armorType
         self.description = description
         super.init(
             name: name,
+            type: .armor,
             weight: weight,
             price: price,
             supply: supply,
-            rawMaterials: rawMaterials,
-            quarterDaysToMake: quarterDaysToMake,
-            requiredTalents: requiredTalents,
-            requiredTools: requiredTools
+            craftingRequirements: craftingRequirements
         )
     }
 }

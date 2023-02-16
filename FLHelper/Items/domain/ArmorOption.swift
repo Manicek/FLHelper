@@ -72,7 +72,7 @@ enum ArmorOption {
         }
     }
     
-    var type: ArmorType {
+    var armorType: ArmorType {
         switch self {
         case .studdedLeatherCap, .open, .closed, .great: return .helmet
         case .leather, .studdedLeather, .chainmail, .plate: return .body
@@ -85,8 +85,12 @@ enum ArmorOption {
             weight: weight,
             price: price,
             armorRating: armorRating,
-            type: type,
+            armorType: armorType,
             description: czDescription
         )
+    }
+    
+    static var defaultItems: [Item] {
+        return [] // TODO
     }
 }

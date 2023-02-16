@@ -34,7 +34,7 @@ struct MainView: View {
                     NavigationLink(destination: EmptyView()) {
                         MainViewLinkView(title: "Combat")
                     }
-                    NavigationLink(destination: EmptyView()) {
+                    NavigationLink(destination: TablesView()) {
                         MainViewLinkView(title: "Tables")
                     }
                 }.frame(maxWidth: .infinity)

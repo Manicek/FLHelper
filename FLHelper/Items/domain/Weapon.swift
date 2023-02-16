@@ -21,7 +21,7 @@ enum WeaponGrip {
 // MARK: - Weapon
 
 class Weapon: Item {
-    let type: WeaponType
+    let weaponType: WeaponType
     let range: Range
     let grip: WeaponGrip
     var bonus: Int
@@ -31,19 +31,20 @@ class Weapon: Item {
         name: String,
         weight: Weight,
         price: Int,
-        type: WeaponType,
+        weaponType: WeaponType,
         range: Range,
         grip: WeaponGrip,
         bonus: Int,
         damage: Int
     ) {
-        self.type = type
+        self.weaponType = weaponType
         self.range = range
         self.grip = grip
         self.bonus = bonus
         self.damage = damage
         super.init(
             name: name,
+            type: .weapon,
             weight: weight,
             price: price
         )

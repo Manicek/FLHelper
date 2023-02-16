@@ -3,7 +3,6 @@
 //
 
 import SwiftUI
-import Swinject
 
 class PlayersViewModel: ObservableObject {
     @Published var playerCharacters: [PlayerCharacter] = []
