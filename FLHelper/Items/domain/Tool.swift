@@ -75,15 +75,6 @@ enum Tool: CaseIterable {
         }
     }
     
-    var quarterDaysToMake: Int {
-        switch self {
-        case .saw, .shovel, .timberAxe, .pliers:
-            return 4
-        case .hammer, .sledgeHammer, .pickaxe, .needleAndThread:
-            return 1
-        }
-    }
-    
     var requiredTalents: [Talent] {
         switch self {
         case .saw, .hammer, .sledgeHammer, .pickaxe, .shovel, .timberAxe, .pliers:
@@ -113,22 +104,34 @@ enum Tool: CaseIterable {
         }
     }
     
-    static var defaultItems: [Item] {
-        allCases.map { tool in
-            Item(
-                name: tool.czName,
-                type: .tool,
-                weight: tool.weight,
-                price: tool.price,
-                supply: tool.supply,
-                craftingRequirements: CraftingRequirements(
-                    materials: tool.rawMaterials,
-                    talents: tool.requiredTalents,
-                    tools: tool.requiredTools,
-                    special: tool.specialRequirements,
-                    quarterDays: tool.quarterDaysToMake
-                )
-            )
+    
+    var quarterDaysToMake: Int {
+        switch self {
+        case .saw, .shovel, .timberAxe, .pliers:
+            return 4
+        case .hammer, .sledgeHammer, .pickaxe, .needleAndThread:
+            return 1
         }
+    }
+    
+    func toItem() -> Item {
+        Item(
+            name: czName,
+            type: .tool,
+            weight: weight,
+            price: price,
+            supply: supply,
+            craftingRequirements: CraftingRequirements(
+                materials: rawMaterials,
+                talents: requiredTalents,
+                tools: requiredTools,
+                special: specialRequirements,
+                quarterDays: quarterDaysToMake
+            )
+        )
+    }
+    
+    static var defaultItems: [Item] {
+        allCases.map { $0.toItem() }
     }
 }

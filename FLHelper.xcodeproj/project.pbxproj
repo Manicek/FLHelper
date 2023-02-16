@@ -242,20 +242,15 @@
 		FF110925299D300200E9F3FC /* domain */ = {
 			isa = PBXGroup;
 			children = (
-				FF110926299D300700E9F3FC /* ItemType.swift */,
+				FF110939299EF30500E9F3FC /* crafting */,
+				FF110937299EF2CD00E9F3FC /* armor */,
+				FF110938299EF2DC00E9F3FC /* shield */,
+				FF110936299EF2BF00E9F3FC /* weapon */,
 				FF4431E12980629500890D7C /* Item.swift */,
-				FF4431E3298062B000890D7C /* Weight.swift */,
-				FF4431E52980638500890D7C /* Weapon.swift */,
-				FF4431EB2980676800890D7C /* Armor.swift */,
+				FF110926299D300700E9F3FC /* ItemType.swift */,
 				FF4431ED29806AD500890D7C /* Supply.swift */,
-				FF4431EF29806AF900890D7C /* RawMaterial.swift */,
 				FF4431F129806B4B00890D7C /* Tool.swift */,
-				FF4431F3298083BA00890D7C /* ArmorOption.swift */,
-				FF7DDE432987F64000FD9D43 /* Shield.swift */,
-				FF11092E299EE24100E9F3FC /* CraftingRequirements.swift */,
-				FF110930299EE3B700E9F3FC /* SpecialRequirement.swift */,
-				FF110932299EE59F00E9F3FC /* WeaponOption.swift */,
-				FF110934299EE61500E9F3FC /* ShieldOption.swift */,
+				FF4431E3298062B000890D7C /* Weight.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -274,6 +269,43 @@
 				FF4432182980AF6B00890D7C /* GetPlayerCharactersInteractor.swift */,
 			);
 			path = interactor;
+			sourceTree = "<group>";
+		};
+		FF110936299EF2BF00E9F3FC /* weapon */ = {
+			isa = PBXGroup;
+			children = (
+				FF4431E52980638500890D7C /* Weapon.swift */,
+				FF110932299EE59F00E9F3FC /* WeaponOption.swift */,
+			);
+			path = weapon;
+			sourceTree = "<group>";
+		};
+		FF110937299EF2CD00E9F3FC /* armor */ = {
+			isa = PBXGroup;
+			children = (
+				FF4431EB2980676800890D7C /* Armor.swift */,
+				FF4431F3298083BA00890D7C /* ArmorOption.swift */,
+			);
+			path = armor;
+			sourceTree = "<group>";
+		};
+		FF110938299EF2DC00E9F3FC /* shield */ = {
+			isa = PBXGroup;
+			children = (
+				FF7DDE432987F64000FD9D43 /* Shield.swift */,
+				FF110934299EE61500E9F3FC /* ShieldOption.swift */,
+			);
+			path = shield;
+			sourceTree = "<group>";
+		};
+		FF110939299EF30500E9F3FC /* crafting */ = {
+			isa = PBXGroup;
+			children = (
+				FF11092E299EE24100E9F3FC /* CraftingRequirements.swift */,
+				FF110930299EE3B700E9F3FC /* SpecialRequirement.swift */,
+				FF4431EF29806AF900890D7C /* RawMaterial.swift */,
+			);
+			path = crafting;
 			sourceTree = "<group>";
 		};
 		FF1A869B2981C4090056076C /* Database */ = {
