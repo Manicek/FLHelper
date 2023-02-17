@@ -126,13 +126,13 @@ enum ArmorOption: CaseIterable {
     var quarterDaysToMake: Int {
         switch self {
         case .studdedLeatherCap, .leather:
-            return 4
+            return 2
         case .openHelmet, .closedHelmet, .studdedLeather:
-            return 8
+            return 4
         case .greatHelm, .chainmail:
-            return 28
+            return 14
         case .plate:
-            return 56
+            return 28
         }
     }
     

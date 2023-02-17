@@ -64,7 +64,7 @@ enum ShieldOption: CaseIterable {
     var quarterDaysToMake: Int {
         switch self {
         case .smallShield: return 1
-        case .largeShield: return 4
+        case .largeShield: return 2
         }
     }
     

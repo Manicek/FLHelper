@@ -108,7 +108,7 @@ enum Tool: CaseIterable {
     var quarterDaysToMake: Int {
         switch self {
         case .saw, .shovel, .timberAxe, .pliers:
-            return 4
+            return 2
         case .hammer, .sledgeHammer, .pickaxe, .needleAndThread:
             return 1
         }

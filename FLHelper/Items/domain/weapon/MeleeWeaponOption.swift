@@ -4,7 +4,7 @@
 
 import Foundation
 
-enum MeleeWeaponOption {
+enum MeleeWeaponOption: CaseIterable {
     case unarmed
     case knife
     case dagger
@@ -155,12 +155,18 @@ enum MeleeWeaponOption {
     
     var quarterDaysToMake: Int {
         switch self {
-        case .unarmed: return 0
-        case .knife, .handaxe, .woodenClub, .largeWoodenClub, .staff, .shortSpear: return 1
-        case .dagger, .falchion, .battleaxe, .mace, .longSpear: return 4
-        case .shortsword, .morningstar, .warhammer, .pike, .trident: return 8
-        case .broadsword, .longsword, .scimitar, .twoHandedAxe, .flail, .heavyWarhammer, .halberd: return 28
-        case .twoHandedSword: return 56
+        case .unarmed:
+            return 0
+        case .knife, .handaxe, .woodenClub, .largeWoodenClub, .staff, .shortSpear:
+            return 1
+        case .dagger, .falchion, .battleaxe, .mace, .longSpear:
+            return 2
+        case .shortsword, .morningstar, .warhammer, .pike, .trident:
+            return 4
+        case .broadsword, .longsword, .scimitar, .twoHandedAxe, .flail, .heavyWarhammer, .halberd:
+            return 14
+        case .twoHandedSword:
+            return 28
         }
     }
     
@@ -260,6 +266,6 @@ enum MeleeWeaponOption {
     }
     
     static var defaultItems: [Item] {
-        return [] // TODO
+        allCases.map { $0.toWeapon() }
     }
 }
