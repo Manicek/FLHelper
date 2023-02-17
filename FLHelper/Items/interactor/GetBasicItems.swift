@@ -12,8 +12,10 @@ class GetBasicItemsInteractor {
             return MeleeWeaponOption.defaultItems
         case .rangedWeapon:
             return RangedWeaponOption.defaultItems
-        case .armor:
-            return ArmorOption.defaultItems
+        case .bodyArmor:
+            return BodyArmorOption.defaultItems
+        case .helmet:
+            return HelmetOption.defaultItems
         case .shield:
             return ShieldOption.defaultItems
         case .tool:

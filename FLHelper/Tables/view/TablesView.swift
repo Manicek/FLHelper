@@ -14,8 +14,17 @@ struct TablesView: View {
             NavigationLink(destination: ItemsView(type: .rangedWeapon)) {
                 MainViewLinkView(title: "Střelné zbraně")
             }.frame(maxWidth: .infinity)
-            NavigationLink(destination: ItemsView(type: .armor)) {
-                MainViewLinkView(title: "Zbroje a helmy")
+            NavigationLink(destination: ItemsView(type: .bodyArmor)) {
+                MainViewLinkView(title: "Zbroje")
+            }.frame(maxWidth: .infinity)
+            NavigationLink(destination: ItemsView(type: .helmet)) {
+                MainViewLinkView(title: "Helmy")
+            }.frame(maxWidth: .infinity)
+            NavigationLink(destination: ItemsView(type: .shield)) {
+                MainViewLinkView(title: "Štíty")
+            }.frame(maxWidth: .infinity)
+            NavigationLink(destination: ItemsView(type: .tool)) {
+                MainViewLinkView(title: "Nářadí")
             }.frame(maxWidth: .infinity)
         }
         .padding(.horizontal, 44)

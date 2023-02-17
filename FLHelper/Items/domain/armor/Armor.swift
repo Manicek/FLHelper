@@ -23,6 +23,13 @@ enum ArmorType {
         case .body: return "Zbroj"
         }
     }
+    
+    var itemType: ItemType {
+        switch self {
+        case .helmet: return .helmet
+        case .body: return .bodyArmor
+        }
+    }
 }
 
 // MARK: - Armor
@@ -47,7 +54,7 @@ class Armor: Item {
         self.description = description
         super.init(
             name: name,
-            type: .armor,
+            type: armorType.itemType,
             weight: weight,
             price: price,
             supply: supply,

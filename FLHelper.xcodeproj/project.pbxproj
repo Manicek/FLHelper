@@ -20,6 +20,7 @@
 		FF11093D299EF7A700E9F3FC /* WeaponType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF11093C299EF7A700E9F3FC /* WeaponType.swift */; };
 		FF11093F299EF7B800E9F3FC /* WeaponGrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF11093E299EF7B800E9F3FC /* WeaponGrip.swift */; };
 		FF110941299EF93600E9F3FC /* RangedWeaponOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF110940299EF93600E9F3FC /* RangedWeaponOption.swift */; };
+		FF110952299FFE1100E9F3FC /* HelmetOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF110951299FFE1100E9F3FC /* HelmetOption.swift */; };
 		FF1A869D2981C41B0056076C /* Campaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A869C2981C41B0056076C /* Campaign.swift */; };
 		FF1A86A42981C5920056076C /* FLPlayersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A86A32981C5920056076C /* FLPlayersRepository.swift */; };
 		FF1A86A72981C5FE0056076C /* PlayersInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A86A62981C5FE0056076C /* PlayersInjection.swift */; };
@@ -42,7 +43,7 @@
 		FF4431EE29806AD500890D7C /* Supply.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431ED29806AD500890D7C /* Supply.swift */; };
 		FF4431F029806AF900890D7C /* RawMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431EF29806AF900890D7C /* RawMaterial.swift */; };
 		FF4431F229806B4B00890D7C /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431F129806B4B00890D7C /* Tool.swift */; };
-		FF4431F4298083BA00890D7C /* ArmorOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431F3298083BA00890D7C /* ArmorOption.swift */; };
+		FF4431F4298083BA00890D7C /* BodyArmorOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431F3298083BA00890D7C /* BodyArmorOption.swift */; };
 		FF4431F62980897300890D7C /* Battlefield.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431F52980897300890D7C /* Battlefield.swift */; };
 		FF4431F82980899100890D7C /* Zone.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431F72980899100890D7C /* Zone.swift */; };
 		FF4431FA298089CA00890D7C /* Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431F9298089CA00890D7C /* Battle.swift */; };
@@ -129,6 +130,7 @@
 		FF11093C299EF7A700E9F3FC /* WeaponType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponType.swift; sourceTree = "<group>"; };
 		FF11093E299EF7B800E9F3FC /* WeaponGrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponGrip.swift; sourceTree = "<group>"; };
 		FF110940299EF93600E9F3FC /* RangedWeaponOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangedWeaponOption.swift; sourceTree = "<group>"; };
+		FF110951299FFE1100E9F3FC /* HelmetOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelmetOption.swift; sourceTree = "<group>"; };
 		FF1A869C2981C41B0056076C /* Campaign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campaign.swift; sourceTree = "<group>"; };
 		FF1A86A32981C5920056076C /* FLPlayersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLPlayersRepository.swift; sourceTree = "<group>"; };
 		FF1A86A62981C5FE0056076C /* PlayersInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersInjection.swift; sourceTree = "<group>"; };
@@ -151,7 +153,7 @@
 		FF4431ED29806AD500890D7C /* Supply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supply.swift; sourceTree = "<group>"; };
 		FF4431EF29806AF900890D7C /* RawMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawMaterial.swift; sourceTree = "<group>"; };
 		FF4431F129806B4B00890D7C /* Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
-		FF4431F3298083BA00890D7C /* ArmorOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorOption.swift; sourceTree = "<group>"; };
+		FF4431F3298083BA00890D7C /* BodyArmorOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyArmorOption.swift; sourceTree = "<group>"; };
 		FF4431F52980897300890D7C /* Battlefield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battlefield.swift; sourceTree = "<group>"; };
 		FF4431F72980899100890D7C /* Zone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zone.swift; sourceTree = "<group>"; };
 		FF4431F9298089CA00890D7C /* Battle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battle.swift; sourceTree = "<group>"; };
@@ -296,7 +298,8 @@
 			isa = PBXGroup;
 			children = (
 				FF4431EB2980676800890D7C /* Armor.swift */,
-				FF4431F3298083BA00890D7C /* ArmorOption.swift */,
+				FF4431F3298083BA00890D7C /* BodyArmorOption.swift */,
+				FF110951299FFE1100E9F3FC /* HelmetOption.swift */,
 			);
 			path = armor;
 			sourceTree = "<group>";
@@ -806,6 +809,7 @@
 				FF4431F229806B4B00890D7C /* Tool.swift in Sources */,
 				FF4431E8298063E200890D7C /* Range.swift in Sources */,
 				FF4431DD2980566100890D7C /* Skill.swift in Sources */,
+				FF110952299FFE1100E9F3FC /* HelmetOption.swift in Sources */,
 				FF1A86AE2981CC730056076C /* MainViewModel.swift in Sources */,
 				FFD2DCFD29832A1F001EFCAA /* TalentsView.swift in Sources */,
 				FF4431F029806AF900890D7C /* RawMaterial.swift in Sources */,
@@ -846,7 +850,7 @@
 				FF4431F82980899100890D7C /* Zone.swift in Sources */,
 				FF11092F299EE24100E9F3FC /* CraftingRequirements.swift in Sources */,
 				FFD2DCF929831BB5001EFCAA /* SkillsView.swift in Sources */,
-				FF4431F4298083BA00890D7C /* ArmorOption.swift in Sources */,
+				FF4431F4298083BA00890D7C /* BodyArmorOption.swift in Sources */,
 				FF4431D92980553100890D7C /* Entity.swift in Sources */,
 				FF4431DB298055AB00890D7C /* Attribute.swift in Sources */,
 				FF9E9C7229804FCE002FD2FE /* Talent.swift in Sources */,

@@ -7,7 +7,8 @@ import Foundation
 enum ItemType {
     case meleeWeapon
     case rangedWeapon
-    case armor
+    case bodyArmor
+    case helmet
     case shield
     case tool
     case miscellaneous
