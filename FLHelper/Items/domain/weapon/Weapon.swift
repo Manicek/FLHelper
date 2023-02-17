@@ -4,26 +4,11 @@
 
 import Foundation
 
-// MARK: - WeaponType
-
-enum WeaponType {
-    case melee
-    case ranged
-}
-
-// MARK: - WeaponGrip
-
-enum WeaponGrip {
-    case oneHanded
-    case twoHanded
-}
-
-// MARK: - Weapon
-
 class Weapon: Item {
     let weaponType: WeaponType
     let range: Range
     let grip: WeaponGrip
+    let features: [WeaponFeature]
     var bonus: Int
     var damage: Int
     
@@ -31,22 +16,28 @@ class Weapon: Item {
         name: String,
         weight: Weight,
         price: Int,
+        supply: Supply?,
+        craftingRequirements: CraftingRequirements?,
         weaponType: WeaponType,
         range: Range,
         grip: WeaponGrip,
+        features: [WeaponFeature],
         bonus: Int,
         damage: Int
     ) {
         self.weaponType = weaponType
         self.range = range
         self.grip = grip
+        self.features = features
         self.bonus = bonus
         self.damage = damage
         super.init(
             name: name,
-            type: .weapon,
+            type: weaponType.itemType,
             weight: weight,
-            price: price
+            price: price,
+            supply: supply,
+            craftingRequirements: craftingRequirements
         )
     }
 }

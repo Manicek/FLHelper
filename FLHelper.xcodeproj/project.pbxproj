@@ -14,8 +14,12 @@
 		FF11092D299ED8A600E9F3FC /* GetBasicItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF11092C299ED8A600E9F3FC /* GetBasicItems.swift */; };
 		FF11092F299EE24100E9F3FC /* CraftingRequirements.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF11092E299EE24100E9F3FC /* CraftingRequirements.swift */; };
 		FF110931299EE3B700E9F3FC /* SpecialRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF110930299EE3B700E9F3FC /* SpecialRequirement.swift */; };
-		FF110933299EE59F00E9F3FC /* WeaponOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF110932299EE59F00E9F3FC /* WeaponOption.swift */; };
+		FF110933299EE59F00E9F3FC /* MeleeWeaponOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF110932299EE59F00E9F3FC /* MeleeWeaponOption.swift */; };
 		FF110935299EE61500E9F3FC /* ShieldOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF110934299EE61500E9F3FC /* ShieldOption.swift */; };
+		FF11093B299EF6F900E9F3FC /* WeaponFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF11093A299EF6F900E9F3FC /* WeaponFeature.swift */; };
+		FF11093D299EF7A700E9F3FC /* WeaponType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF11093C299EF7A700E9F3FC /* WeaponType.swift */; };
+		FF11093F299EF7B800E9F3FC /* WeaponGrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF11093E299EF7B800E9F3FC /* WeaponGrip.swift */; };
+		FF110941299EF93600E9F3FC /* RangedWeaponOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF110940299EF93600E9F3FC /* RangedWeaponOption.swift */; };
 		FF1A869D2981C41B0056076C /* Campaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A869C2981C41B0056076C /* Campaign.swift */; };
 		FF1A86A42981C5920056076C /* FLPlayersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A86A32981C5920056076C /* FLPlayersRepository.swift */; };
 		FF1A86A72981C5FE0056076C /* PlayersInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A86A62981C5FE0056076C /* PlayersInjection.swift */; };
@@ -119,8 +123,12 @@
 		FF11092C299ED8A600E9F3FC /* GetBasicItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBasicItems.swift; sourceTree = "<group>"; };
 		FF11092E299EE24100E9F3FC /* CraftingRequirements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CraftingRequirements.swift; sourceTree = "<group>"; };
 		FF110930299EE3B700E9F3FC /* SpecialRequirement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialRequirement.swift; sourceTree = "<group>"; };
-		FF110932299EE59F00E9F3FC /* WeaponOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponOption.swift; sourceTree = "<group>"; };
+		FF110932299EE59F00E9F3FC /* MeleeWeaponOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeleeWeaponOption.swift; sourceTree = "<group>"; };
 		FF110934299EE61500E9F3FC /* ShieldOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShieldOption.swift; sourceTree = "<group>"; };
+		FF11093A299EF6F900E9F3FC /* WeaponFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponFeature.swift; sourceTree = "<group>"; };
+		FF11093C299EF7A700E9F3FC /* WeaponType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponType.swift; sourceTree = "<group>"; };
+		FF11093E299EF7B800E9F3FC /* WeaponGrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponGrip.swift; sourceTree = "<group>"; };
+		FF110940299EF93600E9F3FC /* RangedWeaponOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangedWeaponOption.swift; sourceTree = "<group>"; };
 		FF1A869C2981C41B0056076C /* Campaign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campaign.swift; sourceTree = "<group>"; };
 		FF1A86A32981C5920056076C /* FLPlayersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLPlayersRepository.swift; sourceTree = "<group>"; };
 		FF1A86A62981C5FE0056076C /* PlayersInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersInjection.swift; sourceTree = "<group>"; };
@@ -274,8 +282,12 @@
 		FF110936299EF2BF00E9F3FC /* weapon */ = {
 			isa = PBXGroup;
 			children = (
+				FF110932299EE59F00E9F3FC /* MeleeWeaponOption.swift */,
+				FF110940299EF93600E9F3FC /* RangedWeaponOption.swift */,
 				FF4431E52980638500890D7C /* Weapon.swift */,
-				FF110932299EE59F00E9F3FC /* WeaponOption.swift */,
+				FF11093A299EF6F900E9F3FC /* WeaponFeature.swift */,
+				FF11093C299EF7A700E9F3FC /* WeaponType.swift */,
+				FF11093E299EF7B800E9F3FC /* WeaponGrip.swift */,
 			);
 			path = weapon;
 			sourceTree = "<group>";
@@ -801,6 +813,7 @@
 				FF1A869D2981C41B0056076C /* Campaign.swift in Sources */,
 				FF4432132980ADA500890D7C /* PlayersView.swift in Sources */,
 				FF1A86B62981D4640056076C /* PersistenceController.swift in Sources */,
+				FF11093F299EF7B800E9F3FC /* WeaponGrip.swift in Sources */,
 				FF4431D22980530B00890D7C /* Animal.swift in Sources */,
 				FF110927299D300700E9F3FC /* ItemType.swift in Sources */,
 				FF4432332980B5E500890D7C /* PlayersRepository.swift in Sources */,
@@ -822,8 +835,10 @@
 				FF443203298091A700890D7C /* MainViewLinkView.swift in Sources */,
 				FF4431E4298062B000890D7C /* Weight.swift in Sources */,
 				FF9E9C6E29804DCB002FD2FE /* Kin.swift in Sources */,
-				FF110933299EE59F00E9F3FC /* WeaponOption.swift in Sources */,
+				FF110933299EE59F00E9F3FC /* MeleeWeaponOption.swift in Sources */,
 				FF4431EC2980676800890D7C /* Armor.swift in Sources */,
+				FF11093D299EF7A700E9F3FC /* WeaponType.swift in Sources */,
+				FF110941299EF93600E9F3FC /* RangedWeaponOption.swift in Sources */,
 				FF4431D02980518C00890D7C /* Die.swift in Sources */,
 				FF9E9C6C29804D83002FD2FE /* Character.swift in Sources */,
 				FF4432192980AF6B00890D7C /* GetPlayerCharactersInteractor.swift in Sources */,
@@ -841,6 +856,7 @@
 				FF7DDE442987F64000FD9D43 /* Shield.swift in Sources */,
 				FF7DDE482988225D00FD9D43 /* ConsumablesView.swift in Sources */,
 				FF4432352980B6E000890D7C /* Gender.swift in Sources */,
+				FF11093B299EF6F900E9F3FC /* WeaponFeature.swift in Sources */,
 				FFA971512980306D009FF258 /* FLHelperApp.swift in Sources */,
 				FF110935299EE61500E9F3FC /* ShieldOption.swift in Sources */,
 			);

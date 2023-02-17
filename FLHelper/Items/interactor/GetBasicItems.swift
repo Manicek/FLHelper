@@ -8,8 +8,10 @@ class GetBasicItemsInteractor {
     
     func callAsFunction(type: ItemType) -> [Item] {
         switch type {
-        case .weapon:
-            return WeaponOption.defaultItems
+        case .meleeWeapon:
+            return MeleeWeaponOption.defaultItems
+        case .rangedWeapon:
+            return RangedWeaponOption.defaultItems
         case .armor:
             return ArmorOption.defaultItems
         case .shield:

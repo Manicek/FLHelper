@@ -8,8 +8,11 @@ struct TablesView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 32) {
-            NavigationLink(destination: ItemsView(type: .weapon)) {
-                MainViewLinkView(title: "Zbraně")
+            NavigationLink(destination: ItemsView(type: .meleeWeapon)) {
+                MainViewLinkView(title: "Zbraně nablízko")
+            }.frame(maxWidth: .infinity)
+            NavigationLink(destination: ItemsView(type: .rangedWeapon)) {
+                MainViewLinkView(title: "Střelné zbraně")
             }.frame(maxWidth: .infinity)
             NavigationLink(destination: ItemsView(type: .armor)) {
                 MainViewLinkView(title: "Zbroje a helmy")
