@@ -8,22 +8,22 @@ struct TablesView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 32) {
-            NavigationLink(destination: ItemsView(type: .meleeWeapon)) {
+            NavigationLink(destination: ItemsView(viewModel: ItemsViewModel(type: .meleeWeapon))) {
                 MainViewLinkView(title: "Zbraně nablízko")
             }.frame(maxWidth: .infinity)
-            NavigationLink(destination: ItemsView(type: .rangedWeapon)) {
+            NavigationLink(destination: ItemsView(viewModel: ItemsViewModel(type: .rangedWeapon))) {
                 MainViewLinkView(title: "Střelné zbraně")
             }.frame(maxWidth: .infinity)
-            NavigationLink(destination: ItemsView(type: .bodyArmor)) {
+            NavigationLink(destination: ItemsView(viewModel: ItemsViewModel(type: .bodyArmor))) {
                 MainViewLinkView(title: "Zbroje")
             }.frame(maxWidth: .infinity)
-            NavigationLink(destination: ItemsView(type: .helmet)) {
+            NavigationLink(destination: ItemsView(viewModel: ItemsViewModel(type: .helmet))) {
                 MainViewLinkView(title: "Helmy")
             }.frame(maxWidth: .infinity)
-            NavigationLink(destination: ItemsView(type: .shield)) {
+            NavigationLink(destination: ItemsView(viewModel: ItemsViewModel(type: .shield))) {
                 MainViewLinkView(title: "Štíty")
             }.frame(maxWidth: .infinity)
-            NavigationLink(destination: ItemsView(type: .tool)) {
+            NavigationLink(destination: ItemsView(viewModel: ItemsViewModel(type: .tool))) {
                 MainViewLinkView(title: "Nářadí")
             }.frame(maxWidth: .infinity)
         }

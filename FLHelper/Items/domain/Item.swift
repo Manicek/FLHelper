@@ -4,7 +4,7 @@
 
 import Foundation
 
-class Item {
+class Item: Identifiable {
     var name: String
     var type: ItemType
     var weight: Weight

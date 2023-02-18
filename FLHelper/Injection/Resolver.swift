@@ -11,6 +11,7 @@ class Resolver {
         container = Container()
         
         PlayersInjection.register(container: container)
+        ItemsInjection.register(container: container)
     }
     
     private var container: Container

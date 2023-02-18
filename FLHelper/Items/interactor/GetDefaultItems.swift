@@ -4,7 +4,7 @@
 
 import Foundation
 
-class GetBasicItemsInteractor {
+class GetDefaultItemsInteractor {
     
     func callAsFunction(type: ItemType) -> [Item] {
         switch type {
