@@ -10,8 +10,8 @@ enum ShieldOption: CaseIterable {
     
     var name: LocalizedStringKey {
         switch self {
-        case .smallShield: return "Malý štít"
-        case .largeShield: return "Velký štít"
+        case .smallShield: return .shieldSmall
+        case .largeShield: return .shieldLarge
         }
     }
     

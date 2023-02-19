@@ -17,7 +17,6 @@
 		FF110933299EE59F00E9F3FC /* MeleeWeaponOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF110932299EE59F00E9F3FC /* MeleeWeaponOption.swift */; };
 		FF110935299EE61500E9F3FC /* ShieldOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF110934299EE61500E9F3FC /* ShieldOption.swift */; };
 		FF11093B299EF6F900E9F3FC /* WeaponFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF11093A299EF6F900E9F3FC /* WeaponFeature.swift */; };
-		FF11093D299EF7A700E9F3FC /* WeaponType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF11093C299EF7A700E9F3FC /* WeaponType.swift */; };
 		FF11093F299EF7B800E9F3FC /* WeaponGrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF11093E299EF7B800E9F3FC /* WeaponGrip.swift */; };
 		FF110941299EF93600E9F3FC /* RangedWeaponOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF110940299EF93600E9F3FC /* RangedWeaponOption.swift */; };
 		FF110952299FFE1100E9F3FC /* HelmetOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF110951299FFE1100E9F3FC /* HelmetOption.swift */; };
@@ -111,7 +110,6 @@
 		FF110932299EE59F00E9F3FC /* MeleeWeaponOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeleeWeaponOption.swift; sourceTree = "<group>"; };
 		FF110934299EE61500E9F3FC /* ShieldOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShieldOption.swift; sourceTree = "<group>"; };
 		FF11093A299EF6F900E9F3FC /* WeaponFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponFeature.swift; sourceTree = "<group>"; };
-		FF11093C299EF7A700E9F3FC /* WeaponType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponType.swift; sourceTree = "<group>"; };
 		FF11093E299EF7B800E9F3FC /* WeaponGrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponGrip.swift; sourceTree = "<group>"; };
 		FF110940299EF93600E9F3FC /* RangedWeaponOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangedWeaponOption.swift; sourceTree = "<group>"; };
 		FF110951299FFE1100E9F3FC /* HelmetOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelmetOption.swift; sourceTree = "<group>"; };
@@ -258,7 +256,6 @@
 				FF110940299EF93600E9F3FC /* RangedWeaponOption.swift */,
 				FF4431E52980638500890D7C /* Weapon.swift */,
 				FF11093A299EF6F900E9F3FC /* WeaponFeature.swift */,
-				FF11093C299EF7A700E9F3FC /* WeaponType.swift */,
 				FF11093E299EF7B800E9F3FC /* WeaponGrip.swift */,
 			);
 			path = weapon;
@@ -762,7 +759,6 @@
 				FF9E9C6E29804DCB002FD2FE /* Kin.swift in Sources */,
 				FF110933299EE59F00E9F3FC /* MeleeWeaponOption.swift in Sources */,
 				FF4431EC2980676800890D7C /* Armor.swift in Sources */,
-				FF11093D299EF7A700E9F3FC /* WeaponType.swift in Sources */,
 				FF110941299EF93600E9F3FC /* RangedWeaponOption.swift in Sources */,
 				FF4431D02980518C00890D7C /* Die.swift in Sources */,
 				FF9E9C6C29804D83002FD2FE /* Character.swift in Sources */,

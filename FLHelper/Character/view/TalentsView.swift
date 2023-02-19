@@ -13,7 +13,8 @@ struct TalentsView: View {
                 Text(.talents)
                     .playerDetailSectionTitleFont()
                 Spacer()
-                Text(.characterLevel)
+                Text(.characterRank)
+                    .textCase(.uppercase)
                     .playerDetailSectionSubtitleFont()
             }
                         

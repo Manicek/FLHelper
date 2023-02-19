@@ -2,16 +2,16 @@
 // © 2023 Manicek
 //
 
-import Foundation
+import SwiftUI
 
 enum WeaponGrip {
     case oneHanded
     case twoHanded
     
-    var name: String {
+    var name: LocalizedStringKey {
         switch self {
-        case .oneHanded: return "jednoruční"
-        case .twoHanded: return "obouruční"
+        case .oneHanded: return .weaponGripOneHanded
+        case .twoHanded: return .weaponGripTwoHanded
         }
     }
 }

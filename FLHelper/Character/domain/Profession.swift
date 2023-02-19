@@ -2,7 +2,7 @@
 // © 2023 Manicek
 //
 
-import Foundation
+import SwiftUI
 
 enum Profession {
     case druid
@@ -15,39 +15,39 @@ enum Profession {
     case sorcerer
     case other
     
-    var czMale: String {
+    var maleName: LocalizedStringKey {
         switch self {
-        case .druid: return "Druid"
-        case .fighter: return "Bojovník"
-        case .hunter: return "Lovec"
-        case .minstrel: return "Bard"
-        case .peddler: return "Kupec"
-        case .rider: return "Jezdec"
-        case .rogue: return "Zloděj"
-        case .sorcerer: return "Čaroděj"
-        case .other: return "Ostatní"
+        case .druid: return .professionDruidMale
+        case .fighter: return .professionFighterMale
+        case .hunter: return .professionHunterMale
+        case .minstrel: return .professionMinstrelMale
+        case .peddler: return .professionPeddlerMale
+        case .rider: return .professionRiderMale
+        case .rogue: return .professionRogueMale
+        case .sorcerer: return .professionSorcererMale
+        case .other: return .professionOtherMale
         }
     }
     
-    var czFemale: String {
+    var femaleName: LocalizedStringKey {
         switch self {
-        case .druid: return "Druidka"
-        case .fighter: return "Bojovnice"
-        case .hunter: return "Lovkyně"
-        case .minstrel: return "Bard"
-        case .peddler: return "Kupkyně"
-        case .rider: return "Jezdkyně"
-        case .rogue: return "Zlodějka"
-        case .sorcerer: return "Čarodějka"
-        case .other: return "Ostatní"
+        case .druid: return .professionDruidFemale
+        case .fighter: return .professionFighterFemale
+        case .hunter: return .professionHunterFemale
+        case .minstrel: return .professionMinstrelFemale
+        case .peddler: return .professionPeddlerFemale
+        case .rider: return .professionRiderFemale
+        case .rogue: return .professionRogueFemale
+        case .sorcerer: return .professionSorcererFemale
+        case .other: return .professionOtherFemale
         }
     }
     
-    func name(gender: Gender) -> String {
+    func name(gender: Gender) -> LocalizedStringKey {
         switch gender {
-        case .male: return czMale
-        case .female: return czFemale
-        case .other: return czMale
+        case .male: return maleName
+        case .female: return femaleName
+        case .other: return maleName
         }
     }
 }

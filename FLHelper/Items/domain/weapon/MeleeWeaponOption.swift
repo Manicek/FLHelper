@@ -33,31 +33,31 @@ enum MeleeWeaponOption: CaseIterable {
     
     var name: LocalizedStringKey {
         switch self {
-        case .unarmed: return "Žádná"
-        case .knife: return "Nůž"
-        case .dagger: return "Dýka"
-        case .falchion: return "Tesák"
-        case .shortsword: return "Krátký meč"
-        case .broadsword: return "Široký meč"
-        case .longsword: return "Dlouhý meč"
-        case .twoHandedSword: return "Obouruční meč"
-        case .scimitar: return "Šavle"
-        case .handaxe: return "Sekyrka"
-        case .battleaxe: return "Válečná sekera"
-        case .twoHandedAxe: return "Obouruční sekera"
-        case .mace: return "Palcát"
-        case .morningstar: return "Kropáč"
-        case .warhammer: return "Válečné kladivo"
-        case .flail: return "Řemdih"
-        case .woodenClub: return "Dřevěný kyj"
-        case .largeWoodenClub: return "Velký dřevěný kyj"
-        case .heavyWarhammer: return "Těžké válečné kladivo"
-        case .staff: return "Hůl"
-        case .shortSpear: return "Krátké kopí"
-        case .longSpear: return "Dlouhé kopí"
-        case .pike: return "Píka"
-        case .halberd: return "Halapartna"
-        case .trident: return "Trojzubec"
+        case .unarmed: return .meleeWeaponUnarmed
+        case .knife: return .meleeWeaponKnife
+        case .dagger: return .meleeWeaponDagger
+        case .falchion: return .meleeWeaponFalchion
+        case .shortsword: return .meleeWeaponShortsword
+        case .broadsword: return .meleeWeaponBroadsword
+        case .longsword: return .meleeWeaponLongsword
+        case .twoHandedSword: return .meleeWeaponTwoHandedSword
+        case .scimitar: return .meleeWeaponScimitar
+        case .handaxe: return .meleeWeaponHandaxe
+        case .battleaxe: return .meleeWeaponBattleaxe
+        case .twoHandedAxe: return .meleeWeaponTwoHandedAxe
+        case .mace: return .meleeWeaponMace
+        case .morningstar: return .meleeWeaponMorningstar
+        case .warhammer: return .meleeWeaponWarhammer
+        case .flail: return .meleeWeaponFlail
+        case .woodenClub: return .meleeWeaponWoodenClub
+        case .largeWoodenClub: return .meleeWeaponLargeWoodenClub
+        case .heavyWarhammer: return .meleeWeaponHeavyWarhammer
+        case .staff: return .meleeWeaponStaff
+        case .shortSpear: return .meleeWeaponShortSpear
+        case .longSpear: return .meleeWeaponLongSpear
+        case .pike: return .meleeWeaponPike
+        case .halberd: return .meleeWeaponHalberd
+        case .trident: return .meleeWeaponTrident
         }
     }
     
@@ -170,10 +170,6 @@ enum MeleeWeaponOption: CaseIterable {
         }
     }
     
-    var weaponType: WeaponType {
-        .melee
-    }
-    
     var range: Range {
         switch self {
         case .unarmed, .knife, .dagger, .falchion, .shortsword, .broadsword, .longsword, .twoHandedSword, .scimitar,
@@ -246,6 +242,7 @@ enum MeleeWeaponOption: CaseIterable {
     func toWeapon() -> Weapon {
         Weapon(
             name: name,
+            type: .meleeWeapon,
             weight: weight,
             price: price,
             supply: supply,
@@ -256,7 +253,6 @@ enum MeleeWeaponOption: CaseIterable {
                 special: specialRequirements,
                 quarterDays: quarterDaysToMake
             ),
-            weaponType: weaponType,
             range: range,
             grip: grip,
             features: features,

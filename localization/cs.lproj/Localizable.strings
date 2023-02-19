@@ -15,12 +15,17 @@
 "tables" = "Tabulky";
 "talents" = "Talenty";
 
-
+"pride" = "Pýcha";
+"darkSecret" = "Temné tajemství";
+"reputation" = "Reputace";
+"age" = "Věk";
+"attributes" = "Vlastnosti";
 "strength" = "Síla";
 "agility" = "Obratnost";
 "wits" = "Bystrost";
 "empathy" = "Osobnost";
 
+"skills" = "Dovednosti";
 "might" = "Svaly";
 "endurance" = "Výdrž";
 "melee" = "Boj zblízka";
@@ -120,6 +125,7 @@
 "wanderer" = "Poutník";
 
 "level" = "Úroveň";
+"rank" = "Stupeň";
 "willpower" = "Vůle";
 
 "meleeWeapon" = "Zbraň nablízko";
@@ -174,3 +180,110 @@
 "closedHelmet" = "Uzavřená přilbice";
 "greatHelm" = "Těžká přilbice";
 "greatHelmDescription" = "Upravuje Ostražitost o –2";
+
+"shieldSmall" = "Malý štít";
+"shieldLarge" = "Velký štít";
+
+"unarmed" = "Žádná";
+"knife" = "Nůž";
+"dagger" = "Dýka";
+"falchion" = "Tesák";
+"shortsword" = "Krátký meč";
+"broadsword" = "Široký meč";
+"longsword" = "Dlouhý meč";
+"twoHandedSword" = "Obouruční meč";
+"scimitar" = "Šavle";
+"handaxe" = "Sekyrka";
+"battleaxe" = "Válečná sekera";
+"twoHandedAxe" = "Obouruční sekera";
+"mace" = "Palcát";
+"morningstar" = "Kropáč";
+"warhammer" = "Válečné kladivo";
+"flail" = "Řemdih";
+"woodenClub" = "Dřevěný kyj";
+"largeWoodenClub" = "Velký dřevěný kyj";
+"heavyWarhammer" = "Těžké válečné kladivo";
+"staff" = "Hůl";
+"shortSpear" = "Krátké kopí";
+"longSpear" = "Dlouhé kopí";
+"pike" = "Píka";
+"halberd" = "Halapartna";
+"trident" = "Trojzubec";
+
+"rock" = "Kámen";
+"throwingKnife" = "Vrhací nůž";
+"throwingAxe" = "Vrhací sekera";
+"throwingSpear" = "Oštěp";
+"sling" = "Prak";
+"shortBow" = "Krátký luk";
+"longbow" = "Dlouhý luk";
+"lightCrossbow" = "Lehká kuše";
+"heavyCrossbow" = "Těžká kuše";
+
+"bluntWeapon" = "tupá";
+"pointedWeapon" = "bodná";
+"edgedWeapon" = "sečná";
+"parryingWeapon" = "odrážecí";
+"lightWeapon" = "lehká";
+"heavyWeapon" = "těžká";
+"hookWeapon" = "zahnutá";
+"loadingIsSlowAction" = "nabíjení je dlouhá akce";
+
+"oneHanded" = "jednoruční";
+"twoHanded" = "obouruční";
+
+"saw" = "Pila";
+"hammer" = "Kladivo";
+"sledgeHammer" = "Palice";
+"pickaxe" = "Krumpáč";
+"shovel" = "Lopata";
+"timberAxe" = "Dřevorubecká sekera";
+"pliers" = "Kleště";
+"needleAndThread" = "Jehla a nit";
+
+"itemHeaderItem" = "Předmět";
+"itemHeaderPrice" = "Cena";
+"itemHeaderSupply" = "Dostupnost";
+"itemHeaderWeight" = "Váha";
+"itemHeaderRawMaterials" = "Suroviny";
+"itemHeaderTime" = "Čas";
+"itemHeaderTalent" = "Talent";
+"itemHeaderTools" = "Nářadí";
+"itemHeaderEffect" = "Účinek";
+"itemHeaderWeapon" = "Zbraň";
+
+"humanMale" = "Člověk";
+"elfMale" = "Elf";
+"halfElfMale" = "Půlelf";
+"dwarfMale" = "Trpaslík";
+"orcMale" = "Ork";
+"wolfkinMale" = "Vlken";
+"halflingMale" = "Půlčík";
+"goblinMale" = "Skřet";
+"humanFemale" = "Člověk";
+"elfFemale" = "Elfka";
+"halfElfFemale" = "Půlelfka";
+"dwarfFemale" = "Trpaslice";
+"orcFemale" = "Orkyně";
+"wolfkinFemale" = "Vlkenka";
+"halflingFemale" = "Půlčice";
+"goblinFemale" = "Skřetka";
+
+"druidMale" = "Druid";
+"fighterMale" = "Bojovník";
+"hunterMale" = "Lovec";
+"minstrelMale" = "Bard";
+"peddlerMale" = "Kupec";
+"riderMale" = "Jezdec";
+"rogueMale" = "Zloděj";
+"sorcererMale" = "Čaroděj";
+"otherMale" = "Ostatní";
+"druidFemale" = "Druidka";
+"fighterFemale" = "Bojovnice";
+"hunterFemale" = "Lovkyně";
+"minstrelFemale" = "Bard";
+"peddlerFemale" = "Kupkyně";
+"riderFemale" = "Jezdkyně";
+"rogueFemale" = "Zlodějka";
+"sorcererFemale" = "Čarodějka";
+"otherFemale" = "Ostatní";

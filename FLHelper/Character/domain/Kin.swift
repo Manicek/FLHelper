@@ -2,7 +2,7 @@
 // © 2023 Manicek
 //
 
-import Foundation
+import SwiftUI
 
 enum Kin {
     case human
@@ -14,37 +14,37 @@ enum Kin {
     case halfling
     case goblin
     
-    var czMale: String {
+    var maleName: LocalizedStringKey {
         switch self {
-        case .human: return "Člověk"
-        case .elf: return "Elf"
-        case .halfelf: return "Půlelf"
-        case .dwarf: return "Trpaslík"
-        case .orc: return "Ork"
-        case .wolfkin: return "Vlken"
-        case .halfling: return "Půlčík"
-        case .goblin: return "Skřet"
+        case .human: return .kinHumanMale
+        case .elf: return .kinElfMale
+        case .halfelf: return .kinHalfElfMale
+        case .dwarf: return .kinDwarfMale
+        case .orc: return .kinOrcMale
+        case .wolfkin: return .kinWolfkinMale
+        case .halfling: return .kinHalflingMale
+        case .goblin: return .kinGoblinMale
         }
     }
     
-    var czFemale: String {
+    var femaleName: LocalizedStringKey {
         switch self {
-        case .human: return "Člověk"
-        case .elf: return "Elfka"
-        case .halfelf: return "Půlelfka"
-        case .dwarf: return "Trpaslice"
-        case .orc: return "Orkyně"
-        case .wolfkin: return "Vlkenka"
-        case .halfling: return "Půlčice"
-        case .goblin: return "Skřetka"
+        case .human: return .kinHumanFemale
+        case .elf: return .kinElfFemale
+        case .halfelf: return .kinHalfElfFemale
+        case .dwarf: return .kinDwarfFemale
+        case .orc: return .kinOrcFemale
+        case .wolfkin: return .kinWolfkinFemale
+        case .halfling: return .kinHalflingFemale
+        case .goblin: return .kinGoblinFemale
         }
     }
     
-    func name(gender: Gender) -> String {
+    func name(gender: Gender) -> LocalizedStringKey {
         switch gender {
-        case .male: return czMale
-        case .female: return czFemale
-        case .other: return czMale
+        case .male: return maleName
+        case .female: return femaleName
+        case .other: return maleName
         }
     }
 }

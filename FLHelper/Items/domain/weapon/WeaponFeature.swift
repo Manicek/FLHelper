@@ -2,7 +2,7 @@
 // © 2023 Manicek
 //
 
-import Foundation
+import SwiftUI
 
 enum WeaponFeature {
     case blunt
@@ -14,24 +14,16 @@ enum WeaponFeature {
     case hook
     case loadingIsSlowAction
     
-    var name: String {
+    var name: LocalizedStringKey {
         switch self {
-        case .blunt:
-            return "tupá"
-        case .pointed:
-            return "bodná"
-        case .edged:
-            return "sečná"
-        case .parrying:
-            return "odrážecí"
-        case .light:
-            return "lehká"
-        case .heavy:
-            return "těžká"
-        case .hook:
-            return "zahnutá"
-        case .loadingIsSlowAction:
-            return "nabíjení je dlouhá akce"
+        case .blunt: return .weaponFeatureBlunt
+        case .pointed: return .weaponFeaturePointed
+        case .edged: return .weaponFeatureEdged
+        case .parrying: return .weaponFeatureParrying
+        case .light: return .weaponFeatureLight
+        case .heavy: return .weaponFeatureHeavy
+        case .hook: return .weaponFeatureHook
+        case .loadingIsSlowAction: return .weaponFeatureLoadingIsSlowAction
         }
     }
 }

@@ -39,29 +39,38 @@ private struct ItemsHeaderView: View {
     var body: some View {
         HStack {
             switch itemType {
-            case .meleeWeapon, .rangedWeapon:
-                EmptyView()
-            case .bodyArmor:
-                EmptyView()
-            case .helmet:
-                EmptyView()
-            case .shield:
-                EmptyView()
+            case .meleeWeapon, .rangedWeapon, .shield, .bodyArmor, .helmet:
+                Text(.itemHeaderWeapon)
+                Text(.itemHeaderPrice)
+                Text(.itemHeaderSupply)
+                Text(.itemHeaderWeight)
+                Text(.itemHeaderRawMaterials)
+                Text(.itemHeaderTime)
+                Text(.itemHeaderTalent)
+                Text(.itemHeaderTools)
             case .tool:
-                EmptyView()
+                Text(.itemHeaderTools)
+                Text(.itemHeaderPrice)
+                Text(.itemHeaderSupply)
+                Text(.itemHeaderWeight)
+                Text(.itemHeaderRawMaterials)
+                Text(.itemHeaderTime)
+                Text(.itemHeaderTalent)
+                Text(.itemHeaderTools)
             case .goods:
-                Text("Předmět")
-                Text("Cena")
-                Text("Dostupnost")
-                Text("Váha")
-                Text("Suroviny")
-                Text("Čas")
-                Text("Talent")
-                Text("Nářadí")
-                Text("Účinek")
+                Text(.itemHeaderItem)
+                Text(.itemHeaderPrice)
+                Text(.itemHeaderSupply)
+                Text(.itemHeaderWeight)
+                Text(.itemHeaderRawMaterials)
+                Text(.itemHeaderTime)
+                Text(.itemHeaderTalent)
+                Text(.itemHeaderTools)
+                Text(.itemHeaderEffect)
             case .miscellaneous:
                 EmptyView()
             }
         }
+        .frame(maxWidth: .infinity)
     }
 }

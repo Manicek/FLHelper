@@ -17,15 +17,15 @@ enum RangedWeaponOption: CaseIterable {
     
     var name: LocalizedStringKey {
         switch self {
-        case .rock: return "Kámen"
-        case .throwingKnife: return "Vrhací nůž"
-        case .throwingAxe: return "Vrhací sekera"
-        case .throwingSpear: return "Oštěp"
-        case .sling: return "Prak"
-        case .shortBow: return "Krátký luk"
-        case .longbow: return "Dlouhý luk"
-        case .lightCrossbow: return "Lehká kuše"
-        case .heavyCrossbow: return "Těžká kuše"
+        case .rock: return .rangedWeaponRock
+        case .throwingKnife: return .rangedWeaponThrowingKnife
+        case .throwingAxe: return .rangedWeaponThrowingAxe
+        case .throwingSpear: return .rangedWeaponThrowingSpear
+        case .sling: return .rangedWeaponSling
+        case .shortBow: return .rangedWeaponShortBow
+        case .longbow: return .rangedWeaponLongbow
+        case .lightCrossbow: return .rangedWeaponLightCrossbow
+        case .heavyCrossbow: return .rangedWeaponHeavyCrossbow
         }
     }
     
@@ -115,10 +115,6 @@ enum RangedWeaponOption: CaseIterable {
         }
     }
     
-    var weaponType: WeaponType {
-        .ranged
-    }
-    
     var range: Range {
         switch self {
         case .rock, .throwingKnife, .throwingAxe:
@@ -177,6 +173,7 @@ enum RangedWeaponOption: CaseIterable {
     func toWeapon() -> Weapon {
         Weapon(
             name: name,
+            type: .rangedWeapon,
             weight: weight,
             price: price,
             supply: supply,
@@ -187,7 +184,6 @@ enum RangedWeaponOption: CaseIterable {
                 special: specialRequirements,
                 quarterDays: quarterDaysToMake
             ),
-            weaponType: weaponType,
             range: range,
             grip: grip,
             features: features,

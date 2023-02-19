@@ -12,10 +12,10 @@ enum HelmetOption: CaseIterable {
     
     var name: LocalizedStringKey {
         switch self {
-        case .studdedLeatherCap: return 
-        case .openHelmet: return 
-        case .closedHelmet: return 
-        case .greatHelm: return 
+        case .studdedLeatherCap: return .helmetStuddedLeatherCap
+        case .openHelmet: return .helmetOpenHelmet
+        case .closedHelmet: return .helmetClosedHelmet
+        case .greatHelm: return .helmetGreatHelm
         }
     }
     
@@ -49,7 +49,7 @@ enum HelmetOption: CaseIterable {
         case .studdedLeatherCap, .openHelmet, .closedHelmet:
             return .empty
         case .greatHelm:
-            return .greatHelmDescription
+            return .helmetGreatHelmDescription
         }
     }
     

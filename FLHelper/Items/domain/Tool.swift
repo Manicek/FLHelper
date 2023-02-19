@@ -16,14 +16,14 @@ enum Tool: CaseIterable {
     
     var name: LocalizedStringKey {
         switch self {
-        case .saw: return "Pila"
-        case .hammer: return "Kladivo"
-        case .sledgeHammer: return "Palice"
-        case .pickaxe: return "Krumpáč"
-        case .shovel: return "Lopata"
-        case .timberAxe: return "Dřevorubecká sekera"
-        case .pliers: return "Kleště"
-        case .needleAndThread: return "Jehla a nit"
+        case .saw: return .toolSaw
+        case .hammer: return .toolHammer
+        case .sledgeHammer: return .toolSledgeHammer
+        case .pickaxe: return .toolPickaxe
+        case .shovel: return .toolShovel
+        case .timberAxe: return .toolTimberAxe
+        case .pliers: return .toolPliers
+        case .needleAndThread: return .toolNeedleAndThread
         }
     }
     
