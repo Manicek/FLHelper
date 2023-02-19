@@ -2,7 +2,7 @@
 // © 2023 Manicek
 //
 
-import Foundation
+import SwiftUI
 
 class Weapon: Item {
     let weaponType: WeaponType
@@ -13,7 +13,7 @@ class Weapon: Item {
     var damage: Int
     
     init(
-        name: String,
+        name: LocalizedStringKey,
         weight: Weight,
         price: Int,
         supply: Supply?,

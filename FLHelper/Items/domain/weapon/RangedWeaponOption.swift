@@ -2,7 +2,7 @@
 // © 2023 Manicek
 //
 
-import Foundation
+import SwiftUI
 
 enum RangedWeaponOption: CaseIterable {
     case rock
@@ -15,7 +15,7 @@ enum RangedWeaponOption: CaseIterable {
     case lightCrossbow
     case heavyCrossbow
     
-    var czName: String {
+    var name: LocalizedStringKey {
         switch self {
         case .rock: return "Kámen"
         case .throwingKnife: return "Vrhací nůž"
@@ -176,7 +176,7 @@ enum RangedWeaponOption: CaseIterable {
     
     func toWeapon() -> Weapon {
         Weapon(
-            name: czName,
+            name: name,
             weight: weight,
             price: price,
             supply: supply,

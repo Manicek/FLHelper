@@ -1,0 +1,176 @@
+/* 
+  Localizable.strings
+  FLHelper
+
+  Created by Patrik Hora on 18.02.2023.
+  
+*/
+
+"combat" = "Souboj";
+"encounters" = "Místa";
+"npcs" = "Nehráčské postavy";
+"places" = "Místa";
+"players" = "Hráči";
+"rolling" = "Házení";
+"tables" = "Tabulky";
+"talents" = "Talenty";
+
+
+"strength" = "Síla";
+"agility" = "Obratnost";
+"wits" = "Bystrost";
+"empathy" = "Osobnost";
+
+"might" = "Svaly";
+"endurance" = "Výdrž";
+"melee" = "Boj zblízka";
+"crafting" = "Řemesla";
+"stealth" = "Plížení";
+"sleightOfHand" = "Zlodějina";
+"move" = "Mrštnost";
+"marksmanship" = "Střelba";
+"scouting" = "Ostražitost";
+"lore" = "Příběhy";
+"survival" = "Přežití";
+"insight" = "Empatie";
+"manipulation" = "Manipulace";
+"performance" = "Vystupování";
+"healing" = "Léčení";
+"animalHandling" = "Zvířata";
+
+
+"adaptive" = "Přizpůsobivý";
+"innerPeace" = "Vnitřní klid";
+"psychicPower" = "Duševní síla";
+"trueGrit" = "Hlava žulová";
+"hardToCatch" = "Nepolapitelný";
+"huntingInstincts" = "Instinkt lovce";
+"unbreakable" = "Nezlomný";
+"nocturnal" = "Noční tvor";
+"pathOfHealing" = "Cesta léčitele";
+"pathOfShiftingShapes" = "Cesta proměny";
+"pathOfSight" = "Cesta zraku";
+"pathOfTheBlade" = "Cesta ostří";
+"pathOfTheEnemy" = "Cesta protivníka";
+"pathOfTheShield" = "Cesta štítu";
+"pathOfTheArrow" = "Cesta šípu";
+"pathOfTheBeast" = "Cesta šelmy";
+"pathOfTheForest" = "Cesta hvozdu";
+"pathOfTheHymn" = "Cesta chvály";
+"pathOfTheSong" = "Cesta písně";
+"pathOfTheWarcry" = "Cesta válečného pokřiku";
+"pathOfTreasures" = "Cesta pokladů";
+"pathOfWords" = "Cesta slov";
+"pathOfManyThings" = "Cesta mnoha věcí";
+"pathOfTheCompanion" = "Cesta společníka";
+"pathOfTheKnight" = "Cesta rytíře";
+"pathOfThePlains" = "Cesta stepi";
+"pathOfTheFace" = "Cesta tváře";
+"pathOfTheKiller" = "Cesta zabijáka";
+"pathOfPoison" = "Cesta jedu";
+"pathOfBlood" = "Cesta krve";
+"pathOfDeath" = "Cesta smrti";
+"pathOfSigns" = "Cesta znamení";
+"pathOfStone" = "Cesta kamene";
+"ambidextrous" = "Obouruký";
+"axeFighter" = "Sekerník";
+"berserker" = "Berserkr";
+"bowyer" = "Lukař";
+"brawler" = "Rváč";
+"builder" = "Stavitel";
+"chef" = "Kuchař";
+"coldBlooded" = "Chladnokrevný";
+"defender" = "Obránce";
+"dragonslayer" = "Drakobijec";
+"executioner" = "Popravčí";
+"fastFootwork" = "Hbité nohy";
+"fastShooter" = "Rychlostřelec";
+"fearless" = "Nebojácný";
+"firmGrip" = "Pevný stisk";
+"fisher" = "Rybář";
+"hammerFighter" = "Kladivář";
+"herbalist" = "Bylinkář";
+"horsebackFighter" = "Bojovník v sedle";
+"incorruptible" = "Zásadový";
+"knifeFighter" = "Dýkař";
+"lightningFast" = "Rychlost blesku";
+"lockpicker" = "Zámečník";
+"lucky" = "Šťastlivec";
+"masterOfTheHunt" = "Stopař";
+"meleeCharge" = "Pěší zteč";
+"packRat" = "Soumar";
+"painResistant" = "Odolný proti bolesti";
+"pathfinder" = "Průzkumník";
+"poisoner" = "Travič";
+"quartermaster" = "Zálesák";
+"quickdraw" = "Rychlé tasení";
+"sailor" = "Námořník";
+"sharpshooter" = "Ostrostřelec";
+"sharpTongue" = "Ostrý jazýček";
+"shieldFighter" = "Štítonoš";
+"sixthSense" = "Šestý smysl";
+"smith" = "Kovář";
+"spearFighter" = "Kopiník";
+"steadyFeet" = "Pevný postoj";
+"swordFighter" = "Šermíř";
+"tailor" = "Krejčí";
+"tanner" = "Koželuh";
+"threatening" = "Děsivý";
+"throwingArm" = "Vrhač";
+"wanderer" = "Poutník";
+
+"level" = "Úroveň";
+"willpower" = "Vůle";
+
+"meleeWeapon" = "Zbraň nablízko";
+"rangedWeapon" = "Střelná zbraň";
+"bodyArmor" = "Zbroj";
+"helmet" = "Přilbice";
+"shield" = "Štít";
+"tool" = "Nářadí";
+"goods" = "Zboží";
+"miscellaneous" = "Různé";
+"meleeWeapons" = "Zbraně nablízko";
+"rangedWeapons" = "Střelné zbraně";
+"bodyArmors" = "Zbroje";
+"helmets" = "Přilbice";
+"shields" = "Štíty";
+"tools" = "Nářadí";
+"goodsPlural" = "Zboží";
+"miscellaneousPlural" = "Různé";
+
+"food" = "Jídlo";
+"water" = "Voda";
+"arrows" = "Šípy";
+"torches" = "Pochodně";
+
+"sleepy" = "Ospalost";
+"thirsty" = "Žízeň";
+"hungry" = "Hlad";
+"cold" = "Podchlazení";
+
+"genderMale" = "Muž";
+"genderFemale" = "Žena";
+"genderOther" = "Jiné";
+
+"copperCoin" = "Měďák";
+"copperCoinsSome" = "Měďáky";
+"copperCoinsMany" = "Měďáků";
+"silverCoin" = "Stříbrňák";
+"silverCoinsSome" = "Stříbrňák";
+"silverCoinsMany" = "Stříbrňáků";
+"goldCoin" = "Zlaťák";
+"goldCoinsSome" = "Zlaťáky";
+"goldCoinsMany" = "Zlaťáků";
+
+"bodyArmorLeather" = "Kožená";
+"bodyArmorStuddedLeather" = "Pokovaná kožená";
+"bodyArmorChainmail" = "Kroužková košile";
+"bodyArmorPlate" = "Plátová";
+"bodyArmorChainmailDescription" = "Třída zbroje 3 proti šípům a bodnutí";
+"bodyArmorPlateDescription" = "Upravuje Mrštnost o –2";
+"studdedLeatherCap" = "Pokovaná kožená čapka";
+"openHelmet" = "Otevřená přilbice";
+"closedHelmet" = "Uzavřená přilbice";
+"greatHelm" = "Těžká přilbice";
+"greatHelmDescription" = "Upravuje Ostražitost o –2";

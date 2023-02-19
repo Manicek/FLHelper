@@ -23,37 +23,37 @@ struct MainView: View {
                 
                 HStack {
                     NavigationLink(destination: PlayersView(viewModel: PlayersViewModel())) {
-                        MainViewLinkView(title: "Players")
+                        MainViewLinkView(title: .mainViewTitlePlayers)
                     }
                     NavigationLink(destination: EmptyView()) {
-                        MainViewLinkView(title: "Places")
+                        MainViewLinkView(title: .mainViewTitlePlaces)
                     }
                 }.frame(maxWidth: .infinity)
                 
                 HStack {
                     NavigationLink(destination: EmptyView()) {
-                        MainViewLinkView(title: "Combat")
+                        MainViewLinkView(title: .mainViewTitleCombat)
                     }
                     NavigationLink(destination: TablesView()) {
-                        MainViewLinkView(title: "Tables")
+                        MainViewLinkView(title: .mainViewTitleTables)
                     }
                 }.frame(maxWidth: .infinity)
                 
                 HStack {
                     NavigationLink(destination: EmptyView()) {
-                        MainViewLinkView(title: "Rolling")
+                        MainViewLinkView(title: .mainViewTitleRolling)
                     }
                     NavigationLink(destination: EmptyView()) {
-                        MainViewLinkView(title: "Talents")
+                        MainViewLinkView(title: .mainViewTitleTalents)
                     }
                 }.frame(maxWidth: .infinity)
                 
                 HStack {
                     NavigationLink(destination: EmptyView()) {
-                        MainViewLinkView(title: "Encounters")
+                        MainViewLinkView(title: .mainViewTitleEncounters)
                     }
                     NavigationLink(destination: EmptyView()) {
-                        MainViewLinkView(title: "NPCs")
+                        MainViewLinkView(title: .mainViewTitleNPCs)
                     }
                 }.frame(maxWidth: .infinity)
             }

@@ -9,22 +9,25 @@ struct TablesView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 32) {
             NavigationLink(destination: ItemsView(viewModel: ItemsViewModel(type: .meleeWeapon))) {
-                MainViewLinkView(title: "Zbraně nablízko")
+                MainViewLinkView(title: ItemType.meleeWeapon.tableName)
             }.frame(maxWidth: .infinity)
             NavigationLink(destination: ItemsView(viewModel: ItemsViewModel(type: .rangedWeapon))) {
-                MainViewLinkView(title: "Střelné zbraně")
+                MainViewLinkView(title: ItemType.rangedWeapon.tableName)
             }.frame(maxWidth: .infinity)
             NavigationLink(destination: ItemsView(viewModel: ItemsViewModel(type: .bodyArmor))) {
-                MainViewLinkView(title: "Zbroje")
+                MainViewLinkView(title: ItemType.bodyArmor.tableName)
             }.frame(maxWidth: .infinity)
             NavigationLink(destination: ItemsView(viewModel: ItemsViewModel(type: .helmet))) {
-                MainViewLinkView(title: "Helmy")
+                MainViewLinkView(title: ItemType.helmet.tableName)
             }.frame(maxWidth: .infinity)
             NavigationLink(destination: ItemsView(viewModel: ItemsViewModel(type: .shield))) {
-                MainViewLinkView(title: "Štíty")
+                MainViewLinkView(title: ItemType.shield.tableName)
             }.frame(maxWidth: .infinity)
             NavigationLink(destination: ItemsView(viewModel: ItemsViewModel(type: .tool))) {
-                MainViewLinkView(title: "Nářadí")
+                MainViewLinkView(title: ItemType.tool.tableName)
+            }.frame(maxWidth: .infinity)
+            NavigationLink(destination: ItemsView(viewModel: ItemsViewModel(type: .goods))) {
+                MainViewLinkView(title: ItemType.goods.tableName)
             }.frame(maxWidth: .infinity)
         }
         .padding(.horizontal, 44)

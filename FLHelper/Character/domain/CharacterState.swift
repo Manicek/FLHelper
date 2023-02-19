@@ -2,7 +2,7 @@
 // © 2023 Manicek
 //
 
-import Foundation
+import SwiftUI
 
 enum CharacterState: CaseIterable {
     case sleepy
@@ -10,12 +10,12 @@ enum CharacterState: CaseIterable {
     case hungry
     case cold
     
-    var czName: String {
+    var name: LocalizedStringKey {
         switch self {
-        case .sleepy: return "Ospalost"
-        case .thirsty: return "Žízeň"
-        case .hungry: return "Hlad"
-        case .cold: return "Podchlazení"
+        case .sleepy: return .stateSleepy
+        case .thirsty: return .stateThirsty
+        case .hungry: return .stateHungry
+        case .cold: return .stateCold
         }
     }
     

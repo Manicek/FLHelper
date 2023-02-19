@@ -13,8 +13,8 @@ struct PlayerDetailView: View {
                 .playerDetailTitle()
                 .frame(maxWidth: .infinity, alignment: .center)
             HStack(spacing: 12) {
-                Text(player.kin.czName(gender: player.gender)).playerDetailSubtitle()
-                Text(player.profession.czName(gender: player.gender)).playerDetailSubtitle()
+                Text(player.kin.name(gender: player.gender)).playerDetailSubtitle()
+                Text(player.profession.name(gender: player.gender)).playerDetailSubtitle()
             }
             .frame(maxWidth: .infinity, alignment: .center)
                 
@@ -24,10 +24,10 @@ struct PlayerDetailView: View {
                     .padding(.bottom, 12)
                 StatesView(states: player.states)
                 VStack {
-                    PrideSecretRepLineView(title: "Pýcha", value: player.pride ?? "")
-                    PrideSecretRepLineView(title: "Temné tajemstvé", value: player.darkSecret)
-                    PrideSecretRepLineView(title: "Reputace", value: "\(player.reputation)")
-                    PrideSecretRepLineView(title: "Věk", value: "\(player.age)")
+                    PrideSecretRepLineView(title: .characterPride, value: player.pride ?? "")
+                    PrideSecretRepLineView(title: .characterDarkSecret, value: player.darkSecret)
+                    PrideSecretRepLineView(title: .characterReputation, value: "\(player.reputation)")
+                    PrideSecretRepLineView(title: .characterAge, value: "\(player.age)")
                 }
                 ConsumablesView(consumables: player.consumables)
                 TalentsView(talents: player.talents)
@@ -50,14 +50,15 @@ struct PlayerDetailView: View {
 // MARK: - PrideSecretRepLineView
 
 private struct PrideSecretRepLineView: View {
-    let title: String
+    let title: LocalizedStringKey
     let value: String
     
     var body: some View {
-        HStack(alignment: .top) {
-            Text(title + ":").playerDetailTextFont()
-            Text(value).playerDetailTextFont()
+        HStack(alignment: .top, spacing: 0) {
+            Text(title)
+            Text(":").padding(.trailing, 4)
+            Text(value)
             Spacer()
-        }
+        }.playerDetailTextFont()
     }
 }

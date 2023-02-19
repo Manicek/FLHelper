@@ -8,7 +8,7 @@ enum WeaponType {
     case melee
     case ranged
     
-    var czName: String {
+    var name: String {
         switch self {
         case .melee:
             return "nablízko"

@@ -2,7 +2,7 @@
 // © 2023 Manicek
 //
 
-import Foundation
+import SwiftUI
 
 enum HelmetOption: CaseIterable {
     case studdedLeatherCap
@@ -10,12 +10,12 @@ enum HelmetOption: CaseIterable {
     case closedHelmet
     case greatHelm
     
-    var czName: String {
+    var name: LocalizedStringKey {
         switch self {
-        case .studdedLeatherCap: return "Pokovaná kožená čapka"
-        case .openHelmet: return "Otevřená přilbice"
-        case .closedHelmet: return "Uzavřená přilbice"
-        case .greatHelm: return "Těžká přilbice"
+        case .studdedLeatherCap: return 
+        case .openHelmet: return 
+        case .closedHelmet: return 
+        case .greatHelm: return 
         }
     }
     
@@ -44,12 +44,12 @@ enum HelmetOption: CaseIterable {
         }
     }
     
-    var czDescription: String? {
+    var description: LocalizedStringKey {
         switch self {
         case .studdedLeatherCap, .openHelmet, .closedHelmet:
-            return nil
+            return .empty
         case .greatHelm:
-            return "-2 Ostražitost"
+            return .greatHelmDescription
         }
     }
     
@@ -106,7 +106,7 @@ enum HelmetOption: CaseIterable {
     
     func toArmor() -> Armor {
         return Armor(
-            name: czName,
+            name: name,
             weight: weight,
             price: price,
             craftingRequirements: CraftingRequirements(
@@ -118,7 +118,7 @@ enum HelmetOption: CaseIterable {
             ),
             armorRating: armorRating,
             armorType: armorType,
-            description: czDescription
+            description: description
         )
     }
     

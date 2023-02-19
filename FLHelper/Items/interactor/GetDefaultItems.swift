@@ -20,6 +20,8 @@ class GetDefaultItemsInteractor {
             return ShieldOption.defaultItems
         case .tool:
             return Tool.defaultItems
+        case .goods:
+            return []
         case .miscellaneous:
             return []
         }

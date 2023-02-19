@@ -9,7 +9,7 @@ struct ItemsView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            ItemsHeaderView()
+            ItemsHeaderView(itemType: viewModel.itemType)
             ForEach(viewModel.items) { item in
                 ItemRowView(item: item)
                     .frame(maxWidth: .infinity)
@@ -34,8 +34,34 @@ private struct ItemRowView: View {
 // MARK: - ItemsHeaderView
 
 private struct ItemsHeaderView: View {
+    let itemType: ItemType
     
     var body: some View {
-        EmptyView()
+        HStack {
+            switch itemType {
+            case .meleeWeapon, .rangedWeapon:
+                EmptyView()
+            case .bodyArmor:
+                EmptyView()
+            case .helmet:
+                EmptyView()
+            case .shield:
+                EmptyView()
+            case .tool:
+                EmptyView()
+            case .goods:
+                Text("Předmět")
+                Text("Cena")
+                Text("Dostupnost")
+                Text("Váha")
+                Text("Suroviny")
+                Text("Čas")
+                Text("Talent")
+                Text("Nářadí")
+                Text("Účinek")
+            case .miscellaneous:
+                EmptyView()
+            }
+        }
     }
 }

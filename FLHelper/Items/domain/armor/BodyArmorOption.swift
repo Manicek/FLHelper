@@ -2,7 +2,7 @@
 // © 2023 Manicek
 //
 
-import Foundation
+import SwiftUI
 
 enum BodyArmorOption: CaseIterable {
     case leather
@@ -10,12 +10,12 @@ enum BodyArmorOption: CaseIterable {
     case chainmail
     case plate
     
-    var czName: String {
+    var name: LocalizedStringKey {
         switch self {
-        case .leather: return "Kožená"
-        case .studdedLeather: return "Pokovaná kožená"
-        case .chainmail: return "Kroužková košile"
-        case .plate: return "Plátová"
+        case .leather: return .bodyArmorLeather
+        case .studdedLeather: return .bodyArmorStuddedLeather
+        case .chainmail: return .bodyArmorChainmail
+        case .plate: return .bodyArmorPlate
         }
     }
     
@@ -45,14 +45,14 @@ enum BodyArmorOption: CaseIterable {
         }
     }
     
-    var czDescription: String? {
+    var description: LocalizedStringKey {
         switch self {
         case .leather, .studdedLeather:
-            return nil
+            return .empty
         case .chainmail:
-            return "Poloviční třída zbroje proti šípům a bodnutí"
+            return .bodyArmorChainmailDescription
         case .plate:
-            return "-2 Mrštnost"
+            return .bodyArmorPlateDescription
         }
     }
     
@@ -111,7 +111,7 @@ enum BodyArmorOption: CaseIterable {
     
     func toArmor() -> Armor {
         return Armor(
-            name: czName,
+            name: name,
             weight: weight,
             price: price,
             craftingRequirements: CraftingRequirements(
@@ -123,7 +123,7 @@ enum BodyArmorOption: CaseIterable {
             ),
             armorRating: armorRating,
             armorType: armorType,
-            description: czDescription
+            description: description
         )
     }
     

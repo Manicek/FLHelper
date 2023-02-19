@@ -14,7 +14,7 @@ enum WeaponFeature {
     case hook
     case loadingIsSlowAction
     
-    var czName: String {
+    var name: String {
         switch self {
         case .blunt:
             return "tupá"

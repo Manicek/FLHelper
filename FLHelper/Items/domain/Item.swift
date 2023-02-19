@@ -2,10 +2,10 @@
 // © 2023 Manicek
 //
 
-import Foundation
+import SwiftUI
 
 class Item: Identifiable {
-    var name: String
+    var name: LocalizedStringKey
     var type: ItemType
     var weight: Weight
     var price: Int
@@ -13,7 +13,7 @@ class Item: Identifiable {
     var craftingRequirements: CraftingRequirements?
     
     init(
-        name: String,
+        name: LocalizedStringKey,
         type: ItemType,
         weight: Weight,
         price: Int,

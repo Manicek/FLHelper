@@ -10,18 +10,30 @@ struct SkillsView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
             HStack {
-                Text("dovednosti").playerDetailSectionTitleFont()
+                Text(.skills)
+                    .playerDetailSectionTitleFont()
                 Spacer()
-                Text("úroveň".uppercased()).playerDetailSectionSubtitleFont()
+                Text(.characterLevel)
+                    .textCase(.lowercase)
+                    .playerDetailSectionSubtitleFont()
             }
             ForEach(Skill.allCases, id: \.self) { skill in
                 HStack(alignment: .bottom, spacing: 0) {
-                    Text(skill.czName).playerDetailItemFont()
-                    Text(" (" + skill.attribute.czName.lowercased() + ") ").scFont(18)
+                    Text(skill.name)
+                        .playerDetailItemFont()
+                    Text(" (")
+                        .scFont(18)
+                    Text(skill.attribute.name)
+                        .scFont(18)
+                        .textCase(.lowercase)
+                    Text(") ")
+                        .scFont(18)
                         .padding(.trailing, 8)
                     Spacer()
                     if let playerSkill = skills[skill] {
-                        Text("\(playerSkill)").playerDetailItemFont().padding(.horizontal, 8)
+                        Text("\(playerSkill)")
+                            .playerDetailItemFont()
+                            .padding(.horizontal, 8)
                     }
                 }.frame(maxWidth: .infinity)
             }

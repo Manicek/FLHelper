@@ -2,7 +2,7 @@
 // © 2023 Manicek
 //
 
-import Foundation
+import SwiftUI
 
 enum MeleeWeaponOption: CaseIterable {
     case unarmed
@@ -31,7 +31,7 @@ enum MeleeWeaponOption: CaseIterable {
     case halberd
     case trident
     
-    var czName: String {
+    var name: LocalizedStringKey {
         switch self {
         case .unarmed: return "Žádná"
         case .knife: return "Nůž"
@@ -245,7 +245,7 @@ enum MeleeWeaponOption: CaseIterable {
     
     func toWeapon() -> Weapon {
         Weapon(
-            name: czName,
+            name: name,
             weight: weight,
             price: price,
             supply: supply,

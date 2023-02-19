@@ -12,22 +12,22 @@ struct ArmorView: View {
     var body: some View {
         VStack {
             ArmorLineView(
-                title: ArmorType.helmet.czName,
-                name: helmet?.name,
+                title: ArmorType.helmet.name,
+                name: helmet?.name ?? .empty,
                 imageName: ArmorType.helmet.systemImageName,
                 bonus: helmet?.armorRating,
                 left: false
             )
             ArmorLineView(
-                title: ArmorType.body.czName,
-                name: bodyArmor?.name,
+                title: ArmorType.body.name,
+                name: bodyArmor?.name ?? .empty,
                 imageName: ArmorType.body.systemImageName,
                 bonus: bodyArmor?.armorRating,
                 left: false
             )
             ArmorLineView(
-                title: Shield.czName,
-                name: shield?.name,
+                title: Shield.name,
+                name: shield?.name ?? .empty,
                 imageName: Shield.systemImageName,
                 bonus: shield?.bonus,
                 left: true
@@ -39,18 +39,20 @@ struct ArmorView: View {
 // MARK: - ArmorLineView
 
 private struct ArmorLineView: View {
-    let title: String
-    let name: String?
+    let title: LocalizedStringKey
+    let name: LocalizedStringKey
     let imageName: String
     let bonus: Int?
     let left: Bool
     
     var body: some View {
         VStack {
-            Text(title).playerDetailSubtitle()
+            Text(title)
+                .playerDetailSubtitle()
             HStack {
                 if left { imageAndBonusView }
-                Text(name ?? "-").playerDetailItemFont()
+                Text(name)
+                    .playerDetailItemFont()
                 if !left { imageAndBonusView }
             }
         }
@@ -58,9 +60,11 @@ private struct ArmorLineView: View {
     
     private var imageAndBonusView: some View {
         ZStack {
-            Image(systemName: imageName).font(.system(size: 40))
+            Image(systemName: imageName)
+                .systemFont(40)
             if let bonus = bonus {
-                Text("\(bonus)").playerDetailItemFont()
+                Text("\(bonus)")
+                    .playerDetailItemFont()
             }
         }
     }

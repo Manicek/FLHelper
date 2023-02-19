@@ -9,14 +9,15 @@ struct WillpowerView: View {
     
     var body: some View {
         HStack {
-            Text("Vůle").playerDetailSectionSubtitleFont()
+            Text(.characterWillpower)
+                .playerDetailSectionSubtitleFont()
             ForEach(0..<10, id: \.self) { counter in
                 if willpower > counter {
                     Image(systemName: "circle.fill")
                 } else {
                     Image(systemName: "circle")
                 }
-            }.font(.system(size: 28))
+            }.systemFont(28)
         }
     }
 }

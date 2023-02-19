@@ -2,7 +2,7 @@
 // © 2023 Manicek
 //
 
-import Foundation
+import SwiftUI
 
 enum Tool: CaseIterable {
     case saw
@@ -14,7 +14,7 @@ enum Tool: CaseIterable {
     case pliers
     case needleAndThread
     
-    var czName: String {
+    var name: LocalizedStringKey {
         switch self {
         case .saw: return "Pila"
         case .hammer: return "Kladivo"
@@ -116,7 +116,7 @@ enum Tool: CaseIterable {
     
     func toItem() -> Item {
         Item(
-            name: czName,
+            name: name,
             type: .tool,
             weight: weight,
             price: price,

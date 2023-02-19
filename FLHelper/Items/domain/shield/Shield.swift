@@ -2,16 +2,16 @@
 // © 2023 Manicek
 //
 
-import Foundation
+import SwiftUI
 
 class Shield: Item {
     static let systemImageName = "shield"
-    static let czName = "Štít"
+    static let name: LocalizedStringKey = .itemsShield
     
     var bonus: Int
     
     init(
-        name: String,
+        name: LocalizedStringKey,
         weight: Weight,
         price: Int,
         supply: Supply? = nil,

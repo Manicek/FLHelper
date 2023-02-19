@@ -6,7 +6,7 @@ import Foundation
 import SwiftUI
 
 struct MainViewLinkView: View {
-    let title: String
+    let title: LocalizedStringKey
     
     var body: some View {
         ZStack {

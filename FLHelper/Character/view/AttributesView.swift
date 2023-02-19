@@ -10,7 +10,8 @@ struct AttributesView: View {
     
     var body: some View {
         VStack(alignment: .center) {
-            Text("Vlastnosti".uppercased()).playerDetailSectionTitleFont()
+            Text(.attributes)
+                .playerDetailSectionTitleFont()
             HStack {
                 VStack(alignment: .leading) {
                     ForEach(Attribute.allCases, id: \.self) { attribute in
@@ -34,14 +35,17 @@ struct AttributesView: View {
     
     private func attributeNameView(_ attribute: Attribute) -> some View {
         HStack {
-            Text(attribute.czName).playerDetailItemFont()
+            Text(attribute.name)
+                .playerDetailItemFont()
             Spacer()
         }
     }
     
     private func attributeValueView(_ attribute: Attribute) -> some View {
         HStack {
-            Text("\(current[attribute] ?? 2)").playerDetailItemFont().padding(.horizontal, 4)
+            Text("\(current[attribute] ?? 2)")
+                .playerDetailItemFont()
+                .padding(.horizontal, 4)
         }
     }
     

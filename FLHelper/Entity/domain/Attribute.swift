@@ -2,7 +2,7 @@
 // © 2023 Manicek
 //
 
-import Foundation
+import SwiftUI
 
 enum Attribute: CaseIterable {
     enum Constants {
@@ -15,12 +15,12 @@ enum Attribute: CaseIterable {
     case wits
     case empathy
     
-    var czName: String {
+    var name: LocalizedStringKey {
         switch self {
-        case .strength: return "Síla"
-        case .agility: return "Obratnost"
-        case .wits: return "Bystrost"
-        case .empathy: return "Osobnost"
+        case .strength: return .attributesStrength
+        case .agility: return .attributesAgility
+        case .wits: return .attributesWits
+        case .empathy: return .attributesEmpathy
         }
     }
 }

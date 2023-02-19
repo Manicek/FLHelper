@@ -40,7 +40,7 @@ enum Kin {
         }
     }
     
-    func czName(gender: Gender) -> String {
+    func name(gender: Gender) -> String {
         switch gender {
         case .male: return czMale
         case .female: return czFemale

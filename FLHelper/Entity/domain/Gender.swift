@@ -2,18 +2,18 @@
 // © 2023 Manicek
 //
 
-import Foundation
+import SwiftUI
 
 enum Gender {
     case male
     case female
     case other
     
-    var czString: String {
+    var name: LocalizedStringKey {
         switch self {
-        case .male: return "Muž"
-        case .female: return "Žena"
-        case .other: return "-"
+        case .male: return .characterGenderMale
+        case .female: return .characterGenderFemale
+        case .other: return .characterGenderOther
         }
     }
     

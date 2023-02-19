@@ -20,19 +20,31 @@ private struct FontModifier: ViewModifier {
     }
 }
 
-extension Text {
+private struct SystemFontModifier: ViewModifier {
+    let size: CGFloat
+    
+    func body(content: Content) -> some View {
+        content.font(.system(size: size))
+    }
+}
+
+extension View {
     // MARK: - Generic
 
+    func systemFont(_ size: CGFloat) -> some View {
+        modifier(SystemFontModifier(size: size)).foregroundColor(.text)
+    }
+    
     func appFont(_ size: CGFloat) -> some View {
-        modifier(FontModifier(fontName: .regular, size: size)).foregroundColor(Color("Text"))
+        modifier(FontModifier(fontName: .regular, size: size)).foregroundColor(.text)
     }
     
     func italicFont(_ size: CGFloat) -> some View {
-        modifier(FontModifier(fontName: .italic, size: size)).foregroundColor(Color("Text"))
+        modifier(FontModifier(fontName: .italic, size: size)).foregroundColor(.text)
     }
     
     func scFont(_ size: CGFloat) -> some View {
-        modifier(FontModifier(fontName: .regularSC, size: size)).foregroundColor(Color("Text"))
+        modifier(FontModifier(fontName: .regularSC, size: size)).foregroundColor(.text)
     }
     
     // MARK: - Player

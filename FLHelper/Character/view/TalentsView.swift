@@ -10,19 +10,24 @@ struct TalentsView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
             HStack {
-                Text("talenty").playerDetailSectionTitleFont()
+                Text(.talents)
+                    .playerDetailSectionTitleFont()
                 Spacer()
-                Text("stupeň".uppercased()).playerDetailSectionSubtitleFont()
+                Text(.characterLevel)
+                    .playerDetailSectionSubtitleFont()
             }
                         
             
             ForEach(talents.keys.sorted(), id: \.self) { talent in
                 HStack(alignment: .bottom, spacing: 0) {
-                    Text(talent.czName).playerDetailItemFont()
+                    Text(talent.name)
+                        .playerDetailItemFont()
                         .padding(.trailing, 8)
                     Spacer()
                     if let value = talents[talent] {
-                        Text("\(value)").playerDetailItemFont().padding(.horizontal, 8)
+                        Text("\(value)")
+                            .playerDetailItemFont()
+                            .padding(.horizontal, 8)
                     }
                 }.frame(maxWidth: .infinity)
             }

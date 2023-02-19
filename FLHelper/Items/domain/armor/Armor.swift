@@ -2,7 +2,7 @@
 // © 2023 Manicek
 //
 
-import Foundation
+import SwiftUI
 
 // MARK: - ArmorType
 
@@ -17,10 +17,10 @@ enum ArmorType {
         }
     }
     
-    var czName: String {
+    var name: LocalizedStringKey {
         switch self {
-        case .helmet: return "Přilbice"
-        case .body: return "Zbroj"
+        case .helmet: return .itemsHelmet
+        case .body: return .itemsBodyArmor
         }
     }
     
@@ -37,17 +37,17 @@ enum ArmorType {
 class Armor: Item {
     var armorRating: Int
     var armorType: ArmorType
-    var description: String?
+    var description: LocalizedStringKey
     
     init(
-        name: String,
+        name: LocalizedStringKey,
         weight: Weight,
         price: Int,
         supply: Supply? = nil,
         craftingRequirements: CraftingRequirements? = nil,
         armorRating: Int,
         armorType: ArmorType,
-        description: String?
+        description: LocalizedStringKey
     ) {
         self.armorRating = armorRating
         self.armorType = armorType

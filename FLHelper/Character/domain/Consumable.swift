@@ -2,7 +2,7 @@
 // © 2023 Manicek
 //
 
-import Foundation
+import SwiftUI
 
 enum Consumable {
     case food
@@ -10,12 +10,12 @@ enum Consumable {
     case arrows
     case torches
     
-    var czName: String {
+    var name: LocalizedStringKey {
         switch self {
-        case .food: return "Jídlo"
-        case .water: return "Voda"
-        case .arrows: return "Šípy"
-        case .torches: return "Pochodně"
+        case .food: return .consumableFood
+        case .water: return .consumableWater
+        case .arrows: return .consumableArrows
+        case .torches: return .consumableTorches
         }
     }
 }

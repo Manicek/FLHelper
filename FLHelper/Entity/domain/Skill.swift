@@ -2,7 +2,7 @@
 // © 2023 Manicek
 //
 
-import Foundation
+import SwiftUI
 
 enum Skill: CaseIterable {
     // MARK: - Strength
@@ -35,24 +35,24 @@ enum Skill: CaseIterable {
         }
     }
     
-    var czName: String {
+    var name: LocalizedStringKey {
         switch self {
-        case .might: return "Svaly"
-        case .endurance: return "Výdrž"
-        case .melee: return "Boj zblízka"
-        case .crafting: return "Řemesla"
-        case .stealth: return "Plížení"
-        case .sleightOfHand: return "Zlodějina"
-        case .move: return "Mrštnost"
-        case .marksmanship: return "Střelba"
-        case .scouting: return "Ostražitost"
-        case .lore: return "Příběhy"
-        case .survival: return "Přežití"
-        case .insight: return "Empatie"
-        case .manipulation: return "Manipulace"
-        case .performance: return "Vystupování"
-        case .healing: return "Léčení"
-        case .animalHandling: return "Zvířata"
+        case .might: return .skillsMight
+        case .endurance: return .skillsEndurance
+        case .melee: return .skillsMelee
+        case .crafting: return .skillsCrafting
+        case .stealth: return .skillsStealth
+        case .sleightOfHand: return .skillsSleightOfHand
+        case .move: return .skillsMove
+        case .marksmanship: return .skillsMarksmanship
+        case .scouting: return .skillsScouting
+        case .lore: return .skillsLore
+        case .survival: return .skillsSurvival
+        case .insight: return .skillsInsight
+        case .manipulation: return .skillsManipulation
+        case .performance: return .skillsPerformance
+        case .healing: return .skillsHealing
+        case .animalHandling: return .skillsAnimalHandling
         }
     }
 }

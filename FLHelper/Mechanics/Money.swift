@@ -2,42 +2,42 @@
 // © 2023 Manicek
 //
 
-import Foundation
+import SwiftUI
 
 enum Money {
     case copper
     case silver
     case gold
         
-    static func czName(_ count: Int, type: Money) -> String {
+    static func name(_ count: Int, type: Money) -> LocalizedStringKey {
         switch type {
-        case .copper: return czNameCopper(count)
-        case .silver: return czNameSilver(count)
-        case .gold: return czNameGold(count)
+        case .copper: return nameCopper(count)
+        case .silver: return nameSilver(count)
+        case .gold: return nameGold(count)
         }
     }
     
-    private static func czNameCopper(_ count: Int) -> String {
+    private static func nameCopper(_ count: Int) -> LocalizedStringKey {
         switch count {
-        case 1: return "Měďák"
-        case 2...4: return "Měďáky"
-        default: return "Měďáků"
+        case 1: return .coinCopper
+        case 2...4: return .coinCopperSome
+        default: return .coinCopperMany
         }
     }
     
-    private static func czNameSilver(_ count: Int) -> String {
+    private static func nameSilver(_ count: Int) -> LocalizedStringKey {
         switch count {
-        case 1: return "Stříbrňák"
-        case 2...4: return "Stříbrňák"
-        default: return "Stříbrňáků"
+        case 1: return .coinSilver
+        case 2...4: return .coinSilverSome
+        default: return .coinSilverMany
         }
     }
     
-    private static func czNameGold(_ count: Int) -> String {
+    private static func nameGold(_ count: Int) -> LocalizedStringKey {
         switch count {
-        case 1: return "Zlaťák"
-        case 2...4: return "Zlaťáky"
-        default: return "Zlaťáků"
+        case 1: return .coinGold
+        case 2...4: return .coinGoldSome
+        default: return .coinGoldMany
         }
     }
 }

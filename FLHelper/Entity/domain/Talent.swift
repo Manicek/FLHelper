@@ -2,7 +2,7 @@
 // © 2023 Manicek
 //
 
-import Foundation
+import SwiftUI
 
 enum Talent: CaseIterable, Comparable {
     // MARK: - Kin
@@ -95,87 +95,87 @@ enum Talent: CaseIterable, Comparable {
     case throwingArm
     case wanderer
     
-    var czName: String {
+    var name: LocalizedStringKey {
         switch self {
-        case .adaptive: return "Přizpůsobivý"
-        case .innerPeace: return "Vnitřní klid"
-        case .psychicPower: return "Duševní síla"
-        case .trueGrit: return "Hlava žulová"
-        case .hardToCatch: return "Nepolapitelný"
-        case .huntingInstincts: return "Instinkt lovce"
-        case .unbreakable: return "Nezlomný"
-        case .nocturnal: return "Noční tvor"
-        case .pathOfHealing: return "Cesta léčitele"
-        case .pathOfShiftingShapes: return "Cesta proměny"
-        case .pathOfSight: return "Cesta zraku"
-        case .pathOfTheBlade: return "Cesta ostří"
-        case .pathOfTheEnemy: return "Cesta protivníka"
-        case .pathOfTheShield: return "Cesta štítu"
-        case .pathOfTheArrow: return "Cesta šípu"
-        case .pathOfTheBeast: return "Cesta šelmy"
-        case .pathOfTheForest: return "Cesta hvozdu"
-        case .pathOfTheHymn: return "Cesta chvály"
-        case .pathOfTheSong: return "Cesta písně"
-        case .pathOfTheWarcry: return "Cesta válečného pokřiku"
-        case .pathOfTreasures: return "Cesta pokladů"
-        case .pathOfWords: return "Cesta slov"
-        case .pathOfManyThings: return "Cesta mnoha věcí"
-        case .pathOfTheCompanion: return "Cesta společníka"
-        case .pathOfTheKnight: return "Cesta rytíře"
-        case .pathOfThePlains: return "Cesta stepi"
-        case .pathOfTheFace: return "Cesta tváře"
-        case .pathOfTheKiller: return "Cesta zabijáka"
-        case .pathOfPoison: return "Cesta jedu"
-        case .pathOfBlood: return "Cesta krve"
-        case .pathOfDeath: return "Cesta smrti"
-        case .pathOfSigns: return "Cesta znamení"
-        case .pathOfStone: return "Cesta kamene"
-        case .ambidextrous: return "Obouruký"
-        case .axeFighter: return "Sekerník"
-        case .berserker: return "Berserkr"
-        case .bowyer: return "Lukař"
-        case .brawler: return "Rváč"
-        case .builder: return "Stavitel"
-        case .chef: return "Kuchař"
-        case .coldBlooded: return "Chladnokrevný"
-        case .defender: return "Obránce"
-        case .dragonslayer: return "Drakobijec"
-        case .executioner: return "Popravčí"
-        case .fastFootwork: return "Hbité nohy"
-        case .fastShooter: return "Rychlostřelec"
-        case .fearless: return "Nebojácný"
-        case .firmGrip: return "Pevný stisk"
-        case .fisher: return "Rybář"
-        case .hammerFighter: return "Kladivář"
-        case .herbalist: return "Bylinkář"
-        case .horsebackFighter: return "Bojovník v sedle"
-        case .incorruptible: return "Zásadový"
-        case .knifeFighter: return "Dýkař"
-        case .lightningFast: return "Rychlost blesku"
-        case .lockpicker: return "Zámečník"
-        case .lucky: return "Šťastlivec"
-        case .masterOfTheHunt: return "Stopař"
-        case .meleeCharge: return "Pěší zteč"
-        case .packRat: return "Soumar"
-        case .painResistant: return "Odolný proti bolesti"
-        case .pathfinder: return "Průzkumník"
-        case .poisoner: return "Travič"
-        case .quartermaster: return "Zálesák"
-        case .quickdraw: return "Rychlé tasení"
-        case .sailor: return "Námořník"
-        case .sharpshooter: return "Ostrostřelec"
-        case .sharpTongue: return "Ostrý jazýček"
-        case .shieldFighter: return "Štítonoš"
-        case .sixthSense: return "Šestý smysl"
-        case .smith: return "Kovář"
-        case .spearFighter: return "Kopiník"
-        case .steadyFeet: return "Pevný postoj"
-        case .swordFighter: return "Šermíř"
-        case .tailor: return "Krejčí"
-        case .tanner: return "Koželuh"
-        case .threatening: return "Děsivý"
-        case .throwingArm: return "Vrhač"
-        case .wanderer: return "Poutník"
+        case .adaptive: return .talentAdaptive
+        case .innerPeace: return .talentInnerPeace
+        case .psychicPower: return .talentPsychicPower
+        case .trueGrit: return .talentTrueGrit
+        case .hardToCatch: return .talentHardToCatch
+        case .huntingInstincts: return .talentHuntingInstincts
+        case .unbreakable: return .talentUnbreakable
+        case .nocturnal: return .talentNocturnal
+        case .pathOfHealing: return .talentPathOfHealing
+        case .pathOfShiftingShapes: return .talentPathOfShiftingShapes
+        case .pathOfSight: return .talentPathOfSight
+        case .pathOfTheBlade: return .talentPathOfTheBlade
+        case .pathOfTheEnemy: return .talentPathOfTheEnemy
+        case .pathOfTheShield: return .talentPathOfTheShield
+        case .pathOfTheArrow: return .talentPathOfTheArrow
+        case .pathOfTheBeast: return .talentPathOfTheBeast
+        case .pathOfTheForest: return .talentPathOfTheForest
+        case .pathOfTheHymn: return .talentPathOfTheHymn
+        case .pathOfTheSong: return .talentPathOfTheSong
+        case .pathOfTheWarcry: return .talentPathOfTheWarcry
+        case .pathOfTreasures: return .talentPathOfTreasures
+        case .pathOfWords: return .talentPathOfWords
+        case .pathOfManyThings: return .talentPathOfManyThings
+        case .pathOfTheCompanion: return .talentPathOfTheCompanion
+        case .pathOfTheKnight: return .talentPathOfTheKnight
+        case .pathOfThePlains: return .talentPathOfThePlains
+        case .pathOfTheFace: return .talentPathOfTheFace
+        case .pathOfTheKiller: return .talentPathOfTheKiller
+        case .pathOfPoison: return .talentPathOfPoison
+        case .pathOfBlood: return .talentPathOfBlood
+        case .pathOfDeath: return .talentPathOfDeath
+        case .pathOfSigns: return .talentPathOfSigns
+        case .pathOfStone: return .talentPathOfStone
+        case .ambidextrous: return .talentAmbidextrous
+        case .axeFighter: return .talentAxeFighter
+        case .berserker: return .talentBerserker
+        case .bowyer: return .talentBowyer
+        case .brawler: return .talentBrawler
+        case .builder: return .talentBuilder
+        case .chef: return .talentChef
+        case .coldBlooded: return .talentColdBlooded
+        case .defender: return .talentDefender
+        case .dragonslayer: return .talentDragonslayer
+        case .executioner: return .talentExecutioner
+        case .fastFootwork: return .talentFastFootwork
+        case .fastShooter: return .talentFastShooter
+        case .fearless: return .talentFearless
+        case .firmGrip: return .talentFirmGrip
+        case .fisher: return .talentFisher
+        case .hammerFighter: return .talentHammerFighter
+        case .herbalist: return .talentHerbalist
+        case .horsebackFighter: return .talentHorsebackFighter
+        case .incorruptible: return .talentIncorruptible
+        case .knifeFighter: return .talentKnifeFighter
+        case .lightningFast: return .talentLightningFast
+        case .lockpicker: return .talentLockpicker
+        case .lucky: return .talentLucky
+        case .masterOfTheHunt: return .talentMasterOfTheHunt
+        case .meleeCharge: return .talentMeleeCharge
+        case .packRat: return .talentPackRat
+        case .painResistant: return .talentPainResistant
+        case .pathfinder: return .talentPathfinder
+        case .poisoner: return .talentPoisoner
+        case .quartermaster: return .talentQuartermaster
+        case .quickdraw: return .talentQuickdraw
+        case .sailor: return .talentSailor
+        case .sharpshooter: return .talentSharpshooter
+        case .sharpTongue: return .talentSharpTongue
+        case .shieldFighter: return .talentShieldFighter
+        case .sixthSense: return .talentSixthSense
+        case .smith: return .talentSmith
+        case .spearFighter: return .talentSpearFighter
+        case .steadyFeet: return .talentSteadyFeet
+        case .swordFighter: return .talentSwordFighter
+        case .tailor: return .talentTailor
+        case .tanner: return .talentTanner
+        case .threatening: return .talentThreatening
+        case .throwingArm: return .talentThrowingArm
+        case .wanderer: return .talentWanderer
         }
     }
     

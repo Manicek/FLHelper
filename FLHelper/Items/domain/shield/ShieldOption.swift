@@ -2,13 +2,13 @@
 // © 2023 Manicek
 //
 
-import Foundation
+import SwiftUI
 
 enum ShieldOption: CaseIterable {
     case smallShield
     case largeShield
     
-    var czName: String {
+    var name: LocalizedStringKey {
         switch self {
         case .smallShield: return "Malý štít"
         case .largeShield: return "Velký štít"
@@ -77,7 +77,7 @@ enum ShieldOption: CaseIterable {
     
     func toShield() -> Shield {
         Shield(
-            name: czName,
+            name: name,
             weight: weight,
             price: price,
             supply: supply,
