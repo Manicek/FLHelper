@@ -22,7 +22,7 @@ enum ShieldOption: CaseIterable {
         }
     }
     
-    var price: Int {
+    var price: Price {
         switch self {
         case .smallShield: return 60
         case .largeShield: return 150

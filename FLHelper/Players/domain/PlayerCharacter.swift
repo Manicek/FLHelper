@@ -21,7 +21,7 @@ class PlayerCharacter: Character {
         kin: Kin,
         profession: Profession,
         reputation: Int,
-        money: Int,
+        money: Money,
         consumables: [Consumable: Die],
         animal: Animal?,
         willpower: Int,

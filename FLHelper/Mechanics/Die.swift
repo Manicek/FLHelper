@@ -2,13 +2,22 @@
 // © 2023 Manicek
 //
 
-import Foundation
+import SwiftUI
 
 enum Die {
     case d6
     case d8
     case d10
     case d12
+    
+    var name: LocalizedStringKey {
+        switch self {
+        case .d6: return .d6
+        case .d8: return .d8
+        case .d10: return .d10
+        case .d12: return .d12
+        }
+    }
     
     var systemImageName: String {
         switch self {
@@ -42,6 +51,15 @@ enum Die {
         case .d8: return .d10
         case .d10: return .d12
         case .d12: return nil
+        }
+    }
+    
+    func roll() -> Int {
+        switch self {
+        case .d6: return Int.random(in: 1...6)
+        case .d8: return Int.random(in: 1...8)
+        case .d10: return Int.random(in: 1...10)
+        case .d12: return Int.random(in: 1...12)
         }
     }
     

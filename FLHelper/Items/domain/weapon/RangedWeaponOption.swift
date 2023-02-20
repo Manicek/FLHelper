@@ -40,7 +40,7 @@ enum RangedWeaponOption: CaseIterable {
         }
     }
     
-    var price: Int {
+    var price: Price {
         switch self {
         case .rock: return 0
         case .throwingKnife, .sling: return 10

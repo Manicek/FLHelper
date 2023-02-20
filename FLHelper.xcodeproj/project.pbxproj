@@ -24,6 +24,11 @@
 		FF11095A29A1298300E9F3FC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF11095C29A1298300E9F3FC /* Localizable.strings */; };
 		FF11096029A12BE400E9F3FC /* LocalizedStringKey+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF11095F29A12BE400E9F3FC /* LocalizedStringKey+Extension.swift */; };
 		FF11096329A264FC00E9F3FC /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF11096229A264FC00E9F3FC /* Color+Extension.swift */; };
+		FF11096829A2F53E00E9F3FC /* Text+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF11096729A2F53E00E9F3FC /* Text+Extension.swift */; };
+		FF11096B29A2FDF700E9F3FC /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF11096A29A2FDF700E9F3FC /* Price.swift */; };
+		FF11096D29A2FF3900E9F3FC /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF11096C29A2FF3900E9F3FC /* Money.swift */; };
+		FF11097529A3013300E9F3FC /* PriceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF11097429A3013300E9F3FC /* PriceTests.swift */; };
+		FF11097C29A3052100E9F3FC /* AmountAndCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF11097B29A3052100E9F3FC /* AmountAndCoin.swift */; };
 		FF1A869D2981C41B0056076C /* Campaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A869C2981C41B0056076C /* Campaign.swift */; };
 		FF1A86A42981C5920056076C /* FLPlayersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A86A32981C5920056076C /* FLPlayersRepository.swift */; };
 		FF1A86A72981C5FE0056076C /* PlayersInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A86A62981C5FE0056076C /* PlayersInjection.swift */; };
@@ -72,7 +77,7 @@
 		FF7DDE442987F64000FD9D43 /* Shield.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7DDE432987F64000FD9D43 /* Shield.swift */; };
 		FF7DDE4629880D8500FD9D43 /* WillpowerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7DDE4529880D8500FD9D43 /* WillpowerView.swift */; };
 		FF7DDE482988225D00FD9D43 /* ConsumablesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7DDE472988225D00FD9D43 /* ConsumablesView.swift */; };
-		FF7DDE4A2988258900FD9D43 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7DDE492988258900FD9D43 /* Money.swift */; };
+		FF7DDE4A2988258900FD9D43 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7DDE492988258900FD9D43 /* Coin.swift */; };
 		FF9E9C6C29804D83002FD2FE /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E9C6B29804D83002FD2FE /* Character.swift */; };
 		FF9E9C6E29804DCB002FD2FE /* Kin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E9C6D29804DCB002FD2FE /* Kin.swift */; };
 		FF9E9C7029804EFF002FD2FE /* Profession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9E9C6F29804EFF002FD2FE /* Profession.swift */; };
@@ -85,6 +90,16 @@
 		FFD2DCFB29831D91001EFCAA /* IMFellGreatPrimer-RegularSC.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFD2DCFA29831D91001EFCAA /* IMFellGreatPrimer-RegularSC.ttf */; };
 		FFD2DCFD29832A1F001EFCAA /* TalentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD2DCFC29832A1F001EFCAA /* TalentsView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF11097629A3013300E9F3FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFA971452980306D009FF258 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFA9714C2980306D009FF258;
+			remoteInfo = "FL Helper";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		FF44322D2980B58700890D7C /* Embed Frameworks */ = {
@@ -118,6 +133,12 @@
 		FF11095D29A129AA00E9F3FC /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FF11095F29A12BE400E9F3FC /* LocalizedStringKey+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalizedStringKey+Extension.swift"; sourceTree = "<group>"; };
 		FF11096229A264FC00E9F3FC /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		FF11096729A2F53E00E9F3FC /* Text+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Extension.swift"; sourceTree = "<group>"; };
+		FF11096A29A2FDF700E9F3FC /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
+		FF11096C29A2FF3900E9F3FC /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		FF11097229A3013300E9F3FC /* FL HelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FL HelperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF11097429A3013300E9F3FC /* PriceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTests.swift; sourceTree = "<group>"; };
+		FF11097B29A3052100E9F3FC /* AmountAndCoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountAndCoin.swift; sourceTree = "<group>"; };
 		FF1A869C2981C41B0056076C /* Campaign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campaign.swift; sourceTree = "<group>"; };
 		FF1A86A32981C5920056076C /* FLPlayersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLPlayersRepository.swift; sourceTree = "<group>"; };
 		FF1A86A62981C5FE0056076C /* PlayersInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersInjection.swift; sourceTree = "<group>"; };
@@ -166,7 +187,7 @@
 		FF7DDE432987F64000FD9D43 /* Shield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shield.swift; sourceTree = "<group>"; };
 		FF7DDE4529880D8500FD9D43 /* WillpowerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillpowerView.swift; sourceTree = "<group>"; };
 		FF7DDE472988225D00FD9D43 /* ConsumablesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumablesView.swift; sourceTree = "<group>"; };
-		FF7DDE492988258900FD9D43 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		FF7DDE492988258900FD9D43 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		FF9E9C6B29804D83002FD2FE /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		FF9E9C6D29804DCB002FD2FE /* Kin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kin.swift; sourceTree = "<group>"; };
 		FF9E9C6F29804EFF002FD2FE /* Profession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profession.swift; sourceTree = "<group>"; };
@@ -182,6 +203,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FF11096F29A3013300E9F3FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FFA9714A2980306D009FF258 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -220,15 +248,11 @@
 		FF110925299D300200E9F3FC /* domain */ = {
 			isa = PBXGroup;
 			children = (
+				FF11096929A2FDDD00E9F3FC /* common */,
 				FF110939299EF30500E9F3FC /* crafting */,
 				FF110937299EF2CD00E9F3FC /* armor */,
 				FF110938299EF2DC00E9F3FC /* shield */,
 				FF110936299EF2BF00E9F3FC /* weapon */,
-				FF4431E12980629500890D7C /* Item.swift */,
-				FF110926299D300700E9F3FC /* ItemType.swift */,
-				FF4431ED29806AD500890D7C /* Supply.swift */,
-				FF4431F129806B4B00890D7C /* Tool.swift */,
-				FF4431E3298062B000890D7C /* Weight.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -315,6 +339,45 @@
 			path = color;
 			sourceTree = "<group>";
 		};
+		FF11096529A2F50A00E9F3FC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FF11096629A2F53400E9F3FC /* view */,
+				FF443204298099EC00890D7C /* font */,
+				FF11096129A264DF00E9F3FC /* color */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FF11096629A2F53400E9F3FC /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FF11096729A2F53E00E9F3FC /* Text+Extension.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FF11096929A2FDDD00E9F3FC /* common */ = {
+			isa = PBXGroup;
+			children = (
+				FF4431E12980629500890D7C /* Item.swift */,
+				FF110926299D300700E9F3FC /* ItemType.swift */,
+				FF4431ED29806AD500890D7C /* Supply.swift */,
+				FF4431F129806B4B00890D7C /* Tool.swift */,
+				FF4431E3298062B000890D7C /* Weight.swift */,
+				FF11096A29A2FDF700E9F3FC /* Price.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		FF11097329A3013300E9F3FC /* FL HelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF11097429A3013300E9F3FC /* PriceTests.swift */,
+			);
+			path = "FL HelperTests";
+			sourceTree = "<group>";
+		};
 		FF1A869B2981C4090056076C /* Database */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,7 +427,8 @@
 			children = (
 				FF4431CF2980518C00890D7C /* Die.swift */,
 				FF4431E7298063E200890D7C /* Range.swift */,
-				FF7DDE492988258900FD9D43 /* Money.swift */,
+				FF7DDE492988258900FD9D43 /* Coin.swift */,
+				FF11097B29A3052100E9F3FC /* AmountAndCoin.swift */,
 			);
 			path = Mechanics;
 			sourceTree = "<group>";
@@ -388,10 +452,8 @@
 		FF44320129808EF900890D7C /* App */ = {
 			isa = PBXGroup;
 			children = (
-				FF11096129A264DF00E9F3FC /* color */,
 				FFA971502980306D009FF258 /* FLHelperApp.swift */,
 				FF44320C29809D1B00890D7C /* view */,
-				FF443204298099EC00890D7C /* font */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -565,6 +627,7 @@
 				FF11095E29A12BD400E9F3FC /* localization */,
 				FF44320929809B8600890D7C /* FL-Helper-Info.plist */,
 				FFA9714F2980306D009FF258 /* FLHelper */,
+				FF11097329A3013300E9F3FC /* FL HelperTests */,
 				FFA9714E2980306D009FF258 /* Products */,
 				FF44322A2980B58700890D7C /* Frameworks */,
 			);
@@ -574,6 +637,7 @@
 			isa = PBXGroup;
 			children = (
 				FFA9714D2980306D009FF258 /* FL Helper.app */,
+				FF11097229A3013300E9F3FC /* FL HelperTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -581,6 +645,7 @@
 		FFA9714F2980306D009FF258 /* FLHelper */ = {
 			isa = PBXGroup;
 			children = (
+				FF11096529A2F50A00E9F3FC /* Common */,
 				FF7DDE3A2987DE6700FD9D43 /* Entity */,
 				FF1A869B2981C4090056076C /* Database */,
 				FF4432252980B19A00890D7C /* Injection */,
@@ -625,6 +690,7 @@
 				FF9E9C6F29804EFF002FD2FE /* Profession.swift */,
 				FF7DDE372987DDBC00FD9D43 /* CharacterState.swift */,
 				FF7DDE3C2987DF0400FD9D43 /* Consumable.swift */,
+				FF11096C29A2FF3900E9F3FC /* Money.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -632,6 +698,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FF11097129A3013300E9F3FC /* FL HelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF11097829A3013300E9F3FC /* Build configuration list for PBXNativeTarget "FL HelperTests" */;
+			buildPhases = (
+				FF11096E29A3013300E9F3FC /* Sources */,
+				FF11096F29A3013300E9F3FC /* Frameworks */,
+				FF11097029A3013300E9F3FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF11097729A3013300E9F3FC /* PBXTargetDependency */,
+			);
+			name = "FL HelperTests";
+			productName = "FL HelperTests";
+			productReference = FF11097229A3013300E9F3FC /* FL HelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FFA9714C2980306D009FF258 /* FL Helper */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFA971712980306E009FF258 /* Build configuration list for PBXNativeTarget "FL Helper" */;
@@ -663,6 +747,10 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					FF11097129A3013300E9F3FC = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FFA9714C2980306D009FF258;
+					};
 					FFA9714C2980306D009FF258 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -686,11 +774,19 @@
 			projectRoot = "";
 			targets = (
 				FFA9714C2980306D009FF258 /* FL Helper */,
+				FF11097129A3013300E9F3FC /* FL HelperTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FF11097029A3013300E9F3FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FFA9714B2980306D009FF258 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -706,14 +802,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FF11096E29A3013300E9F3FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF11097529A3013300E9F3FC /* PriceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FFA971492980306D009FF258 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FF4432272980B1A100890D7C /* Inject.swift in Sources */,
-				FF7DDE4A2988258900FD9D43 /* Money.swift in Sources */,
+				FF7DDE4A2988258900FD9D43 /* Coin.swift in Sources */,
 				FF1A86A42981C5920056076C /* FLPlayersRepository.swift in Sources */,
 				FF9E9C7029804EFF002FD2FE /* Profession.swift in Sources */,
+				FF11096829A2F53E00E9F3FC /* Text+Extension.swift in Sources */,
 				FF7DDE4629880D8500FD9D43 /* WillpowerView.swift in Sources */,
 				FF1A86B12981D3250056076C /* DataModel.xcdatamodeld in Sources */,
 				FF7DDE3D2987DF0400FD9D43 /* Consumable.swift in Sources */,
@@ -722,6 +827,7 @@
 				FF4431EE29806AD500890D7C /* Supply.swift in Sources */,
 				FF4432152980AEB300890D7C /* PlayersViewModel.swift in Sources */,
 				FF110931299EE3B700E9F3FC /* SpecialRequirement.swift in Sources */,
+				FF11097C29A3052100E9F3FC /* AmountAndCoin.swift in Sources */,
 				FF4431F229806B4B00890D7C /* Tool.swift in Sources */,
 				FF4431E8298063E200890D7C /* Range.swift in Sources */,
 				FF11096029A12BE400E9F3FC /* LocalizedStringKey+Extension.swift in Sources */,
@@ -743,6 +849,7 @@
 				FF110929299ED7A000E9F3FC /* ItemsViewModel.swift in Sources */,
 				FF110924299D2FDF00E9F3FC /* ItemsView.swift in Sources */,
 				FF44320029808A9000890D7C /* Combatant.swift in Sources */,
+				FF11096D29A2FF3900E9F3FC /* Money.swift in Sources */,
 				FF4431FA298089CA00890D7C /* Battle.swift in Sources */,
 				FF4431F62980897300890D7C /* Battlefield.swift in Sources */,
 				FF4431E02980591C00890D7C /* AnimalType.swift in Sources */,
@@ -750,6 +857,7 @@
 				FF11095729A0F65700E9F3FC /* ItemsInjection.swift in Sources */,
 				FF7DDE362987DCA500FD9D43 /* StatesView.swift in Sources */,
 				FF4431EA298064BD00890D7C /* PlayerCharacter.swift in Sources */,
+				FF11096B29A2FDF700E9F3FC /* Price.swift in Sources */,
 				FF7DDE422987F55A00FD9D43 /* ArmorView.swift in Sources */,
 				FF11091F299D2ED800E9F3FC /* TablesView.swift in Sources */,
 				FF4431E22980629500890D7C /* Item.swift in Sources */,
@@ -786,6 +894,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		FF11097729A3013300E9F3FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFA9714C2980306D009FF258 /* FL Helper */;
+			targetProxy = FF11097629A3013300E9F3FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		FF11095C29A1298300E9F3FC /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
@@ -799,6 +915,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FF11097929A3013300E9F3FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 692WP484NX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.manicek.FL-HelperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FL Helper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FL Helper";
+			};
+			name = Debug;
+		};
+		FF11097A29A3013300E9F3FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 692WP484NX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.manicek.FL-HelperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FL Helper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FL Helper";
+			};
+			name = Release;
+		};
 		FFA9716F2980306E009FF258 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -986,6 +1140,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FF11097829A3013300E9F3FC /* Build configuration list for PBXNativeTarget "FL HelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF11097929A3013300E9F3FC /* Debug */,
+				FF11097A29A3013300E9F3FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FFA971482980306D009FF258 /* Build configuration list for PBXProject "FLHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

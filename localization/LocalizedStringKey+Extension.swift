@@ -312,4 +312,67 @@ extension LocalizedStringKey {
     static let professionSorcererFemale: LocalizedStringKey = "sorcererFemale"
     static let professionOtherFemale: LocalizedStringKey = "otherFemale"
     
+    // MARK: - Range
+    static let rangeArm: LocalizedStringKey = "rangeArm"
+    static let rangeNear: LocalizedStringKey = "rangeNear"
+    static let rangeShort: LocalizedStringKey = "rangeShort"
+    static let rangeLong: LocalizedStringKey = "rangeLong"
+    static let rangeDistant: LocalizedStringKey = "rangeDistant"
+    
+    // MARK: - Animals
+    static let animalBear: LocalizedStringKey = "bear"
+    static let animalWolf: LocalizedStringKey = "wolf"
+    static let animalFox: LocalizedStringKey = "fox"
+    static let animalDeer: LocalizedStringKey = "deer"
+    static let animalBoar: LocalizedStringKey = "boar"
+    static let animalHorse: LocalizedStringKey = "horse"
+    static let animalWarhorse: LocalizedStringKey = "warhorse"
+    static let animalDonkey: LocalizedStringKey = "donkey"
+    static let animalWardog: LocalizedStringKey = "wardog"
+    static let animalCrocodile: LocalizedStringKey = "crocodile"
+    static let animalDog: LocalizedStringKey = "dog"
+    static let animalCat: LocalizedStringKey = "cat"
+    static let animalRats: LocalizedStringKey = "rats"
+    static let animalBats: LocalizedStringKey = "bats"
+    static let animalRaven: LocalizedStringKey = "raven"
+    static let animalEagle: LocalizedStringKey = "eagle"
+    static let animalSnake: LocalizedStringKey = "snake"
+    static let animalScorpion: LocalizedStringKey = "scorpion"
+    static let animalSpider: LocalizedStringKey = "spider"
+    
+    // MARK: - Dice
+    static let d6: LocalizedStringKey = "d6"
+    static let d8: LocalizedStringKey = "d8"
+    static let d10: LocalizedStringKey = "d10"
+    static let d12: LocalizedStringKey = "d12"
+    
+    // MARK: - Supply
+    static let supplyCommon: LocalizedStringKey = "supplyCommon"
+    static let supplyUncommon: LocalizedStringKey = "supplyUncommon"
+    static let supplyRare: LocalizedStringKey = "supplyRare"
+    
+    // MARK: - Weight
+    static let weightTiny: LocalizedStringKey = "weightTiny"
+    static let weightLight: LocalizedStringKey = "weightLight"
+    static let weightNormal: LocalizedStringKey = "weightNormal"
+    static let weightHeavy: LocalizedStringKey = "weightHeavy"
+    
+    // MARK: - Crafting times
+    static let craftingTimeQuarterDay: LocalizedStringKey = "craftingTimeQuarterDay"
+    static let craftingTimeOneDay: LocalizedStringKey = "craftingTimeOneDay"
+    static let craftingTimeTwoDays: LocalizedStringKey = "craftingTimeTwoDays"
+    static let craftingTimeOneWeek: LocalizedStringKey = "craftingTimeOneWeek"
+    static let craftingTimeTwoWeeks: LocalizedStringKey = "craftingTimeTwoWeeks"
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

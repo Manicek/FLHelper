@@ -17,7 +17,6 @@ struct TalentsView: View {
                     .textCase(.uppercase)
                     .playerDetailSectionSubtitleFont()
             }
-                        
             
             ForEach(talents.keys.sorted(), id: \.self) { talent in
                 HStack(alignment: .bottom, spacing: 0) {

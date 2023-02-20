@@ -75,7 +75,7 @@ enum MeleeWeaponOption: CaseIterable {
         }
     }
     
-    var price: Int {
+    var price: Price {
         switch self {
         case .unarmed: return 0
         case .knife, .staff, .woodenClub: return 10

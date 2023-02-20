@@ -8,7 +8,7 @@ class Character: Entity {
     let kin: Kin
     let profession: Profession
     var reputation: Int
-    var money: Int
+    var money: Money
     var states: [CharacterState: Bool] = [.sleepy: false, .cold: false, .hungry: false, .thirsty: false]
     var consumables: [Consumable: Die]
     var animal: Animal?
@@ -29,7 +29,7 @@ class Character: Entity {
         kin: Kin,
         profession: Profession,
         reputation: Int,
-        money: Int,
+        money: Money,
         consumables: [Consumable: Die],
         animal: Animal? = nil
     ) {

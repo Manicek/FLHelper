@@ -27,12 +27,21 @@ enum BodyArmorOption: CaseIterable {
         }
     }
     
-    var price: Int {
+    var price: Price {
         switch self {
         case .leather: return 40
         case .studdedLeather: return 60
         case .chainmail: return 240
         case .plate: return 800
+        }
+    }
+    
+    var supply: Supply {
+        switch self {
+        case .leather: return .common
+        case .studdedLeather: return .uncommon
+        case .chainmail: return .uncommon
+        case .plate: return .rare
         }
     }
     
@@ -114,6 +123,7 @@ enum BodyArmorOption: CaseIterable {
             name: name,
             weight: weight,
             price: price,
+            supply: supply,
             craftingRequirements: CraftingRequirements(
                 materials: rawMaterials,
                 talents: requiredTalents,

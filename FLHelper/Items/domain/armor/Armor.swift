@@ -42,9 +42,9 @@ class Armor: Item {
     init(
         name: LocalizedStringKey,
         weight: Weight,
-        price: Int,
-        supply: Supply? = nil,
-        craftingRequirements: CraftingRequirements? = nil,
+        price: Price,
+        supply: Supply,
+        craftingRequirements: CraftingRequirements,
         armorRating: Int,
         armorType: ArmorType,
         description: LocalizedStringKey

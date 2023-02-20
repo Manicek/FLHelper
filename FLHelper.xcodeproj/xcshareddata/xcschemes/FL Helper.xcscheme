@@ -33,20 +33,9 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FFA9715C2980306E009FF258"
-               BuildableName = "FLHelperTests.xctest"
-               BlueprintName = "FLHelperTests"
-               ReferencedContainer = "container:FLHelper.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FFA971662980306E009FF258"
-               BuildableName = "FLHelperUITests.xctest"
-               BlueprintName = "FLHelperUITests"
+               BlueprintIdentifier = "FF11097129A3013300E9F3FC"
+               BuildableName = "FL HelperTests.xctest"
+               BlueprintName = "FL HelperTests"
                ReferencedContainer = "container:FLHelper.xcodeproj">
             </BuildableReference>
          </TestableReference>

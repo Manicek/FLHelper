@@ -22,7 +22,11 @@ class FLPlayersRepository: PlayersRepository {
             kin: .goblin,
             profession: .rider,
             reputation: 1,
-            money: 20,
+            money: Money(
+                copperCoins: 3,
+                silverCoins: 2,
+                goldCoins: 0
+            ),
             consumables: [.food: .d8, .water: .d8],
             animal: Animal(
                 name: "Vlkos",

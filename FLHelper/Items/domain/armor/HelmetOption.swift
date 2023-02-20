@@ -26,12 +26,21 @@ enum HelmetOption: CaseIterable {
         }
     }
     
-    var price: Int {
+    var price: Price {
         switch self {
         case .studdedLeatherCap: return 30
         case .openHelmet: return 80
         case .closedHelmet: return 180
         case .greatHelm: return 300
+        }
+    }
+    
+    var supply: Supply {
+        switch self {
+        case .studdedLeatherCap: return .uncommon
+        case .openHelmet: return .uncommon
+        case .closedHelmet: return .uncommon
+        case .greatHelm: return .rare
         }
     }
     
@@ -109,6 +118,7 @@ enum HelmetOption: CaseIterable {
             name: name,
             weight: weight,
             price: price,
+            supply: supply,
             craftingRequirements: CraftingRequirements(
                 materials: rawMaterials,
                 talents: requiredTalents,

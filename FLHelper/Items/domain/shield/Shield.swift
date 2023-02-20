@@ -13,9 +13,9 @@ class Shield: Item {
     init(
         name: LocalizedStringKey,
         weight: Weight,
-        price: Int,
-        supply: Supply? = nil,
-        craftingRequirements: CraftingRequirements? = nil,
+        price: Price,
+        supply: Supply,
+        craftingRequirements: CraftingRequirements,
         bonus: Int
     ) {
         self.bonus = bonus

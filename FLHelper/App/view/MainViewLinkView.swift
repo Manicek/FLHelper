@@ -12,7 +12,8 @@ struct MainViewLinkView: View {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
                 .foregroundColor(.accentColor)
-            Text(title).appFont(48)
+            Text(title)
+                .appFont(48)
         }
     }
 }

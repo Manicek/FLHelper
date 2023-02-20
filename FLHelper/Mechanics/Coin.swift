@@ -4,12 +4,24 @@
 
 import SwiftUI
 
-enum Money {
+enum Coin {
     case copper
     case silver
     case gold
+    
+    var multiplier: Int {
+        switch self {
+        case .copper: return 1
+        case .silver: return 10
+        case .gold: return 100
+        }
+    }
+    
+    func name(count: Int) -> LocalizedStringKey {
+        Self.name(count, type: self)
+    }
         
-    static func name(_ count: Int, type: Money) -> LocalizedStringKey {
+    static func name(_ count: Int, type: Coin) -> LocalizedStringKey {
         switch type {
         case .copper: return nameCopper(count)
         case .silver: return nameSilver(count)

@@ -40,7 +40,7 @@ enum Tool: CaseIterable {
         }
     }
     
-    var price: Int {
+    var price: Price {
         switch self {
         case .saw: return 50
         case .hammer: return 10

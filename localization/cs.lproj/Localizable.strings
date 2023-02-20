@@ -163,7 +163,7 @@
 "copperCoinsSome" = "Měďáky";
 "copperCoinsMany" = "Měďáků";
 "silverCoin" = "Stříbrňák";
-"silverCoinsSome" = "Stříbrňák";
+"silverCoinsSome" = "Stříbrňáky";
 "silverCoinsMany" = "Stříbrňáků";
 "goldCoin" = "Zlaťák";
 "goldCoinsSome" = "Zlaťáky";
@@ -287,3 +287,61 @@
 "rogueFemale" = "Zlodějka";
 "sorcererFemale" = "Čarodějka";
 "otherFemale" = "Ostatní";
+
+"rangeArm" = "Délka paže";
+"rangeNear" = "Krátká";
+"rangeShort" = "Střední";
+"rangeLong" = "Dlouhá";
+"rangeDistant" = "Extrémní";
+
+"bear" = "Medvěd";
+"wolf" = "Vlk";
+"fox" = "Liška";
+"deer" = "Jelen";
+"boar" = "Divočák";
+"horse" = "Jezdecký kůň";
+"warhorse" = "Válečný kůň";
+"donkey" = "Osel";
+"wardog" = "Válečný ohař";
+"crocodile" = "Krokodýl";
+"dog" = "Pes";
+"cat" = "Kočka";
+"rats" = "Krysy";
+"bats" = "Netopýři";
+"raven" = "Havran";
+"eagle" = "Orel";
+"snake" = "Had";
+"scorpion" = "Štír";
+"spider" = "Pavouk";
+
+"d6" = "k6";
+"d8" = "k8";
+"d10" = "k10";
+"d12" = "k12";
+
+"supplyCommon" = "běžné";
+"supplyUncommon" = "neobvyklé";
+"supplyRare" = "vzácné";
+
+"weightTiny" = "drobné";
+"weightLight" = "lehké";
+"weightNormal" = "normální";
+"weightHeavy" = "těžké";
+
+"craftingTimeQuarterDay" = "čtvrtden";
+"craftingTimeOneDay" = "den";
+"craftingTimeTwoDays" = "dva dny";
+"craftingTimeOneWeek" = "týden";
+"craftingTimeTwoWeeks" = "dva týdny";
+
+
+
+
+
+
+
+
+
+
+
+

@@ -8,17 +8,17 @@ class Item: Identifiable {
     var name: LocalizedStringKey
     var type: ItemType
     var weight: Weight
-    var price: Int
-    var supply: Supply?
-    var craftingRequirements: CraftingRequirements?
+    var price: Price
+    var supply: Supply
+    var craftingRequirements: CraftingRequirements
     
     init(
         name: LocalizedStringKey,
         type: ItemType,
         weight: Weight,
-        price: Int,
-        supply: Supply? = nil,
-        craftingRequirements: CraftingRequirements? = nil
+        price: Price,
+        supply: Supply,
+        craftingRequirements: CraftingRequirements
     ) {
         self.name = name
         self.type = type
