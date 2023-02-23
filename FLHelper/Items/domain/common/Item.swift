@@ -11,6 +11,7 @@ class Item: Identifiable {
     var price: Price
     var supply: Supply
     var craftingRequirements: CraftingRequirements
+    var effect: LocalizedStringKey
     
     init(
         name: LocalizedStringKey,
@@ -18,7 +19,8 @@ class Item: Identifiable {
         weight: Weight,
         price: Price,
         supply: Supply,
-        craftingRequirements: CraftingRequirements
+        craftingRequirements: CraftingRequirements,
+        effect: LocalizedStringKey = .empty
     ) {
         self.name = name
         self.type = type
@@ -26,5 +28,6 @@ class Item: Identifiable {
         self.price = price
         self.supply = supply
         self.craftingRequirements = craftingRequirements
+        self.effect = effect
     }
 }

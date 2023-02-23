@@ -21,7 +21,7 @@ class GetDefaultItemsInteractor {
         case .tool:
             return Tool.defaultItems
         case .goods:
-            return []
+            return Goods.defaultItems
         case .miscellaneous:
             return []
         }

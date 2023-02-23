@@ -22,4 +22,16 @@ struct CraftingRequirements {
         default: return "\(quarterDays)"
         }
     }
+    
+    var materialPairs: [RawMaterialAndValue] {
+        var pairs: [RawMaterialAndValue] = []
+        for key in materials.keys {
+            if let value = materials[key] {
+                pairs.append(
+                    RawMaterialAndValue(rawMaterial: key, value: value)
+                )
+            }
+        }
+        return pairs
+    }
 }

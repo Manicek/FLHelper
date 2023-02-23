@@ -334,6 +334,142 @@
 "craftingTimeOneWeek" = "týden";
 "craftingTimeTwoWeeks" = "dva týdny";
 
+"fire" = "Oheň";
+"forge" = "Kovárna";
+"stone" = "Kámen";
+"inkAndQuill" = "Inkoust a brk";
+
+"materialIron" = "železo";
+"materialIronSome" = "železa";
+"materialIronMany" = "želez";
+"materialLeather" = "useň";
+"materialLeatherSome" = "usně";
+"materialLeatherMany" = "usně";
+"materialWood" = "dřevo";
+"materialWoodSome" = "dřeva";
+"materialWoodMany" = "dřev";
+"materialCloth" = "látka";
+"materialClothSome" = "látky";
+"materialClothMany" = "látek";
+"materialPelt" = "kožešina";
+"materialPeltSome" = "kožešiny";
+"materialPeltMany" = "kožešin";
+"materialGlass" = "sklo";
+"materialGlassSome" = "skla";
+"materialGlassMany" = "skel";
+"materialTallow" = "lůj";
+"materialTallowSome" = "loje";
+"materialTallowMany" = "lojů";
+"materialStone" = "kámen";
+"materialStoneSome" = "kameny";
+"materialStoneMany" = "kamenů";
+"materialStonePieceOf" = "kamene";
+"materialMeatFishOrVegetables" = "maso, ryba nebo plodina";
+
+"arrowsIronHead" = "Šípy, železný hrot";
+"arrowsWoodenHead" = "Šípy, dřevěný hrot";
+"quiver" = "Toulec";
+"grapplingHook" = "Hák na lano";
+"rope10Meters" = "Lano, 10 metrů";
+"tallowCandle" = "Svíčka, lojová";
+"oilLamp" = "Lampička, olejová";
+"lantern" = "Lucerna";
+"torches" = "Pochodně";
+"sack" = "Pytel";
+"backpack" = "Batoh";
+"waterskin" = "Měch na vodu";
+"bandages" = "Obvazy";
+"lampOil" = "Olej, lampový";
+"parchment" = "Pergamen";
+"blanket" = "Deka";
+"sleepingFur" = "Kožešiny na spaní";
+"flintAndSteel" = "Křesadlo";
+"lockpicks" = "Šperháky";
+"fieldRations" = "Cestovní zásoby";
+"fieldKitchen" = "Polní kuchyně";
+"cauldron" = "Kotlík";
+"metalChalice" = "Kovový kalich";
+"tankard" = "Žejdlík";
+"metalPlate" = "Kovový talíř";
+"foodKnife" = "Nůž na jídlo";
+"spoon" = "Lžíce";
+"bearTrap" = "Past na medvěda";
+"snaresCloth" = "Lovecká oka (látková)";
+"snaresLeather" = "Lovecká oka (kožená)";
+"barrel" = "Sud";
+"clayJug" = "Hliněný džbán";
+"smallTentCloth" = "Stan, malý (látkový)";
+"smallTentLeather" = "Stan, malý (kožený)";
+"largeTentCloth" = "Stan, velký (látkový)";
+"largeTentLeather" = "Stan, velký (kožený)";
+"fishingHookAndLine" = "Rybářský prut a háček";
+"fishingNet" = "Rybářská síť";
+"magnifyingGlass" = "Zvětšovací sklo";
+"holySymbol" = "Svatý symbol";
+"chalk" = "Křída";
+"map" = "Mapa";
+"spyglass" = "Dalekohled";
+"crystalBall" = "Křišťálová koule";
+"hourglass" = "Přesýpací hodiny";
+"scales" = "Váhy";
+"flute" = "Flétna";
+"horn" = "Roh";
+"lyre" = "Loutna";
+"harp" = "Harfa";
+"drum" = "Buben";
+"lethalPoisonOrAntidote" = "Smrtelný jed / protijed";
+"paralyzingPoisonOrAntidote" = "Ochromující jed / protijed";
+"sleepingPoisonOrAntidote" = "Uspávací jed / protijed";
+"hallucinogenicPoisonOrAntidote" = "Halucinogenní jed / protijed";
+
+"itemEffectArrowsIronHead" = "Zvýší kostku zdroje šípů o jeden stupeň.";
+"itemEffectArrowsWoodenHead" = "Zvýší kostku zdroje šípů o jeden stupeň. Zbroj se počítá za dvojnásobek.";
+"itemEffectQuiver" = "Při nošení nijak nezatěžuje.";
+"itemEffectGrapplingHook" = "Bonus vybavení +1 při lezení.";
+"itemEffectRope10Meters" = "Bonus vybavení +1 při lezení.";
+"itemEffectTallowCandle" = "Po dobu jednoho čtvrtdne svítí na délku paže";
+"itemEffectOilLamp" = "Svítí čtvrtden na krátkou vzdálenost. Dá se pou- žít jen uvnitř. Vyžaduje lampový olej";
+"itemEffectLantern" = "Svítí čtvrtden na krátkou vzdálenost. Vyžaduje lampový olej.";
+"itemEffectTorches" = "Zvýší kostku zdroje pochodní o jeden stupeň. Svítí na krátkou vzdálenost. Každou směnu (15 minut) házej kostkou zdroje.";
+"itemEffectSack" = "Při nošení nijak nezatěžuje.";
+"itemEffectBackpack" = "Při nošení nijak nezatěžuje.";
+"itemEffectWaterskin" = "Je potřeba k nošení vody. Nijak nezatěžuje.";
+"itemEffectBandages" = "Bonus vybavení +1 na léčení.";
+"itemEffectLampOil" = "Vydrží čtvrtden.";
+"itemEffectInkAndQuill" = "Dá se použít k zapisování kouzel.";
+"itemEffectParchment" = "Dá se použít k zapisování kouzel.";
+"itemEffectBlanket" = "Bonus vybavení +1 proti podchlazení.";
+"itemEffectSleepingFur" = "Bonus vybavení +2 proti podchlazení.";
+"itemEffectFlintAndSteel" = "Bonus vybavení +1 při táboření na cestách.";
+"itemEffectLockpicks" = "Bonus vybavení +1 na dovednost Zlodějina při odemykání zámků.";
+"itemEffectFieldRations" = "Jedna jednotka jídla. Zvyšuje kostku zdroje jídla o jeden stupeň.";
+"itemEffectFieldKitchen" = "Umožňuje postavě s talentem Kuchař uvařit za čtvrtden 2k6 jednotek jídla.";
+"itemEffectCauldron" = "Umožňuje postavě s talentem Kuchař uvařit za čtvrtden k6+2 jednotek jídla.";
+"itemEffectBearTrap" = "Bonus vybavení +2 při lovu na cestách.";
+"itemEffectSnares" = "Bonus vybavení +1 při lovu na cestách.";
+"itemEffectBarrel" = "Pojme 10 jednotek vody nebo jiné tekutiny.";
+"itemEffectClayJug" = "Pojme 1 jednotku vody nebo jiné tekutiny.";
+"itemEffectSmallTent" = "Místo pro dva. Bonus vybavení +2 při táboření na cestách.";
+"itemEffectLargeTent" = "Místo pro šest. Bonus vybavení +2 při táboření na cestách.";
+"itemEffectFishingHookAndLine" = "Bonus vybavení +1 při rybaření na cestách.";
+"itemEffectFishingNet" = "Bonus vybavení +2 při rybaření na cestách.";
+"itemEffectChalk" = "Využívá se v nauce Symbolika.";
+"itemEffectSpyglass" = "Bonus vybavení +2 na Ostražitost na dlouhou vzdálenost.";
+"itemEffectMagicIngredient" = "Dá se použít jako pomůcka při kouzlení.";
+"itemEffectInstrument1" = "Bonus vybavení +1 na Vystupování.";
+"itemEffectInstrument2" = "Bonus vybavení +2 na Vystupování.";
+"itemEffectPoisonOrAntidote" = "Účinnost 3. Navýšení účinnosti o každý další bod
+zdvojnásobí cenu. Protijed stojí základní cenu.";
+
+
+
+
+
+
+
+
+
+
 
 
 

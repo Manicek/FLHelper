@@ -28,59 +28,25 @@ struct ItemsView: View {
                     .systemFont(24)
                 ForEach(viewModel.items) { item in
                     switch viewModel.itemType {
-                    case .meleeWeapon, .rangedWeapon, .shield, .bodyArmor, .helmet:
+                    case .meleeWeapon, .rangedWeapon, .shield, .bodyArmor, .helmet, .tool:
                         Text(item.name)
-                        if item.price.price == 0 {
-                            Text(.empty)
-                        } else {
-                            HStack(spacing: 2) {
-                                Text(item.price.amountAndCoin.amount)
-                                Text(item.price.amountAndCoin.coin.name(count: item.price.amountAndCoin.amount))
-                            }
-                        }
+                        ItemPriceView(item: item)
                         Text(item.supply.name)
                         Text(item.weight.name)
-                        Text(.itemHeaderRawMaterials)
+                        RequiredMaterialsView(item: item)
                         Text(item.craftingRequirements.timeText)
-                        switch item.craftingRequirements.talents.count {
-                        case 0:
-                            Text(.empty)
-                        case 1:
-                            Text(item.craftingRequirements.talents[0].name)
-                        case 2:
-                            HStack(spacing: 0) {
-                                Text(item.craftingRequirements.talents[0].name)
-                                Text(", ")
-                                Text(item.craftingRequirements.talents[1].name)
-                            }
-                        default:
-                            HStack(spacing: 0) {
-                                Text(item.craftingRequirements.talents[0].name)
-                                Text(", ")
-                                Text(item.craftingRequirements.talents[1].name)
-                                Text(", ...")
-                            }
-                        }
-                        Text(.itemHeaderTools)
-                    case .tool:
-                        Text(.itemHeaderTools)
-                        Text(.itemHeaderPrice)
-                        Text(.itemHeaderSupply)
-                        Text(.itemHeaderWeight)
-                        Text(.itemHeaderRawMaterials)
-                        Text(.itemHeaderTime)
-                        Text(.itemHeaderTalent)
-                        Text(.itemHeaderTools)
+                        RequiredTalentsView(item: item)
+                        RequiredToolsAndSpecialView(item: item)
                     case .goods:
-                        Text(.itemHeaderItem)
-                        Text(.itemHeaderPrice)
-                        Text(.itemHeaderSupply)
-                        Text(.itemHeaderWeight)
-                        Text(.itemHeaderRawMaterials)
-                        Text(.itemHeaderTime)
-                        Text(.itemHeaderTalent)
-                        Text(.itemHeaderTools)
-                        Text(.itemHeaderEffect)
+                        Text(item.name)
+                        ItemPriceView(item: item)
+                        Text(item.supply.name)
+                        Text(item.weight.name)
+                        RequiredMaterialsView(item: item)
+                        Text(item.craftingRequirements.timeText)
+                        RequiredTalentsView(item: item)
+                        RequiredToolsAndSpecialView(item: item)
+                        Text(item.effect)
                     case .miscellaneous:
                         EmptyView()
                     }
@@ -88,58 +54,5 @@ struct ItemsView: View {
             }
         }
         .padding(20)
-    }
-}
-
-// MARK: - ItemRowView
-
-private struct ItemRowView: View {
-    let item: Item
-    
-    var body: some View {
-        HStack {
-            Text(item.name)
-        }
-    }
-}
-
-// MARK: - ItemsHeaderView
-
-private struct ItemsHeaderView: View {
-    let itemType: ItemType
-    
-    var body: some View {
-        switch itemType {
-        case .meleeWeapon, .rangedWeapon, .shield, .bodyArmor, .helmet:
-            Text(.itemHeaderWeapon)
-            Text(.itemHeaderPrice)
-            Text(.itemHeaderSupply)
-            Text(.itemHeaderWeight)
-            Text(.itemHeaderRawMaterials)
-            Text(.itemHeaderTime)
-            Text(.itemHeaderTalent)
-            Text(.itemHeaderTools)
-        case .tool:
-            Text(.itemHeaderTools)
-            Text(.itemHeaderPrice)
-            Text(.itemHeaderSupply)
-            Text(.itemHeaderWeight)
-            Text(.itemHeaderRawMaterials)
-            Text(.itemHeaderTime)
-            Text(.itemHeaderTalent)
-            Text(.itemHeaderTools)
-        case .goods:
-            Text(.itemHeaderItem)
-            Text(.itemHeaderPrice)
-            Text(.itemHeaderSupply)
-            Text(.itemHeaderWeight)
-            Text(.itemHeaderRawMaterials)
-            Text(.itemHeaderTime)
-            Text(.itemHeaderTalent)
-            Text(.itemHeaderTools)
-            Text(.itemHeaderEffect)
-        case .miscellaneous:
-            EmptyView()
-        }
     }
 }
