@@ -43,6 +43,7 @@
 		FF1A86B12981D3250056076C /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF1A86AF2981D3250056076C /* DataModel.xcdatamodeld */; };
 		FF1A86B62981D4640056076C /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A86B52981D4640056076C /* PersistenceController.swift */; };
 		FF1A86B82981DFBC0056076C /* PlayerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A86B72981DFBC0056076C /* PlayerDetailView.swift */; };
+		FF1F146529A822C5007891AA /* TextLeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F146429A822C5007891AA /* TextLeading.swift */; };
 		FF4431D02980518C00890D7C /* Die.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431CF2980518C00890D7C /* Die.swift */; };
 		FF4431D22980530B00890D7C /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431D12980530B00890D7C /* Animal.swift */; };
 		FF4431D92980553100890D7C /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431D82980553100890D7C /* Entity.swift */; };
@@ -160,6 +161,7 @@
 		FF1A86B02981D3250056076C /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		FF1A86B52981D4640056076C /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		FF1A86B72981DFBC0056076C /* PlayerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailView.swift; sourceTree = "<group>"; };
+		FF1F146429A822C5007891AA /* TextLeading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLeading.swift; sourceTree = "<group>"; };
 		FF4431CF2980518C00890D7C /* Die.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Die.swift; sourceTree = "<group>"; };
 		FF4431D12980530B00890D7C /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		FF4431D82980553100890D7C /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
@@ -373,6 +375,7 @@
 			isa = PBXGroup;
 			children = (
 				FF11096729A2F53E00E9F3FC /* Text+Extension.swift */,
+				FF1F146429A822C5007891AA /* TextLeading.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -901,6 +904,7 @@
 				FF4432192980AF6B00890D7C /* GetPlayerCharactersInteractor.swift in Sources */,
 				FF1A86A72981C5FE0056076C /* PlayersInjection.swift in Sources */,
 				FF11096329A264FC00E9F3FC /* Color+Extension.swift in Sources */,
+				FF1F146529A822C5007891AA /* TextLeading.swift in Sources */,
 				FF4431F82980899100890D7C /* Zone.swift in Sources */,
 				FF11092F299EE24100E9F3FC /* CraftingRequirements.swift in Sources */,
 				FFD2DCF929831BB5001EFCAA /* SkillsView.swift in Sources */,

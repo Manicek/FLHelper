@@ -10,35 +10,29 @@ struct ItemsHeaderView: View {
     var body: some View {
         switch itemType {
         case .meleeWeapon, .rangedWeapon, .shield, .bodyArmor, .helmet:
-            Text(.itemHeaderWeapon)
-            Text(.itemHeaderPrice)
-            Text(.itemHeaderSupply)
-            Text(.itemHeaderWeight)
-            Text(.itemHeaderRawMaterials)
-            Text(.itemHeaderTime)
-            Text(.itemHeaderTalent)
-            Text(.itemHeaderTools)
+            TextLeading(.itemHeaderWeapon)
+            CommonHeadersView()
         case .tool:
-            Text(.itemHeaderTools)
-            Text(.itemHeaderPrice)
-            Text(.itemHeaderSupply)
-            Text(.itemHeaderWeight)
-            Text(.itemHeaderRawMaterials)
-            Text(.itemHeaderTime)
-            Text(.itemHeaderTalent)
-            Text(.itemHeaderTools)
-        case .goods:
-            Text(.itemHeaderItem)
-            Text(.itemHeaderPrice)
-            Text(.itemHeaderSupply)
-            Text(.itemHeaderWeight)
-            Text(.itemHeaderRawMaterials)
-            Text(.itemHeaderTime)
-            Text(.itemHeaderTalent)
-            Text(.itemHeaderTools)
-            Text(.itemHeaderEffect)
-        case .miscellaneous:
-            EmptyView()
+            TextLeading(.itemHeaderTools)
+            CommonHeadersView()
+        case .goods, .miscellaneous:
+            TextLeading(.itemHeaderItem)
+            CommonHeadersView()
+            TextLeading(.itemHeaderEffect)
         }
+    }
+}
+
+// MARK: - CommonHeadersView
+
+private struct CommonHeadersView: View {
+    var body: some View {
+        TextLeading(.itemHeaderPrice)
+        TextLeading(.itemHeaderSupply)
+        TextLeading(.itemHeaderWeight)
+        TextLeading(.itemHeaderRawMaterials)
+        TextLeading(.itemHeaderTime)
+        TextLeading(.itemHeaderTalent)
+        TextLeading(.itemHeaderTools)
     }
 }

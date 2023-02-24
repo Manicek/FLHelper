@@ -8,67 +8,19 @@ struct RequiredMaterialsView: View {
     let item: Item
     
     var body: some View {
-        switch item.craftingRequirements.materialPairs.count {
-        case 0:
-            Text(.empty)
-        case 1:
-            HStack(spacing: 2) {
-                Text(item.craftingRequirements.materialPairs[0].valueText)
-                Text(
-                    item.craftingRequirements.materialPairs[0].rawMaterial.name(
-                        count: item.craftingRequirements.materialPairs[0].value
-                    )
-                )
-            }
-        case 2:
-            HStack(spacing: 0) {
-                Text(item.craftingRequirements.materialPairs[0].valueText)
-                    .padding(.trailing, 2)
-                Text(
-                    item.craftingRequirements.materialPairs[0].rawMaterial.name(
-                        count: item.craftingRequirements.materialPairs[0].value
-                    )
-                )
-                Text(", ")
-                Text(item.craftingRequirements.materialPairs[1].valueText)
-                    .padding(.trailing, 2)
-                Text(
-                    item.craftingRequirements.materialPairs[1].rawMaterial.name(
-                        count: item.craftingRequirements.materialPairs[1].value
-                    )
-                )
-            }
-        case 3:
+        if item.craftingRequirements.materialPairs.isEmpty {
+            TextLeading(.empty)
+        } else {
             VStack {
-                HStack(spacing: 0) {
-                    Text(item.craftingRequirements.materialPairs[0].valueText)
-                        .padding(.trailing, 2)
-                    Text(
-                        item.craftingRequirements.materialPairs[0].rawMaterial.name(
-                            count: item.craftingRequirements.materialPairs[0].value
-                        )
-                    )
-                    Text(", ")
-                    Text(item.craftingRequirements.materialPairs[1].valueText)
-                        .padding(.trailing, 2)
-                    Text(
-                        item.craftingRequirements.materialPairs[1].rawMaterial.name(
-                            count: item.craftingRequirements.materialPairs[1].value
-                        )
-                    )
-                    Text(", ")
-                }
-                HStack(spacing: 2) {
-                    Text(item.craftingRequirements.materialPairs[2].valueText)
-                    Text(
-                        item.craftingRequirements.materialPairs[2].rawMaterial.name(
-                            count: item.craftingRequirements.materialPairs[2].value
-                        )
-                    )
+                ForEach(item.craftingRequirements.materialPairs, id: \.rawMaterial.self) { materialPair in
+                    HStack(spacing: 0) {
+                        Text(materialPair.valueText)
+                            .padding(.trailing, 2)
+                        Text(materialPair.rawMaterial.name(count: materialPair.value))
+                        Spacer()
+                    }
                 }
             }
-        default:
-            Text("...")
         }
     }
 }
