@@ -17,7 +17,7 @@ struct WillpowerView: View {
                 } else {
                     Image(systemName: "circle")
                 }
-            }.systemFont(28)
+            }.systemFontRegular(28)
         }
     }
 }

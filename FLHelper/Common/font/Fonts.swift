@@ -22,17 +22,22 @@ private struct FontModifier: ViewModifier {
 
 private struct SystemFontModifier: ViewModifier {
     let size: CGFloat
+    let weight: Font.Weight
     
     func body(content: Content) -> some View {
-        content.font(.system(size: size))
+        content.font(.system(size: size, weight: weight))
     }
 }
 
 extension View {
     // MARK: - Generic
 
-    func systemFont(_ size: CGFloat) -> some View {
-        modifier(SystemFontModifier(size: size)).foregroundColor(.text)
+    func systemFontRegular(_ size: CGFloat) -> some View {
+        modifier(SystemFontModifier(size: size, weight: .regular)).foregroundColor(.text)
+    }
+    
+    func systemFontBold(_ size: CGFloat) -> some View {
+        modifier(SystemFontModifier(size: size, weight: .bold)).foregroundColor(.text)
     }
     
     func appFont(_ size: CGFloat) -> some View {
@@ -55,4 +60,8 @@ extension View {
     func playerDetailSectionSubtitleFont() -> some View { appFont(16) }
     func playerDetailItemFont() -> some View { appFont(24) }
     func playerDetailTextFont() -> some View { appFont(18) }
+    
+    // MARK: - Tables
+    
+    func tableHeaderFont() -> some View { systemFontBold(14) }
 }

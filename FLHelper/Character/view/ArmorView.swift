@@ -61,7 +61,7 @@ private struct ArmorLineView: View {
     private var imageAndBonusView: some View {
         ZStack {
             Image(systemName: imageName)
-                .systemFont(40)
+                .systemFontRegular(40)
             if let bonus = bonus {
                 Text("\(bonus)")
                     .playerDetailItemFont()

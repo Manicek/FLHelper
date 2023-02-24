@@ -25,7 +25,8 @@ struct ItemsView: View {
         ScrollView {
             LazyVGrid(columns: columns, spacing: 0) {
                 ItemsHeaderView(itemType: viewModel.itemType)
-                    .systemFont(24)
+                    .textCase(.uppercase)
+                    .tableHeaderFont()
                 ForEach(viewModel.items.indices, id: \.self) { index in
                     let item = viewModel.items[index]
                     ItemColumnsView(item: item, itemType: viewModel.itemType)
