@@ -44,6 +44,10 @@
 		FF1A86B62981D4640056076C /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A86B52981D4640056076C /* PersistenceController.swift */; };
 		FF1A86B82981DFBC0056076C /* PlayerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A86B72981DFBC0056076C /* PlayerDetailView.swift */; };
 		FF1F146529A822C5007891AA /* TextLeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F146429A822C5007891AA /* TextLeading.swift */; };
+		FF1F146929A92AF8007891AA /* PlayerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F146829A92AF8007891AA /* PlayerHeaderView.swift */; };
+		FF1F146B29A92CDA007891AA /* ExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F146A29A92CDA007891AA /* ExperienceView.swift */; };
+		FF1F146E29A931E2007891AA /* SystemImageName.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F146D29A931E2007891AA /* SystemImageName.swift */; };
+		FF1F147029A94596007891AA /* String+ImageNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F146F29A94596007891AA /* String+ImageNames.swift */; };
 		FF4431D02980518C00890D7C /* Die.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431CF2980518C00890D7C /* Die.swift */; };
 		FF4431D22980530B00890D7C /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431D12980530B00890D7C /* Animal.swift */; };
 		FF4431D92980553100890D7C /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431D82980553100890D7C /* Entity.swift */; };
@@ -162,6 +166,10 @@
 		FF1A86B52981D4640056076C /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		FF1A86B72981DFBC0056076C /* PlayerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailView.swift; sourceTree = "<group>"; };
 		FF1F146429A822C5007891AA /* TextLeading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLeading.swift; sourceTree = "<group>"; };
+		FF1F146829A92AF8007891AA /* PlayerHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerHeaderView.swift; sourceTree = "<group>"; };
+		FF1F146A29A92CDA007891AA /* ExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceView.swift; sourceTree = "<group>"; };
+		FF1F146D29A931E2007891AA /* SystemImageName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemImageName.swift; sourceTree = "<group>"; };
+		FF1F146F29A94596007891AA /* String+ImageNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ImageNames.swift"; sourceTree = "<group>"; };
 		FF4431CF2980518C00890D7C /* Die.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Die.swift; sourceTree = "<group>"; };
 		FF4431D12980530B00890D7C /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		FF4431D82980553100890D7C /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
@@ -364,6 +372,7 @@
 		FF11096529A2F50A00E9F3FC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				FF1F146C29A931C2007891AA /* image */,
 				FF11096629A2F53400E9F3FC /* view */,
 				FF443204298099EC00890D7C /* font */,
 				FF11096129A264DF00E9F3FC /* color */,
@@ -433,6 +442,15 @@
 				FF1A86A62981C5FE0056076C /* PlayersInjection.swift */,
 			);
 			path = injection;
+			sourceTree = "<group>";
+		};
+		FF1F146C29A931C2007891AA /* image */ = {
+			isa = PBXGroup;
+			children = (
+				FF1F146D29A931E2007891AA /* SystemImageName.swift */,
+				FF1F146F29A94596007891AA /* String+ImageNames.swift */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 		FF4431CD2980515A00890D7C /* Items */ = {
@@ -518,6 +536,8 @@
 				FF4432122980ADA500890D7C /* PlayersView.swift */,
 				FF4432142980AEB300890D7C /* PlayersViewModel.swift */,
 				FF1A86B72981DFBC0056076C /* PlayerDetailView.swift */,
+				FF1F146829A92AF8007891AA /* PlayerHeaderView.swift */,
+				FF1F146A29A92CDA007891AA /* ExperienceView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -852,6 +872,7 @@
 				FF11098029A4ED3400E9F3FC /* RawMaterialAndValue.swift in Sources */,
 				FF4432152980AEB300890D7C /* PlayersViewModel.swift in Sources */,
 				FF110931299EE3B700E9F3FC /* SpecialRequirement.swift in Sources */,
+				FF1F146929A92AF8007891AA /* PlayerHeaderView.swift in Sources */,
 				FF11097C29A3052100E9F3FC /* AmountAndCoin.swift in Sources */,
 				FF4431F229806B4B00890D7C /* Tool.swift in Sources */,
 				FF4431E8298063E200890D7C /* Range.swift in Sources */,
@@ -875,12 +896,14 @@
 				FF4432332980B5E500890D7C /* PlayersRepository.swift in Sources */,
 				FF4431FC298089F500890D7C /* BattleTeam.swift in Sources */,
 				FF44320B29809C2A00890D7C /* Fonts.swift in Sources */,
+				FF1F146E29A931E2007891AA /* SystemImageName.swift in Sources */,
 				FF110929299ED7A000E9F3FC /* ItemsViewModel.swift in Sources */,
 				FF11098629A4FC8A00E9F3FC /* RequiredMaterialsView.swift in Sources */,
 				FF110924299D2FDF00E9F3FC /* ItemsView.swift in Sources */,
 				FF44320029808A9000890D7C /* Combatant.swift in Sources */,
 				FF11096D29A2FF3900E9F3FC /* Money.swift in Sources */,
 				FF4431FA298089CA00890D7C /* Battle.swift in Sources */,
+				FF1F147029A94596007891AA /* String+ImageNames.swift in Sources */,
 				FF4431F62980897300890D7C /* Battlefield.swift in Sources */,
 				FF4431E02980591C00890D7C /* AnimalType.swift in Sources */,
 				FFD2DCF629831B97001EFCAA /* AttributesView.swift in Sources */,
@@ -915,6 +938,7 @@
 				FFA971532980306D009FF258 /* MainView.swift in Sources */,
 				FF1A86B82981DFBC0056076C /* PlayerDetailView.swift in Sources */,
 				FF4432112980AC6C00890D7C /* SettingsView.swift in Sources */,
+				FF1F146B29A92CDA007891AA /* ExperienceView.swift in Sources */,
 				FF7DDE442987F64000FD9D43 /* Shield.swift in Sources */,
 				FF7DDE482988225D00FD9D43 /* ConsumablesView.swift in Sources */,
 				FF4432352980B6E000890D7C /* Gender.swift in Sources */,

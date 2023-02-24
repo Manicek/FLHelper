@@ -19,21 +19,21 @@ enum CharacterState: CaseIterable {
         }
     }
     
-    var systemImageName: String {
+    var systemImageName: SystemImageName {
         switch self {
-        case .sleepy: return "moon.stars"
-        case .thirsty: return "cup.and.saucer"
-        case .hungry: return "fork.knife.circle"
-        case .cold: return "snowflake"
+        case .sleepy: return .moonStars
+        case .thirsty: return .cupAndSaucer
+        case .hungry: return .forkKnifeCircle
+        case .cold: return .snowflake
         }
     }
     
     var imageName: String {
         switch self {
-        case .sleepy: return "SleepyState"
-        case .thirsty: return "ThirstyState"
-        case .hungry: return "HungryState"
-        case .cold: return "ColdState"
+        case .sleepy: return .sleepyState
+        case .thirsty: return .thirstyState
+        case .hungry: return .hungryState
+        case .cold: return .coldState
         }
     }
 }

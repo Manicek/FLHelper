@@ -14,7 +14,6 @@ struct SkillsView: View {
                     .playerDetailSectionTitleFont()
                 Spacer()
                 Text(.characterLevel)
-                    .textCase(.uppercase)
                     .playerDetailSectionSubtitleFont()
             }
             ForEach(Skill.allCases, id: \.self) { skill in

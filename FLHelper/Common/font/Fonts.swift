@@ -40,8 +40,8 @@ extension View {
         modifier(SystemFontModifier(size: size, weight: .bold)).foregroundColor(.text)
     }
     
-    func appFont(_ size: CGFloat) -> some View {
-        modifier(FontModifier(fontName: .regular, size: size)).foregroundColor(.text)
+    func appFont(_ size: CGFloat, color: Color = .text) -> some View {
+        modifier(FontModifier(fontName: .regular, size: size)).foregroundColor(color)
     }
     
     func italicFont(_ size: CGFloat) -> some View {
@@ -56,8 +56,14 @@ extension View {
     
     func playerDetailTitle() -> some View { appFont(60) }
     func playerDetailSubtitle() -> some View { appFont(40) }
-    func playerDetailSectionTitleFont() -> some View { scFont(26) }
-    func playerDetailSectionSubtitleFont() -> some View { appFont(16) }
+    func playerDetailSectionTitleFont() -> some View {
+        textCase(.uppercase)
+            .appFont(24, color: .black)
+    }
+    func playerDetailSectionSubtitleFont() -> some View {
+        textCase(.uppercase)
+            .appFont(16)
+    }
     func playerDetailItemFont() -> some View { appFont(24) }
     func playerDetailTextFont() -> some View { appFont(18) }
     

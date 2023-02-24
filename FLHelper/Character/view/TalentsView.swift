@@ -14,7 +14,6 @@ struct TalentsView: View {
                     .playerDetailSectionTitleFont()
                 Spacer()
                 Text(.characterRank)
-                    .textCase(.uppercase)
                     .playerDetailSectionSubtitleFont()
             }
             

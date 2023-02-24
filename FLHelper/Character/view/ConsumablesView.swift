@@ -33,7 +33,7 @@ private struct ConsumableView: View {
     
     var body: some View {
         VStack {
-            Image(systemName: die?.systemImageName ?? "square").font(.system(size: 40))
+            Image(die?.systemImageName ?? .square).font(.system(size: 40))
             Text(consumable.name).playerDetailTextFont()
         }
         .frame(width: Constants.size, height: Constants.size)

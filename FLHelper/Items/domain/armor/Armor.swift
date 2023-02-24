@@ -10,10 +10,10 @@ enum ArmorType {
     case helmet
     case body
     
-    var systemImageName: String {
+    var systemImageName: SystemImageName {
         switch self {
-        case .helmet: return "seal"
-        case .body: return "tshirt"
+        case .helmet: return .seal
+        case .body: return .tshirt
         }
     }
     

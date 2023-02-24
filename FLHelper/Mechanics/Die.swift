@@ -19,12 +19,12 @@ enum Die {
         }
     }
     
-    var systemImageName: String {
+    var systemImageName: SystemImageName {
         switch self {
-        case .d6: return "6.square"
-        case .d8: return "8.square"
-        case .d10: return "10.square"
-        case .d12: return "12.square"
+        case .d6: return .square6
+        case .d8: return .square8
+        case .d10: return .square10
+        case .d12: return .square12
         }
     }
     

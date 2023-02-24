@@ -9,14 +9,7 @@ struct PlayerDetailView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text(player.name)
-                .playerDetailTitle()
-                .frame(maxWidth: .infinity, alignment: .center)
-            HStack(spacing: 12) {
-                Text(player.kin.name(gender: player.gender)).playerDetailSubtitle()
-                Text(player.profession.name(gender: player.gender)).playerDetailSubtitle()
-            }
-            .frame(maxWidth: .infinity, alignment: .center)
+            PlayerHeaderView(player: player)
                 
             HStack(spacing: 20) {
                 AttributesView(max: player.maxAttributes, current: player.attributes)
@@ -26,15 +19,28 @@ struct PlayerDetailView: View {
                 VStack {
                     PrideSecretRepLineView(title: .characterPride, value: player.pride ?? "")
                     PrideSecretRepLineView(title: .characterDarkSecret, value: player.darkSecret)
-                    PrideSecretRepLineView(title: .characterReputation, value: "\(player.reputation)")
-                    PrideSecretRepLineView(title: .characterAge, value: "\(player.age)")
+                    HStack {
+                        PrideSecretRepLineView(title: .characterReputation, value: "\(player.reputation)")
+                            .frame(maxWidth: .infinity)
+                        PrideSecretRepLineView(title: .characterAge, value: "\(player.age)")
+                            .frame(maxWidth: .infinity)
+                    }
                 }
                 ConsumablesView(consumables: player.consumables)
                 TalentsView(talents: player.talents)
             }
+            
+            HStack {
+                SkillsView(skills: player.skills)
+                    .fixedSize(horizontal: true, vertical: true)
+                VStack {
+                    Spacer()
+                    WillpowerView(willpower: player.willpower)
+                }
                 
-            SkillsView(skills: player.skills)
-                .fixedSize(horizontal: true, vertical: true)
+                Spacer()
+                ExperienceView(experience: player.experience)
+            }
 
 //        inventory: [Item],
 //        money: Int,

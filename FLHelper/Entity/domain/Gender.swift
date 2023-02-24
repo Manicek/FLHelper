@@ -19,8 +19,8 @@ enum Gender {
     
     var iconName: String {
         switch self {
-        case .male: return "GenderMan"
-        case .female: return "GenderWoman"
+        case .male: return .genderMan
+        case .female: return .genderWoman
         case .other: return ""
         }
     }

@@ -40,6 +40,7 @@ extension LocalizedStringKey {
     static let characterLevel: LocalizedStringKey = "level"
     static let characterRank: LocalizedStringKey = "rank"
     static let characterWillpower: LocalizedStringKey = "willpower"
+    static let characterExperience: LocalizedStringKey = "experience"
     
     // MARK: - Attributes
     static let attributes: LocalizedStringKey = "attributes"

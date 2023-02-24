@@ -15,7 +15,7 @@ struct MainView: View {
                 HStack {
                     Spacer()
                     NavigationLink(destination: SettingsView()) {
-                        Image(systemName: "gearshape.fill")
+                        Image(.gearShapeFilled)
                             .font(.system(size: Constants.settingsLinkSize))
                         .frame(width: Constants.settingsLinkSize, height: Constants.settingsLinkSize)
                     }

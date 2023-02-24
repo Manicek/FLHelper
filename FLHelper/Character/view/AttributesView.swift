@@ -52,11 +52,7 @@ struct AttributesView: View {
     private func attributeHeartsView(_ attribute: Attribute) -> some View {
         HStack(alignment: .bottom, spacing: 0) {
             ForEach((1...(max[attribute] ?? 2)), id: \.self) { value in
-                if value <= (current[attribute] ?? 0) {
-                    Image(systemName: "heart.fill")
-                } else {
-                    Image(systemName: "heart")
-                }
+                Image(value <= (current[attribute] ?? 0) ? .heartFilled : .heart)
             }
             Spacer()
         }

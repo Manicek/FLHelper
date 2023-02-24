@@ -5,19 +5,19 @@
 import SwiftUI
 
 struct WillpowerView: View {
+    enum Constants {
+        static let maxWillPower = 10
+    }
+    
     let willpower: Int
     
     var body: some View {
         HStack {
             Text(.characterWillpower)
-                .playerDetailSectionSubtitleFont()
-            ForEach(0..<10, id: \.self) { counter in
-                if willpower > counter {
-                    Image(systemName: "circle.fill")
-                } else {
-                    Image(systemName: "circle")
-                }
-            }.systemFontRegular(28)
+                .playerDetailSectionTitleFont()
+            ForEach(0..<Constants.maxWillPower, id: \.self) { counter in
+                Image(willpower > counter ? .circleFilled : .circle)
+            }.systemFontRegular(20)
         }
     }
 }

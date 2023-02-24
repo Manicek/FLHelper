@@ -127,6 +127,7 @@
 "level" = "Úroveň";
 "rank" = "Stupeň";
 "willpower" = "Vůle";
+"experience" = "Zkušenosti";
 
 "meleeWeapon" = "Zbraň nablízko";
 "rangedWeapon" = "Střelná zbraň";

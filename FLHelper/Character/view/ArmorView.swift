@@ -41,7 +41,7 @@ struct ArmorView: View {
 private struct ArmorLineView: View {
     let title: LocalizedStringKey
     let name: LocalizedStringKey
-    let imageName: String
+    let imageName: SystemImageName
     let bonus: Int?
     let left: Bool
     
@@ -60,7 +60,7 @@ private struct ArmorLineView: View {
     
     private var imageAndBonusView: some View {
         ZStack {
-            Image(systemName: imageName)
+            Image(imageName)
                 .systemFontRegular(40)
             if let bonus = bonus {
                 Text("\(bonus)")

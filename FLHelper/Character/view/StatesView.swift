@@ -33,8 +33,10 @@ private struct StateView: View {
     
     var body: some View {
         VStack {
-            Image(systemName: state.systemImageName).font(.system(size: 40))
-            Text(state.name).playerDetailTextFont()
+            Image(state.systemImageName)
+                .font(.system(size: 40))
+            Text(state.name)
+                .playerDetailTextFont()
         }
         .opacity(isActive ? 1 : 0.3)
         .frame(width: Constants.size, height: Constants.size)

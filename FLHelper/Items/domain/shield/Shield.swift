@@ -5,7 +5,7 @@
 import SwiftUI
 
 class Shield: Item {
-    static let systemImageName = "shield"
+    static let systemImageName: SystemImageName = .shield
     static let name: LocalizedStringKey = .itemsShield
     
     var bonus: Int
