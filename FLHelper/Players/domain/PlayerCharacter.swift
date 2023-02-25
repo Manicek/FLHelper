@@ -24,6 +24,7 @@ class PlayerCharacter: Character {
         money: Money,
         consumables: [Consumable: Die],
         animal: Animal?,
+        equippedItems: EquippedItems,
         willpower: Int,
         experience: Int,
         pride: String?,
@@ -46,7 +47,9 @@ class PlayerCharacter: Character {
             profession: profession,
             reputation: reputation,
             money: money,
-            consumables: consumables
+            consumables: consumables,
+            animal: animal,
+            equippedItems: equippedItems
         )
     }
 }

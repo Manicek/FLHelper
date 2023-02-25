@@ -10,7 +10,7 @@ struct ArmorView: View {
     let shield: Shield?
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             ArmorLineView(
                 title: ArmorType.helmet.name,
                 name: helmet?.name ?? .empty,
@@ -46,9 +46,9 @@ private struct ArmorLineView: View {
     let left: Bool
     
     var body: some View {
-        VStack {
-            Text(title)
-                .playerDetailSubtitle()
+        VStack(spacing: 8) {
+            TextLeading(title)
+                .playerDetailSectionTitleFont()
             HStack {
                 if left { imageAndBonusView }
                 Text(name)
@@ -61,7 +61,7 @@ private struct ArmorLineView: View {
     private var imageAndBonusView: some View {
         ZStack {
             Image(imageName)
-                .systemFontRegular(40)
+                .systemFontRegular(28)
             if let bonus = bonus {
                 Text("\(bonus)")
                     .playerDetailItemFont()

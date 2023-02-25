@@ -38,5 +38,19 @@ class Weapon: Item {
             craftingRequirements: craftingRequirements
         )
     }
+    
+    static func == (lhs: Weapon, rhs: Weapon) -> Bool {
+        lhs.name == rhs.name
+        && lhs.type == rhs.type
+        && lhs.weight == rhs.weight
+        && lhs.price == rhs.price
+        && lhs.supply == rhs.supply
+        && lhs.craftingRequirements == rhs.craftingRequirements
+        && lhs.effect == rhs.effect
+        && lhs.range == rhs.range
+        && lhs.grip == rhs.grip
+        && lhs.features == rhs.features
+        && lhs.bonus == rhs.bonus
+        && lhs.damage == rhs.damage
+    }
 }
-

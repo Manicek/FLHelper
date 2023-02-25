@@ -21,3 +21,8 @@ enum Weight {
         }
     }
 }
+
+// MARK: - Equatable
+
+extension Weight: Equatable {
+}

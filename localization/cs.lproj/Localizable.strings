@@ -462,11 +462,11 @@
 "itemEffectPoisonOrAntidote" = "Účinnost 3. Navýšení účinnosti o každý další bod
 zdvojnásobí cenu. Protijed stojí základní cenu.";
 
-
-
-
-
-
+"weapons" = "Zbraně";
+"bonus" = "Bonus";
+"damage" = "Zranění";
+"range" = "Vzdálenost";
+"comment" = "Poznámky";
 
 
 

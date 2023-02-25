@@ -21,3 +21,8 @@ struct Price: ExpressibleByIntegerLiteral {
         }
     }
 }
+
+// MARK: - Equatable
+
+extension Price: Equatable {
+}

@@ -19,12 +19,8 @@ struct PlayerDetailView: View {
                 VStack {
                     PrideSecretRepLineView(title: .characterPride, value: player.pride ?? "")
                     PrideSecretRepLineView(title: .characterDarkSecret, value: player.darkSecret)
-                    HStack {
-                        PrideSecretRepLineView(title: .characterReputation, value: "\(player.reputation)")
-                            .frame(maxWidth: .infinity)
-                        PrideSecretRepLineView(title: .characterAge, value: "\(player.age)")
-                            .frame(maxWidth: .infinity)
-                    }
+                    PrideSecretRepLineView(title: .characterAge, value: "\(player.age)")
+                    PrideSecretRepLineView(title: .characterReputation, value: "\(player.reputation)")
                 }
                 ConsumablesView(consumables: player.consumables)
                 TalentsView(talents: player.talents)
@@ -34,7 +30,17 @@ struct PlayerDetailView: View {
                 SkillsView(skills: player.skills)
                     .fixedSize(horizontal: true, vertical: true)
                 VStack {
-                    Spacer()
+                    ArmorView(
+                        helmet: player.equippedItems.helmet,
+                        bodyArmor: player.equippedItems.bodyArmor,
+                        shield: player.equippedItems.shield
+                    )
+                    .fixedSize(horizontal: true, vertical: true)
+                    WeaponsView(
+                        weapons: player.weapons,
+                        mainHandWeapon: player.equippedItems.mainHandWeapon,
+                        offHandWeapon: player.equippedItems.offHandWeapon
+                    )
                     WillpowerView(willpower: player.willpower)
                 }
                 
@@ -45,8 +51,6 @@ struct PlayerDetailView: View {
 //        inventory: [Item],
 //        money: Int,
 //        animal: Animal?,
-//        willpower: Int,
-//        experience: Int,
         }
         .padding(.horizontal, 12)
         .padding(.bottom, 24)

@@ -48,6 +48,8 @@
 		FF1F146B29A92CDA007891AA /* ExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F146A29A92CDA007891AA /* ExperienceView.swift */; };
 		FF1F146E29A931E2007891AA /* SystemImageName.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F146D29A931E2007891AA /* SystemImageName.swift */; };
 		FF1F147029A94596007891AA /* String+ImageNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F146F29A94596007891AA /* String+ImageNames.swift */; };
+		FF1F147229A94D2D007891AA /* EquippedItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F147129A94D2D007891AA /* EquippedItems.swift */; };
+		FF1F147429A98335007891AA /* WeaponsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F147329A98335007891AA /* WeaponsView.swift */; };
 		FF4431D02980518C00890D7C /* Die.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431CF2980518C00890D7C /* Die.swift */; };
 		FF4431D22980530B00890D7C /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431D12980530B00890D7C /* Animal.swift */; };
 		FF4431D92980553100890D7C /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4431D82980553100890D7C /* Entity.swift */; };
@@ -170,6 +172,8 @@
 		FF1F146A29A92CDA007891AA /* ExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceView.swift; sourceTree = "<group>"; };
 		FF1F146D29A931E2007891AA /* SystemImageName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemImageName.swift; sourceTree = "<group>"; };
 		FF1F146F29A94596007891AA /* String+ImageNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ImageNames.swift"; sourceTree = "<group>"; };
+		FF1F147129A94D2D007891AA /* EquippedItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquippedItems.swift; sourceTree = "<group>"; };
+		FF1F147329A98335007891AA /* WeaponsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsView.swift; sourceTree = "<group>"; };
 		FF4431CF2980518C00890D7C /* Die.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Die.swift; sourceTree = "<group>"; };
 		FF4431D12980530B00890D7C /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		FF4431D82980553100890D7C /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
@@ -722,6 +726,7 @@
 				FF7DDE352987DCA500FD9D43 /* StatesView.swift */,
 				FF7DDE412987F55A00FD9D43 /* ArmorView.swift */,
 				FF7DDE472988225D00FD9D43 /* ConsumablesView.swift */,
+				FF1F147329A98335007891AA /* WeaponsView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -735,6 +740,7 @@
 				FF7DDE372987DDBC00FD9D43 /* CharacterState.swift */,
 				FF7DDE3C2987DF0400FD9D43 /* Consumable.swift */,
 				FF11096C29A2FF3900E9F3FC /* Money.swift */,
+				FF1F147129A94D2D007891AA /* EquippedItems.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -903,6 +909,7 @@
 				FF44320029808A9000890D7C /* Combatant.swift in Sources */,
 				FF11096D29A2FF3900E9F3FC /* Money.swift in Sources */,
 				FF4431FA298089CA00890D7C /* Battle.swift in Sources */,
+				FF1F147229A94D2D007891AA /* EquippedItems.swift in Sources */,
 				FF1F147029A94596007891AA /* String+ImageNames.swift in Sources */,
 				FF4431F62980897300890D7C /* Battlefield.swift in Sources */,
 				FF4431E02980591C00890D7C /* AnimalType.swift in Sources */,
@@ -911,6 +918,7 @@
 				FF7DDE362987DCA500FD9D43 /* StatesView.swift in Sources */,
 				FF4431EA298064BD00890D7C /* PlayerCharacter.swift in Sources */,
 				FF11096B29A2FDF700E9F3FC /* Price.swift in Sources */,
+				FF1F147429A98335007891AA /* WeaponsView.swift in Sources */,
 				FF7DDE422987F55A00FD9D43 /* ArmorView.swift in Sources */,
 				FF11091F299D2ED800E9F3FC /* TablesView.swift in Sources */,
 				FF11098429A4FC7400E9F3FC /* RequiredToolsAndSpecialView.swift in Sources */,

@@ -4,7 +4,7 @@
 
 import SwiftUI
 
-class Item: Identifiable {
+class Item: Identifiable, Equatable {
     var name: LocalizedStringKey
     var type: ItemType
     var weight: Weight
@@ -29,5 +29,15 @@ class Item: Identifiable {
         self.supply = supply
         self.craftingRequirements = craftingRequirements
         self.effect = effect
+    }
+    
+    static func == (lhs: Item, rhs: Item) -> Bool {
+        lhs.name == rhs.name
+        && lhs.type == rhs.type
+        && lhs.weight == rhs.weight
+        && lhs.price == rhs.price
+        && lhs.supply == rhs.supply
+        && lhs.craftingRequirements == rhs.craftingRequirements
+        && lhs.effect == rhs.effect
     }
 }

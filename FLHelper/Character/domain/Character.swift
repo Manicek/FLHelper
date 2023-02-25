@@ -12,6 +12,7 @@ class Character: Entity {
     var states: [CharacterState: Bool] = [.sleepy: false, .cold: false, .hungry: false, .thirsty: false]
     var consumables: [Consumable: Die]
     var animal: Animal?
+    var equippedItems: EquippedItems
     
     var weapons: [Weapon] {
         (inventory.filter { $0 is Weapon } as? [Weapon]) ?? []
@@ -31,7 +32,8 @@ class Character: Entity {
         reputation: Int,
         money: Money,
         consumables: [Consumable: Die],
-        animal: Animal? = nil
+        animal: Animal? = nil,
+        equippedItems: EquippedItems = EquippedItems()
     ) {
         self.kin = kin
         self.profession = profession
@@ -39,6 +41,7 @@ class Character: Entity {
         self.money = money
         self.consumables = consumables
         self.animal = animal
+        self.equippedItems = equippedItems
         super.init(
             name: name,
             age: age,

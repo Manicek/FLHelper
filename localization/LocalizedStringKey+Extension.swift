@@ -275,6 +275,13 @@ extension LocalizedStringKey {
     static let itemHeaderEffect: LocalizedStringKey = "itemHeaderEffect"
     static let itemHeaderWeapon: LocalizedStringKey = "itemHeaderWeapon"
     
+    // MARK: - Weapon headers
+    static let weaponHeaderWeapons: LocalizedStringKey = "weapons"
+    static let weaponHeaderBonus: LocalizedStringKey = "bonus"
+    static let weaponHeaderDamage: LocalizedStringKey = "damage"
+    static let weaponHeaderRange: LocalizedStringKey = "range"
+    static let weaponHeaderComment: LocalizedStringKey = "comment"
+    
     // MARK: - Kin
     static let kinHumanMale: LocalizedStringKey = "humanMale"
     static let kinElfMale: LocalizedStringKey = "elfMale"

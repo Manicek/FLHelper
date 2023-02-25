@@ -18,15 +18,18 @@ class FLPlayersRepository: PlayersRepository {
             attributes: [.strength: 2, .agility: 4, .wits: 2, .empathy: 5],
             skills: [.melee: 2, .crafting: 1],
             talents: [.pathOfTheKnight: 2, .chef: 1],
-            inventory: [],
+            inventory: [
+                HelmetOption.closedHelmet.toArmor(),
+                ShieldOption.smallShield.toShield(),
+                MeleeWeaponOption.flail.toWeapon(),
+                RangedWeaponOption.lightCrossbow.toWeapon(),
+                Tool.saw.toItem(),
+                Goods.blanket.toItem()
+            ],
             kin: .goblin,
             profession: .rider,
             reputation: 1,
-            money: Money(
-                copperCoins: 3,
-                silverCoins: 2,
-                goldCoins: 0
-            ),
+            money: Money(copperCoins: 3, silverCoins: 2, goldCoins: 0),
             consumables: [.food: .d8, .water: .d8],
             animal: Animal(
                 name: "Vlkos",
@@ -37,6 +40,11 @@ class FLPlayersRepository: PlayersRepository {
                 attributes: [.strength: 2, .agility: 3],
                 skills: [.move: 2],
                 inventory: []
+            ),
+            equippedItems: EquippedItems(
+                helmet: HelmetOption.closedHelmet.toArmor(),
+                shield: ShieldOption.smallShield.toShield(),
+                mainHandWeapon: MeleeWeaponOption.flail.toWeapon()
             ),
             willpower: 3,
             experience: 9,

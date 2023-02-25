@@ -35,3 +35,8 @@ struct CraftingRequirements {
         return pairs
     }
 }
+
+// MARK: - Equatable
+
+extension CraftingRequirements: Equatable {
+}
