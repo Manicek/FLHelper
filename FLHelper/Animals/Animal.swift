@@ -15,7 +15,7 @@ class Animal: Entity {
         speed: Int,
         attributes: [Attribute: Int],
         skills: [Skill: Int],
-        inventory: [Item]
+        inventory: Inventory
     ) {
         self.type = type
         super.init(

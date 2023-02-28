@@ -150,12 +150,12 @@ extension LocalizedStringKey {
     static let talentThrowingArm: LocalizedStringKey = "throwingArm"
     static let talentWanderer: LocalizedStringKey = "wanderer"
     
-    // MARK: - States
-    static let states: LocalizedStringKey = "states"
-    static let stateSleepy: LocalizedStringKey = "sleepy"
-    static let stateThirsty: LocalizedStringKey = "thirsty"
-    static let stateHungry: LocalizedStringKey = "hungry"
-    static let stateCold: LocalizedStringKey = "cold"
+    // MARK: - Conditions
+    static let conditions: LocalizedStringKey = "conditions"
+    static let conditionsSleepy: LocalizedStringKey = "sleepy"
+    static let conditionsThirsty: LocalizedStringKey = "thirsty"
+    static let conditionsHungry: LocalizedStringKey = "hungry"
+    static let conditionsCold: LocalizedStringKey = "cold"
     
     // MARK: - Consumables
     static let consumables: LocalizedStringKey = "consumables"
@@ -529,12 +529,20 @@ extension LocalizedStringKey {
     static let itemEffectSleepingPoisonOrAntidote: LocalizedStringKey = "itemEffectPoisonOrAntidote"
     static let itemEffectHallucinogenicPoisonOrAntidote: LocalizedStringKey = "itemEffectPoisonOrAntidote"
     
+    // MARK: - Common
+    static let commonDay: LocalizedStringKey = "day"
+    static let commonDaysSome: LocalizedStringKey = "daysSome"
+    static let commonDaysMany: LocalizedStringKey = "daysMany"
     
+    // MARK: - Critical injuries
+    static let criticalInjuries: LocalizedStringKey = "criticalInjuries"
+    static let criticalInjuriesPermanent: LocalizedStringKey = "criticalInjuriesPermanent"
     
-    
-    
-    
-    
+    // MARK: - Critical injuries other
+    static let criticalInjuriesNonTypicalDamage: LocalizedStringKey = "criticalInjuriesNonTypicalDamage"
+    static let criticalInjuriesPushedDamage: LocalizedStringKey = "criticalInjuriesPushedDamage"
+    static let criticalInjuriesNonTypicalDamageEffect: LocalizedStringKey = "criticalInjuriesNonTypicalDamageEffect"
+    static let criticalInjuriesPushedDamageEffect: LocalizedStringKey = "criticalInjuriesPushedDamageEffect"
     
     
     

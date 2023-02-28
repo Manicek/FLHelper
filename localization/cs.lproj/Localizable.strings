@@ -6,6 +6,10 @@
   
 */
 
+"day" = "den";
+"daysSome" = "dny";
+"daysMany" = "dnů";
+
 "combat" = "Souboj";
 "encounters" = "Místa";
 "npcs" = "Nehráčské postavy";
@@ -151,6 +155,7 @@
 "arrows" = "Šípy";
 "torches" = "Pochodně";
 
+"conditions" = "Stavy";
 "sleepy" = "Ospalost";
 "thirsty" = "Žízeň";
 "hungry" = "Hlad";
@@ -468,10 +473,13 @@ zdvojnásobí cenu. Protijed stojí základní cenu.";
 "range" = "Vzdálenost";
 "comment" = "Poznámky";
 
+"criticalInjuries" = "Kritická zranění:";
+"criticalInjuriesPermanent" = "permanentní";
 
-
-
-
+"criticalInjuriesNonTypicalDamage" = "Netypické zranění";
+"criticalInjuriesPushedDamage" = "Zranění při zkoušení štěstí";
+"criticalInjuriesNonTypicalDamageEffect" = "V bezvědomí, dokud neumřeš nebo tě někdo NEVYLÉČÍ.";
+"criticalInjuriesPushedDamageEffect" = "Žádné";
 
 
 

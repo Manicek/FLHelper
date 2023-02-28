@@ -15,22 +15,19 @@ struct ArmorView: View {
                 title: ArmorType.helmet.name,
                 name: helmet?.name ?? .empty,
                 imageName: ArmorType.helmet.systemImageName,
-                bonus: helmet?.armorRating,
-                left: false
+                bonus: helmet?.armorRating
             )
             ArmorLineView(
                 title: ArmorType.body.name,
                 name: bodyArmor?.name ?? .empty,
                 imageName: ArmorType.body.systemImageName,
-                bonus: bodyArmor?.armorRating,
-                left: false
+                bonus: bodyArmor?.armorRating
             )
             ArmorLineView(
                 title: Shield.name,
                 name: shield?.name ?? .empty,
                 imageName: Shield.systemImageName,
-                bonus: shield?.bonus,
-                left: true
+                bonus: shield?.bonus
             )
         }
     }
@@ -43,17 +40,17 @@ private struct ArmorLineView: View {
     let name: LocalizedStringKey
     let imageName: SystemImageName
     let bonus: Int?
-    let left: Bool
     
     var body: some View {
         VStack(spacing: 8) {
-            TextLeading(title)
-                .playerDetailSectionTitleFont()
-            HStack {
-                if left { imageAndBonusView }
-                Text(name)
+            HStack(spacing: 0) {
+                Text(title)
+                    .playerDetailSectionSubtitleFont()
+                Text(":")
+                    .playerDetailSectionSubtitleFont()
+                imageAndBonusView
+                TextLeading(name)
                     .playerDetailItemFont()
-                if !left { imageAndBonusView }
             }
         }
     }
@@ -65,6 +62,7 @@ private struct ArmorLineView: View {
             if let bonus = bonus {
                 Text("\(bonus)")
                     .playerDetailItemFont()
+                    .padding(.bottom, 8)
             }
         }
     }

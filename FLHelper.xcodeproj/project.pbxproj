@@ -84,8 +84,8 @@
 		FF4432312980B5B900890D7C /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = FF4432302980B5B900890D7C /* Swinject */; };
 		FF4432332980B5E500890D7C /* PlayersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4432322980B5E500890D7C /* PlayersRepository.swift */; };
 		FF4432352980B6E000890D7C /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4432342980B6E000890D7C /* Gender.swift */; };
-		FF7DDE362987DCA500FD9D43 /* StatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7DDE352987DCA500FD9D43 /* StatesView.swift */; };
-		FF7DDE382987DDBC00FD9D43 /* CharacterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7DDE372987DDBC00FD9D43 /* CharacterState.swift */; };
+		FF7DDE362987DCA500FD9D43 /* ConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7DDE352987DCA500FD9D43 /* ConditionsView.swift */; };
+		FF7DDE382987DDBC00FD9D43 /* CharacterCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7DDE372987DDBC00FD9D43 /* CharacterCondition.swift */; };
 		FF7DDE3D2987DF0400FD9D43 /* Consumable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7DDE3C2987DF0400FD9D43 /* Consumable.swift */; };
 		FF7DDE422987F55A00FD9D43 /* ArmorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7DDE412987F55A00FD9D43 /* ArmorView.swift */; };
 		FF7DDE442987F64000FD9D43 /* Shield.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7DDE432987F64000FD9D43 /* Shield.swift */; };
@@ -99,6 +99,20 @@
 		FFA971512980306D009FF258 /* FLHelperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA971502980306D009FF258 /* FLHelperApp.swift */; };
 		FFA971532980306D009FF258 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA971522980306D009FF258 /* MainView.swift */; };
 		FFA971552980306E009FF258 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA971542980306E009FF258 /* Assets.xcassets */; };
+		FFB5876A29AE84FD00C3DAD2 /* CriticalInjuryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5876929AE84FD00C3DAD2 /* CriticalInjuryType.swift */; };
+		FFB5876D29AE858300C3DAD2 /* StabWoundOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5876C29AE858300C3DAD2 /* StabWoundOption.swift */; };
+		FFB5876F29AE859800C3DAD2 /* SlashWoundOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5876E29AE859800C3DAD2 /* SlashWoundOption.swift */; };
+		FFB5877129AE85A900C3DAD2 /* BluntForceTraumaOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5877029AE85A900C3DAD2 /* BluntForceTraumaOption.swift */; };
+		FFB5877329AE85C100C3DAD2 /* HorrorWoundOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5877229AE85C100C3DAD2 /* HorrorWoundOption.swift */; };
+		FFB5877529AE85D100C3DAD2 /* OtherWoundOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5877429AE85D100C3DAD2 /* OtherWoundOption.swift */; };
+		FFB5877729AE86AE00C3DAD2 /* CriticalInjury.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5877629AE86AE00C3DAD2 /* CriticalInjury.swift */; };
+		FFB5877929AE871E00C3DAD2 /* HealingTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5877829AE871E00C3DAD2 /* HealingTime.swift */; };
+		FFB5877B29AE8B9C00C3DAD2 /* CriticalInjuriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5877A29AE8B9C00C3DAD2 /* CriticalInjuriesView.swift */; };
+		FFB5877D29AE9D9500C3DAD2 /* PlayerDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5877C29AE9D9500C3DAD2 /* PlayerDescriptionView.swift */; };
+		FFB5877F29AE9FB900C3DAD2 /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5877E29AE9FB900C3DAD2 /* InventoryView.swift */; };
+		FFB5878129AE9FDC00C3DAD2 /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5878029AE9FDC00C3DAD2 /* Inventory.swift */; };
+		FFB5878329AEA18F00C3DAD2 /* OwnedAnimalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5878229AEA18F00C3DAD2 /* OwnedAnimalView.swift */; };
+		FFB5878529AEA1FF00C3DAD2 /* MoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5878429AEA1FF00C3DAD2 /* MoneyView.swift */; };
 		FFD2DCF629831B97001EFCAA /* AttributesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD2DCF529831B97001EFCAA /* AttributesView.swift */; };
 		FFD2DCF929831BB5001EFCAA /* SkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD2DCF829831BB5001EFCAA /* SkillsView.swift */; };
 		FFD2DCFB29831D91001EFCAA /* IMFellGreatPrimer-RegularSC.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFD2DCFA29831D91001EFCAA /* IMFellGreatPrimer-RegularSC.ttf */; };
@@ -208,8 +222,8 @@
 		FF4432282980B1B400890D7C /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
 		FF4432322980B5E500890D7C /* PlayersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersRepository.swift; sourceTree = "<group>"; };
 		FF4432342980B6E000890D7C /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
-		FF7DDE352987DCA500FD9D43 /* StatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesView.swift; sourceTree = "<group>"; };
-		FF7DDE372987DDBC00FD9D43 /* CharacterState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterState.swift; sourceTree = "<group>"; };
+		FF7DDE352987DCA500FD9D43 /* ConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionsView.swift; sourceTree = "<group>"; };
+		FF7DDE372987DDBC00FD9D43 /* CharacterCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCondition.swift; sourceTree = "<group>"; };
 		FF7DDE3C2987DF0400FD9D43 /* Consumable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consumable.swift; sourceTree = "<group>"; };
 		FF7DDE412987F55A00FD9D43 /* ArmorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorView.swift; sourceTree = "<group>"; };
 		FF7DDE432987F64000FD9D43 /* Shield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shield.swift; sourceTree = "<group>"; };
@@ -224,6 +238,20 @@
 		FFA971502980306D009FF258 /* FLHelperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLHelperApp.swift; sourceTree = "<group>"; };
 		FFA971522980306D009FF258 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FFA971542980306E009FF258 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFB5876929AE84FD00C3DAD2 /* CriticalInjuryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriticalInjuryType.swift; sourceTree = "<group>"; };
+		FFB5876C29AE858300C3DAD2 /* StabWoundOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StabWoundOption.swift; sourceTree = "<group>"; };
+		FFB5876E29AE859800C3DAD2 /* SlashWoundOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlashWoundOption.swift; sourceTree = "<group>"; };
+		FFB5877029AE85A900C3DAD2 /* BluntForceTraumaOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluntForceTraumaOption.swift; sourceTree = "<group>"; };
+		FFB5877229AE85C100C3DAD2 /* HorrorWoundOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorrorWoundOption.swift; sourceTree = "<group>"; };
+		FFB5877429AE85D100C3DAD2 /* OtherWoundOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherWoundOption.swift; sourceTree = "<group>"; };
+		FFB5877629AE86AE00C3DAD2 /* CriticalInjury.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriticalInjury.swift; sourceTree = "<group>"; };
+		FFB5877829AE871E00C3DAD2 /* HealingTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealingTime.swift; sourceTree = "<group>"; };
+		FFB5877A29AE8B9C00C3DAD2 /* CriticalInjuriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriticalInjuriesView.swift; sourceTree = "<group>"; };
+		FFB5877C29AE9D9500C3DAD2 /* PlayerDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDescriptionView.swift; sourceTree = "<group>"; };
+		FFB5877E29AE9FB900C3DAD2 /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
+		FFB5878029AE9FDC00C3DAD2 /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
+		FFB5878229AEA18F00C3DAD2 /* OwnedAnimalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnedAnimalView.swift; sourceTree = "<group>"; };
+		FFB5878429AEA1FF00C3DAD2 /* MoneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyView.swift; sourceTree = "<group>"; };
 		FFD2DCF529831B97001EFCAA /* AttributesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributesView.swift; sourceTree = "<group>"; };
 		FFD2DCF829831BB5001EFCAA /* SkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsView.swift; sourceTree = "<group>"; };
 		FFD2DCFA29831D91001EFCAA /* IMFellGreatPrimer-RegularSC.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IMFellGreatPrimer-RegularSC.ttf"; sourceTree = "<group>"; };
@@ -542,6 +570,7 @@
 				FF1A86B72981DFBC0056076C /* PlayerDetailView.swift */,
 				FF1F146829A92AF8007891AA /* PlayerHeaderView.swift */,
 				FF1F146A29A92CDA007891AA /* ExperienceView.swift */,
+				FFB5877C29AE9D9500C3DAD2 /* PlayerDescriptionView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -717,16 +746,35 @@
 			path = FLHelper;
 			sourceTree = "<group>";
 		};
+		FFB5876B29AE856400C3DAD2 /* injuries */ = {
+			isa = PBXGroup;
+			children = (
+				FFB5876929AE84FD00C3DAD2 /* CriticalInjuryType.swift */,
+				FFB5876C29AE858300C3DAD2 /* StabWoundOption.swift */,
+				FFB5876E29AE859800C3DAD2 /* SlashWoundOption.swift */,
+				FFB5877029AE85A900C3DAD2 /* BluntForceTraumaOption.swift */,
+				FFB5877229AE85C100C3DAD2 /* HorrorWoundOption.swift */,
+				FFB5877429AE85D100C3DAD2 /* OtherWoundOption.swift */,
+				FFB5877629AE86AE00C3DAD2 /* CriticalInjury.swift */,
+				FFB5877829AE871E00C3DAD2 /* HealingTime.swift */,
+			);
+			path = injuries;
+			sourceTree = "<group>";
+		};
 		FFD2DCF429831B8E001EFCAA /* view */ = {
 			isa = PBXGroup;
 			children = (
 				FFD2DCF529831B97001EFCAA /* AttributesView.swift */,
 				FFD2DCF829831BB5001EFCAA /* SkillsView.swift */,
 				FFD2DCFC29832A1F001EFCAA /* TalentsView.swift */,
-				FF7DDE352987DCA500FD9D43 /* StatesView.swift */,
+				FF7DDE352987DCA500FD9D43 /* ConditionsView.swift */,
 				FF7DDE412987F55A00FD9D43 /* ArmorView.swift */,
 				FF7DDE472988225D00FD9D43 /* ConsumablesView.swift */,
 				FF1F147329A98335007891AA /* WeaponsView.swift */,
+				FFB5877A29AE8B9C00C3DAD2 /* CriticalInjuriesView.swift */,
+				FFB5877E29AE9FB900C3DAD2 /* InventoryView.swift */,
+				FFB5878229AEA18F00C3DAD2 /* OwnedAnimalView.swift */,
+				FFB5878429AEA1FF00C3DAD2 /* MoneyView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -734,13 +782,15 @@
 		FFD2DCF729831BA1001EFCAA /* domain */ = {
 			isa = PBXGroup;
 			children = (
+				FFB5876B29AE856400C3DAD2 /* injuries */,
 				FF9E9C6B29804D83002FD2FE /* Character.swift */,
 				FF9E9C6D29804DCB002FD2FE /* Kin.swift */,
 				FF9E9C6F29804EFF002FD2FE /* Profession.swift */,
-				FF7DDE372987DDBC00FD9D43 /* CharacterState.swift */,
+				FF7DDE372987DDBC00FD9D43 /* CharacterCondition.swift */,
 				FF7DDE3C2987DF0400FD9D43 /* Consumable.swift */,
 				FF11096C29A2FF3900E9F3FC /* Money.swift */,
 				FF1F147129A94D2D007891AA /* EquippedItems.swift */,
+				FFB5878029AE9FDC00C3DAD2 /* Inventory.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -864,6 +914,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFB5877D29AE9D9500C3DAD2 /* PlayerDescriptionView.swift in Sources */,
 				FF4432272980B1A100890D7C /* Inject.swift in Sources */,
 				FF7DDE4A2988258900FD9D43 /* Coin.swift in Sources */,
 				FF1A86A42981C5920056076C /* FLPlayersRepository.swift in Sources */,
@@ -872,11 +923,16 @@
 				FF7DDE4629880D8500FD9D43 /* WillpowerView.swift in Sources */,
 				FF1A86B12981D3250056076C /* DataModel.xcdatamodeld in Sources */,
 				FF7DDE3D2987DF0400FD9D43 /* Consumable.swift in Sources */,
+				FFB5877529AE85D100C3DAD2 /* OtherWoundOption.swift in Sources */,
 				FF4431E62980638500890D7C /* Weapon.swift in Sources */,
+				FFB5877F29AE9FB900C3DAD2 /* InventoryView.swift in Sources */,
+				FFB5878329AEA18F00C3DAD2 /* OwnedAnimalView.swift in Sources */,
 				FF4432292980B1B400890D7C /* Resolver.swift in Sources */,
 				FF4431EE29806AD500890D7C /* Supply.swift in Sources */,
+				FFB5877B29AE8B9C00C3DAD2 /* CriticalInjuriesView.swift in Sources */,
 				FF11098029A4ED3400E9F3FC /* RawMaterialAndValue.swift in Sources */,
 				FF4432152980AEB300890D7C /* PlayersViewModel.swift in Sources */,
+				FFB5878529AEA1FF00C3DAD2 /* MoneyView.swift in Sources */,
 				FF110931299EE3B700E9F3FC /* SpecialRequirement.swift in Sources */,
 				FF1F146929A92AF8007891AA /* PlayerHeaderView.swift in Sources */,
 				FF11097C29A3052100E9F3FC /* AmountAndCoin.swift in Sources */,
@@ -889,7 +945,8 @@
 				FFD2DCFD29832A1F001EFCAA /* TalentsView.swift in Sources */,
 				FF4431F029806AF900890D7C /* RawMaterial.swift in Sources */,
 				FF11098229A4FC5E00E9F3FC /* RequiredTalentsView.swift in Sources */,
-				FF7DDE382987DDBC00FD9D43 /* CharacterState.swift in Sources */,
+				FF7DDE382987DDBC00FD9D43 /* CharacterCondition.swift in Sources */,
+				FFB5877729AE86AE00C3DAD2 /* CriticalInjury.swift in Sources */,
 				FF1A869D2981C41B0056076C /* Campaign.swift in Sources */,
 				FF11098A29A52E8E00E9F3FC /* ItemPriceView.swift in Sources */,
 				FF11098E29A5320200E9F3FC /* Goods.swift in Sources */,
@@ -905,6 +962,8 @@
 				FF1F146E29A931E2007891AA /* SystemImageName.swift in Sources */,
 				FF110929299ED7A000E9F3FC /* ItemsViewModel.swift in Sources */,
 				FF11098629A4FC8A00E9F3FC /* RequiredMaterialsView.swift in Sources */,
+				FFB5876D29AE858300C3DAD2 /* StabWoundOption.swift in Sources */,
+				FFB5878129AE9FDC00C3DAD2 /* Inventory.swift in Sources */,
 				FF110924299D2FDF00E9F3FC /* ItemsView.swift in Sources */,
 				FF44320029808A9000890D7C /* Combatant.swift in Sources */,
 				FF11096D29A2FF3900E9F3FC /* Money.swift in Sources */,
@@ -915,13 +974,14 @@
 				FF4431E02980591C00890D7C /* AnimalType.swift in Sources */,
 				FFD2DCF629831B97001EFCAA /* AttributesView.swift in Sources */,
 				FF11095729A0F65700E9F3FC /* ItemsInjection.swift in Sources */,
-				FF7DDE362987DCA500FD9D43 /* StatesView.swift in Sources */,
+				FF7DDE362987DCA500FD9D43 /* ConditionsView.swift in Sources */,
 				FF4431EA298064BD00890D7C /* PlayerCharacter.swift in Sources */,
 				FF11096B29A2FDF700E9F3FC /* Price.swift in Sources */,
 				FF1F147429A98335007891AA /* WeaponsView.swift in Sources */,
 				FF7DDE422987F55A00FD9D43 /* ArmorView.swift in Sources */,
 				FF11091F299D2ED800E9F3FC /* TablesView.swift in Sources */,
 				FF11098429A4FC7400E9F3FC /* RequiredToolsAndSpecialView.swift in Sources */,
+				FFB5877129AE85A900C3DAD2 /* BluntForceTraumaOption.swift in Sources */,
 				FF4431E22980629500890D7C /* Item.swift in Sources */,
 				FF11092D299ED8A600E9F3FC /* GetDefaultItems.swift in Sources */,
 				FF443203298091A700890D7C /* MainViewLinkView.swift in Sources */,
@@ -936,14 +996,17 @@
 				FF1A86A72981C5FE0056076C /* PlayersInjection.swift in Sources */,
 				FF11096329A264FC00E9F3FC /* Color+Extension.swift in Sources */,
 				FF1F146529A822C5007891AA /* TextLeading.swift in Sources */,
+				FFB5877929AE871E00C3DAD2 /* HealingTime.swift in Sources */,
 				FF4431F82980899100890D7C /* Zone.swift in Sources */,
 				FF11092F299EE24100E9F3FC /* CraftingRequirements.swift in Sources */,
 				FFD2DCF929831BB5001EFCAA /* SkillsView.swift in Sources */,
 				FF4431F4298083BA00890D7C /* BodyArmorOption.swift in Sources */,
 				FF4431D92980553100890D7C /* Entity.swift in Sources */,
 				FF4431DB298055AB00890D7C /* Attribute.swift in Sources */,
+				FFB5876F29AE859800C3DAD2 /* SlashWoundOption.swift in Sources */,
 				FF9E9C7229804FCE002FD2FE /* Talent.swift in Sources */,
 				FFA971532980306D009FF258 /* MainView.swift in Sources */,
+				FFB5877329AE85C100C3DAD2 /* HorrorWoundOption.swift in Sources */,
 				FF1A86B82981DFBC0056076C /* PlayerDetailView.swift in Sources */,
 				FF4432112980AC6C00890D7C /* SettingsView.swift in Sources */,
 				FF1F146B29A92CDA007891AA /* ExperienceView.swift in Sources */,
@@ -951,6 +1014,7 @@
 				FF7DDE482988225D00FD9D43 /* ConsumablesView.swift in Sources */,
 				FF4432352980B6E000890D7C /* Gender.swift in Sources */,
 				FF11093B299EF6F900E9F3FC /* WeaponFeature.swift in Sources */,
+				FFB5876A29AE84FD00C3DAD2 /* CriticalInjuryType.swift in Sources */,
 				FFA971512980306D009FF258 /* FLHelperApp.swift in Sources */,
 				FF110935299EE61500E9F3FC /* ShieldOption.swift in Sources */,
 			);

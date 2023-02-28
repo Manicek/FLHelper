@@ -8,15 +8,11 @@ struct ConsumablesView: View {
     let consumables: [Consumable: Die]
     
     var body: some View {
-        VStack(spacing: 4) {
-            HStack(spacing: 4) {
-                ConsumableView(consumable: .food, die: consumables[.food])
-                ConsumableView(consumable: .water, die: consumables[.water])
-            }
-            HStack(spacing: 4) {
-                ConsumableView(consumable: .arrows, die: consumables[.arrows])
-                ConsumableView(consumable: .torches, die: consumables[.torches])
-            }
+        HStack(spacing: 4) {
+            ConsumableView(consumable: .food, die: consumables[.food])
+            ConsumableView(consumable: .water, die: consumables[.water])
+            ConsumableView(consumable: .arrows, die: consumables[.arrows])
+            ConsumableView(consumable: .torches, die: consumables[.torches])
         }
     }
 }

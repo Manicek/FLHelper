@@ -9,13 +9,14 @@ class Character: Entity {
     let profession: Profession
     var reputation: Int
     var money: Money
-    var states: [CharacterState: Bool] = [.sleepy: false, .cold: false, .hungry: false, .thirsty: false]
+    var conditions: [CharacterCondition: Bool] = [.sleepy: false, .cold: false, .hungry: false, .thirsty: false]
     var consumables: [Consumable: Die]
+    var injuries: [CriticalInjury]
     var animal: Animal?
     var equippedItems: EquippedItems
     
     var weapons: [Weapon] {
-        (inventory.filter { $0 is Weapon } as? [Weapon]) ?? []
+        (inventory.items.filter { $0 is Weapon } as? [Weapon]) ?? []
     }
     
     init(
@@ -26,12 +27,13 @@ class Character: Entity {
         attributes: [Attribute : Int],
         skills: [Skill : Int],
         talents: [Talent : Int],
-        inventory: [Item],
+        inventory: Inventory,
         kin: Kin,
         profession: Profession,
         reputation: Int,
         money: Money,
         consumables: [Consumable: Die],
+        injuries: [CriticalInjury],
         animal: Animal? = nil,
         equippedItems: EquippedItems = EquippedItems()
     ) {
@@ -40,6 +42,7 @@ class Character: Entity {
         self.reputation = reputation
         self.money = money
         self.consumables = consumables
+        self.injuries = injuries
         self.animal = animal
         self.equippedItems = equippedItems
         super.init(

@@ -4,7 +4,7 @@
 
 import SwiftUI
 
-enum CharacterState: CaseIterable {
+enum CharacterCondition: CaseIterable {
     case sleepy
     case thirsty
     case hungry
@@ -12,10 +12,10 @@ enum CharacterState: CaseIterable {
     
     var name: LocalizedStringKey {
         switch self {
-        case .sleepy: return .stateSleepy
-        case .thirsty: return .stateThirsty
-        case .hungry: return .stateHungry
-        case .cold: return .stateCold
+        case .sleepy: return .conditionsSleepy
+        case .thirsty: return .conditionsThirsty
+        case .hungry: return .conditionsHungry
+        case .cold: return .conditionsCold
         }
     }
     
@@ -28,12 +28,13 @@ enum CharacterState: CaseIterable {
         }
     }
     
+    // TODO, using system image for now
     var imageName: String {
         switch self {
-        case .sleepy: return .sleepyState
-        case .thirsty: return .thirstyState
-        case .hungry: return .hungryState
-        case .cold: return .coldState
+        case .sleepy: return .sleepyCondition
+        case .thirsty: return .thirstyCondition
+        case .hungry: return .hungryCondition
+        case .cold: return .coldCondition
         }
     }
 }

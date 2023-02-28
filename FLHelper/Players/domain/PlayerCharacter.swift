@@ -17,12 +17,13 @@ class PlayerCharacter: Character {
         attributes: [Attribute : Int],
         skills: [Skill : Int],
         talents: [Talent : Int],
-        inventory: [Item],
+        inventory: Inventory,
         kin: Kin,
         profession: Profession,
         reputation: Int,
         money: Money,
         consumables: [Consumable: Die],
+        injuries: [CriticalInjury],
         animal: Animal?,
         equippedItems: EquippedItems,
         willpower: Int,
@@ -48,6 +49,7 @@ class PlayerCharacter: Character {
             reputation: reputation,
             money: money,
             consumables: consumables,
+            injuries: injuries,
             animal: animal,
             equippedItems: equippedItems
         )

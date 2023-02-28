@@ -8,7 +8,7 @@ struct SkillsView: View {
     let skills: [Skill: Int]
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 4) {
+        VStack(alignment: .leading, spacing: 0) {
             HStack {
                 Text(.skills)
                     .playerDetailSectionTitleFont()
@@ -16,6 +16,7 @@ struct SkillsView: View {
                 Text(.characterLevel)
                     .playerDetailSectionSubtitleFont()
             }
+            Divider()
             ForEach(Skill.allCases, id: \.self) { skill in
                 HStack(alignment: .bottom, spacing: 0) {
                     Text(skill.name)
@@ -29,12 +30,20 @@ struct SkillsView: View {
                         .scFont(18)
                         .padding(.trailing, 8)
                     Spacer()
+                    Divider()
                     if let playerSkill = skills[skill] {
                         Text("\(playerSkill)")
                             .playerDetailItemFont()
                             .padding(.horizontal, 8)
+                            .frame(minWidth: 30, maxWidth: 30)
+                    } else {
+                        Text("")
+                            .padding(.horizontal, 8)
+                            .frame(minWidth: 30, maxWidth: 30)
                     }
+                    Divider()
                 }.frame(maxWidth: .infinity)
+                Divider()
             }
         }
     }

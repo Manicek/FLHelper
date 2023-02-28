@@ -11,8 +11,8 @@ struct WeaponsView: View {
     
     private let columns = [
         GridItem(.fixed(150), spacing: 0),
-        GridItem(.flexible(), spacing: 0),
-        GridItem(.flexible(), spacing: 0),
+        GridItem(.fixed(80), spacing: 0),
+        GridItem(.fixed(80), spacing: 0),
         GridItem(.flexible(), spacing: 0),
         GridItem(.flexible(), spacing: 0)
     ]

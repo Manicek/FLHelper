@@ -7,9 +7,8 @@ import Foundation
 extension String {
     static let genderMan = "GenderMan"
     static let genderWoman = "GenderWoman"
-    static let sleepyState = "SleepyState"
-    static let thirstyState = "ThirstyState"
-    static let hungryState = "HungryState"
-    static let coldState = "ColdState"
-    
+    static let sleepyCondition = "SleepyCondition"
+    static let thirstyCondition = "ThirstyCondition"
+    static let hungryCondition = "HungryCondition"
+    static let coldCondition = "ColdCondition"
 }

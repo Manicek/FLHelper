@@ -18,19 +18,25 @@ class FLPlayersRepository: PlayersRepository {
             attributes: [.strength: 2, .agility: 4, .wits: 2, .empathy: 5],
             skills: [.melee: 2, .crafting: 1],
             talents: [.pathOfTheKnight: 2, .chef: 1],
-            inventory: [
-                HelmetOption.closedHelmet.toArmor(),
-                ShieldOption.smallShield.toShield(),
-                MeleeWeaponOption.flail.toWeapon(),
-                RangedWeaponOption.lightCrossbow.toWeapon(),
-                Tool.saw.toItem(),
-                Goods.blanket.toItem()
-            ],
+            inventory: Inventory(
+                items: [
+                    HelmetOption.closedHelmet.toArmor(),
+                    ShieldOption.smallShield.toShield(),
+                    MeleeWeaponOption.flail.toWeapon(),
+                    RangedWeaponOption.lightCrossbow.toWeapon(),
+                    Tool.saw.toItem(),
+                    Goods.blanket.toItem()
+                ],
+                encumbranceCapacity: 4
+            ),
             kin: .goblin,
             profession: .rider,
             reputation: 1,
             money: Money(copperCoins: 3, silverCoins: 2, goldCoins: 0),
             consumables: [.food: .d8, .water: .d8],
+            injuries: [
+                OtherWoundOption.pushedDamage.toCriticalInjury()
+            ],
             animal: Animal(
                 name: "Vlkos",
                 type: .wolf,
@@ -39,7 +45,7 @@ class FLPlayersRepository: PlayersRepository {
                 speed: 2,
                 attributes: [.strength: 2, .agility: 3],
                 skills: [.move: 2],
-                inventory: []
+                inventory: Inventory(items: [], encumbranceCapacity: 4)
             ),
             equippedItems: EquippedItems(
                 helmet: HelmetOption.closedHelmet.toArmor(),
@@ -53,7 +59,7 @@ class FLPlayersRepository: PlayersRepository {
         )
         mrTest.attributes[.strength] = 1
         mrTest.attributes[.agility] = 2
-        mrTest.states[.hungry] = true
+        mrTest.conditions[.hungry] = true
         return [mrTest]
     }
 }

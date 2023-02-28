@@ -13,7 +13,7 @@ class Entity {
     let maxAttributes: [Attribute: Int]
     var skills: [Skill: Int]
     var talents: [Talent: Int]
-    var inventory: [Item]
+    var inventory: Inventory
     
     init(
         name: String,
@@ -23,7 +23,7 @@ class Entity {
         attributes: [Attribute : Int],
         skills: [Skill : Int],
         talents: [Talent : Int],
-        inventory: [Item]
+        inventory: Inventory
     ) {
         self.name = name
         self.age = age
@@ -47,7 +47,7 @@ class Entity {
             }
         }
         var usedSlots = 0.0
-        for item in inventory {
+        for item in inventory.items {
             switch item.weight {
             case .tiny: break
             case .light: usedSlots += 0.5
