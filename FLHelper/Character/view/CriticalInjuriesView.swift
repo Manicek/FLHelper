@@ -10,25 +10,32 @@ struct CriticalInjuriesView: View {
     var body: some View {
         VStack {
             TextLeading(.criticalInjuries)
+                .playerDetailSectionTitleFont()
             ForEach(injuries) { injury in
                 HStack(spacing: 0) {
                     Text(injury.name)
-                    Text(", ")
-                    Text(injury.effect)
-                    Text(", ")
+                    if injury.hasHealingEffect {
+                        Text(" - ")
+                        Text(injury.effect)
+                    }
                     if injury.remainingHealingTime.isPermanent {
+                        Text(", ")
                         Text(.criticalInjuriesPermanent)
                     } else {
-                        Text("\(injury.remainingHealingTime.days ?? 0)")
-                        switch injury.remainingHealingTime.days ?? 0 {
-                        case 0: Text(.empty)
-                        case 1: Text(.commonDay)
-                        case 2...4: Text(.commonDaysSome)
-                        default: Text(.commonDaysMany)
+                        if let days = injury.remainingHealingTime.days {
+                            Text(", ")
+                            Text("\(days)")
+                            switch days {
+                            case 0: Text(.empty)
+                            case 1: Text(.commonDay)
+                            case 2...4: Text(.commonDaysSome)
+                            default: Text(.commonDaysMany)
+                            }
                         }
                     }
-                }
-            }
+                    Spacer()
+                }.padding(.leading, 8)
+            }.playerDetailTextFont()
         }
     }
 }

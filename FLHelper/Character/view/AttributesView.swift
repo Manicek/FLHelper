@@ -5,48 +5,52 @@
 import SwiftUI
 
 struct AttributesView: View {
+    let showTitle: Bool
     let max: [Attribute: Int]
     let current: [Attribute: Int]
     
+    var usedAttributes: [Attribute] {
+        Attribute.allCases.filter { attribute in
+            max[attribute] != nil
+        }
+    }
+    
     var body: some View {
-        VStack(alignment: .center) {
-            Text(.attributes)
-                .playerDetailSectionTitleFont()
+        VStack(alignment: .center, spacing: 2) {
+            if showTitle {
+                TextLeading(.attributes)
+                    .playerDetailSectionTitleFont()
+            }
             HStack {
                 VStack(alignment: .leading) {
-                    ForEach(Attribute.allCases, id: \.self) { attribute in
+                    ForEach(usedAttributes, id: \.self) { attribute in
                         attributeNameView(attribute)
                     }
                 }
                 .fixedSize()
                 VStack {
-                    ForEach(Attribute.allCases, id: \.self) { attribute in
+                    ForEach(usedAttributes, id: \.self) { attribute in
                         attributeValueView(attribute)
                     }
                 }
                 VStack {
-                    ForEach(Attribute.allCases, id: \.self) { attribute in
+                    ForEach(usedAttributes, id: \.self) { attribute in
                         attributeHeartsView(attribute)
                     }
-                }
+                }.padding(.top, 6)
             }
-        }
+        }.fixedSize()
     }
     
     private func attributeNameView(_ attribute: Attribute) -> some View {
-        HStack {
-            Text(attribute.name)
-                .playerDetailItemFont()
-            Spacer()
-        }
+        TextLeading(attribute.name)
+            .playerDetailItemFont()
     }
     
     private func attributeValueView(_ attribute: Attribute) -> some View {
-        HStack {
-            Text("\(current[attribute] ?? 2)")
-                .playerDetailItemFont()
-                .padding(.horizontal, 4)
-        }
+        Text("\(current[attribute] ?? 2)")
+            .playerDetailItemFont()
+            .padding(.horizontal, 4)
     }
     
     private func attributeHeartsView(_ attribute: Attribute) -> some View {

@@ -10,7 +10,7 @@ struct WeaponsView: View {
     let offHandWeapon: Weapon?
     
     private let columns = [
-        GridItem(.fixed(150), spacing: 0),
+        GridItem(.fixed(120), spacing: 0),
         GridItem(.fixed(80), spacing: 0),
         GridItem(.fixed(80), spacing: 0),
         GridItem(.flexible(), spacing: 0),

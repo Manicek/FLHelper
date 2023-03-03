@@ -36,7 +36,7 @@ enum OtherWoundOption {
     var effect: LocalizedStringKey {
         switch self {
         case .nonTypicalDamage: return .criticalInjuriesNonTypicalDamageEffect
-        case .pushedDamage: return .criticalInjuriesPushedDamageEffect
+        case .pushedDamage: return .criticalInjuriesNoEffect
         }
     }
     

@@ -12,12 +12,14 @@ struct WillpowerView: View {
     let willpower: Int
     
     var body: some View {
-        HStack {
+        VStack {
             Text(.characterWillpower)
                 .playerDetailSectionTitleFont()
-            ForEach(0..<Constants.maxWillPower, id: \.self) { counter in
-                Image(willpower > counter ? .circleFilled : .circle)
-            }.systemFontRegular(20)
+            HStack(spacing: 1) {
+                ForEach(0..<Constants.maxWillPower, id: \.self) { counter in
+                    Image(willpower > counter ? .circleFilled : .circle)
+                }.systemFontRegular(20)
+            }
         }
     }
 }

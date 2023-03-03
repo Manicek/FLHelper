@@ -530,6 +530,7 @@ extension LocalizedStringKey {
     static let itemEffectHallucinogenicPoisonOrAntidote: LocalizedStringKey = "itemEffectPoisonOrAntidote"
     
     // MARK: - Common
+    static let commonName: LocalizedStringKey = "name"
     static let commonDay: LocalizedStringKey = "day"
     static let commonDaysSome: LocalizedStringKey = "daysSome"
     static let commonDaysMany: LocalizedStringKey = "daysMany"
@@ -537,12 +538,17 @@ extension LocalizedStringKey {
     // MARK: - Critical injuries
     static let criticalInjuries: LocalizedStringKey = "criticalInjuries"
     static let criticalInjuriesPermanent: LocalizedStringKey = "criticalInjuriesPermanent"
+    static let criticalInjuriesNoEffect: LocalizedStringKey = "criticalInjuriesPushedDamageEffect"
+    
+    // MARK: - Animal
+    static let animalRidingAnimal: LocalizedStringKey = "ridingAnimal"
     
     // MARK: - Critical injuries other
     static let criticalInjuriesNonTypicalDamage: LocalizedStringKey = "criticalInjuriesNonTypicalDamage"
     static let criticalInjuriesPushedDamage: LocalizedStringKey = "criticalInjuriesPushedDamage"
     static let criticalInjuriesNonTypicalDamageEffect: LocalizedStringKey = "criticalInjuriesNonTypicalDamageEffect"
-    static let criticalInjuriesPushedDamageEffect: LocalizedStringKey = "criticalInjuriesPushedDamageEffect"
+    
+    //
     
     
     

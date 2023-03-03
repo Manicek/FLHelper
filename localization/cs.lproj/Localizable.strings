@@ -6,6 +6,7 @@
   
 */
 
+"name" = "Jméno";
 "day" = "den";
 "daysSome" = "dny";
 "daysMany" = "dnů";
@@ -472,6 +473,8 @@ zdvojnásobí cenu. Protijed stojí základní cenu.";
 "damage" = "Zranění";
 "range" = "Vzdálenost";
 "comment" = "Poznámky";
+
+"ridingAnimal" = "Jezdecké zvíře";
 
 "criticalInjuries" = "Kritická zranění:";
 "criticalInjuriesPermanent" = "permanentní";

@@ -14,6 +14,10 @@ class CriticalInjury: Identifiable {
     let timeLimitDie: Die?
     let effect: LocalizedStringKey
     
+    var hasHealingEffect: Bool {
+        effect != .criticalInjuriesNoEffect
+    }
+    
     init(
         name: LocalizedStringKey,
         type: CriticalInjuryType,
