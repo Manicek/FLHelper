@@ -5,6 +5,9 @@
 import SwiftUI
 
 enum Skill: CaseIterable {
+    static let maxLevel = 5
+    static let xpPerLevel = 5
+    
     // MARK: - Strength
     case might
     case endurance

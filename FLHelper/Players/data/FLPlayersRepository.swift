@@ -57,7 +57,7 @@ class FLPlayersRepository: PlayersRepository {
                 mainHandWeapon: MeleeWeaponOption.flail.toWeapon()
             ),
             characterDescription: CharacterDescription(
-                face: "Vysmátý, velké zelelé oči",
+                face: "Vysmátý, velké zelené oči",
                 body: "Štíhlý, dlouhé paže",
                 clothing: "Špinavá tmavě zelená lněná košile"
             ),

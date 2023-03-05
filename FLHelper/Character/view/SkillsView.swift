@@ -5,7 +5,11 @@
 import SwiftUI
 
 struct SkillsView: View {
+    @Environment(\.isEditing) var isEditing
+    
     let skills: [Skill: Int]
+    
+    var onIncreaseSkill: (Skill) -> Void
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -40,6 +44,13 @@ struct SkillsView: View {
                         Text("")
                             .padding(.horizontal, 8)
                             .frame(minWidth: 30, maxWidth: 30)
+                    }
+                    if isEditing {
+                        Button {
+                            onIncreaseSkill(skill)
+                        } label: {
+                            Image(.plusCircle)
+                        }
                     }
                     Divider()
                 }.frame(maxWidth: .infinity)

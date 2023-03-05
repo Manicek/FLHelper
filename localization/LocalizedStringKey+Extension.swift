@@ -16,6 +16,8 @@ extension LocalizedStringKey {
     static let commonEdit: LocalizedStringKey = "edit"
     static let commonDone: LocalizedStringKey = "done"
     static let commonDelete: LocalizedStringKey = "delete"
+    static let commonOk: LocalizedStringKey = "ok"
+    static let commonWarning: LocalizedStringKey = "warning"
     
     // MARK: - MainView titles
     static let mainViewTitlePlayers: LocalizedStringKey = "players"
@@ -556,7 +558,10 @@ extension LocalizedStringKey {
     static let criticalInjuriesPushedDamage: LocalizedStringKey = "criticalInjuriesPushedDamage"
     static let criticalInjuriesNonTypicalDamageEffect: LocalizedStringKey = "criticalInjuriesNonTypicalDamageEffect"
     
-    //
+    // MARK: - Player detail
+    static let playerDetailNotEnoughExperience: LocalizedStringKey = "notEnoughExperienceDescription"
+    static let playerDetailIgnoreExperienceOnce: LocalizedStringKey = "ignoreExperienceOnce"
+    static let playerDetailIgnoreExperienceForAll: LocalizedStringKey = "ignoreExperienceForAll"
     
     
     

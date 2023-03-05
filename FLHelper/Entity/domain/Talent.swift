@@ -5,6 +5,9 @@
 import SwiftUI
 
 enum Talent: CaseIterable, Comparable {
+    static let maxLevel = 3
+    static let xpPerLevel = 3
+    
     // MARK: - Kin
     case adaptive
     case innerPeace

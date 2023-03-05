@@ -493,8 +493,12 @@ zdvojnásobí cenu. Protijed stojí základní cenu.";
 "edit" = "Upravit";
 "done" = "Hotovo";
 "delete" = "Smazat";
+"ok" = "Ok";
+"warning" = "Pozor!";
 
-
+"notEnoughExperienceDescription" = "Nedostatek zkušeností";
+"ignoreExperienceOnce" = "Zlepšit zadarmo";
+"ignoreExperienceForAll" = "Ignorovat všechny zkušenosti";
 
 
 

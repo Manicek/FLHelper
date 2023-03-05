@@ -22,8 +22,11 @@ struct PlayerDetailView: View {
                     Spacer()
                 }
                 HStack {
-                    SkillsView(skills: viewModel.player.skills)
-                        .fixedSize()
+                    SkillsView(skills: viewModel.player.skills) { skill in
+                        viewModel.onIncreaseSkill(skill: skill)
+                    }
+                    .environment(\.isEditing, viewModel.isEditing)
+                    .fixedSize()
                     Spacer()
                 }
             }.fixedSize(horizontal: true, vertical: false)
@@ -64,7 +67,7 @@ struct PlayerDetailView: View {
                     VStack {
                         OwnedAnimalView(
                             animal: $viewModel.player.animal, onAttributeChanged: viewModel.onAnimalAttributeChanged
-                        )
+                        ).environment(\.isEditing, viewModel.isEditing)
                         Spacer()
                         WillpowerView(willpower: viewModel.player.willpower)
                     }
@@ -76,6 +79,31 @@ struct PlayerDetailView: View {
                 }
             }
         }
+        .overlay(content: {
+            if let skill = viewModel.skillCausingExperienceWarning {
+                FLAlertView(
+                    title: .commonWarning,
+                    description: .playerDetailNotEnoughExperience,
+                    primaryButtonAction: AlertAction(
+                        text: .commonOk,
+                        style: .normal,
+                        action: { viewModel.onAcceptNotEnoughExperience() }
+                    ),
+                    extraButtonActions: [
+                        AlertAction(
+                            text: .playerDetailIgnoreExperienceOnce,
+                            style: .destructive,
+                            action: { viewModel.onIgnoreExperienceForSkill(skill: skill) }
+                        ),
+                        AlertAction(
+                            text: .playerDetailIgnoreExperienceForAll,
+                            style: .destructive,
+                            action: { viewModel.onIgnoreThisAndFutureExperienceRequirements(skill: skill, talent: nil) }
+                        )
+                    ]
+                )
+            }
+        })
         .padding(12)
     }
 }
