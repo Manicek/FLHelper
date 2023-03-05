@@ -4,29 +4,28 @@
 
 import Foundation
 
-class Animal: Entity {
+struct Animal: Entity {
+    var name: String
+    var age: Int
+    var gender: Gender
+    var speed: Int
+    var attributes: [Attribute: Int]
+    var maxAttributes: [Attribute: Int]
+    var skills: [Skill: Int]
+    var talents: [Talent: Int]
+    var inventory: Inventory
     let type: AnimalType
     
-    init(
-        name: String,
-        type: AnimalType,
-        age: Int,
-        gender: Gender,
-        speed: Int,
-        attributes: [Attribute: Int],
-        skills: [Skill: Int],
-        inventory: Inventory
-    ) {
-        self.type = type
-        super.init(
-            name: name,
-            age: age,
-            gender: gender,
-            speed: speed,
-            attributes: attributes,
-            skills: skills,
-            talents: [:],
-            inventory: inventory
-        )
-    }
+    static let empty = Animal(
+        name: "",
+        age: 0,
+        gender: .other,
+        speed: 0,
+        attributes: [:],
+        maxAttributes: [:],
+        skills: [:],
+        talents: [:],
+        inventory: Inventory(items: [], money: Money.empty, consumables: [:], encumbranceCapacity: 0),
+        type: .empty
+    )
 }

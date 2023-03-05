@@ -12,4 +12,6 @@ struct Money {
     var total: Int {
         copperCoins + 10 * silverCoins + 100 * goldCoins
     }
+    
+    static let empty = Money(copperCoins: 0, silverCoins: 0, goldCoins: 0)
 }

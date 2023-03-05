@@ -5,10 +5,15 @@
 import SwiftUI
 
 struct InventoryView: View {
+    let showTitle: Bool
     let inventory: Inventory
     
     var body: some View {
         VStack {
+            if showTitle {
+                TextLeading(.characterInventory)
+                    .playerDetailSectionTitleFont()
+            }
             ForEach(inventory.items.indices, id: \.self) { index in
                 let item = inventory.items[index]
                 let row = index + 1

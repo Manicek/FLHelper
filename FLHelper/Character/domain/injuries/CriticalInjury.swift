@@ -4,7 +4,8 @@
 
 import SwiftUI
 
-class CriticalInjury: Identifiable {
+struct CriticalInjury: Identifiable {
+    let id = UUID()
     let name: LocalizedStringKey
     let type: CriticalInjuryType
     let isDeadly: Bool
@@ -16,25 +17,5 @@ class CriticalInjury: Identifiable {
     
     var hasHealingEffect: Bool {
         effect != .criticalInjuriesNoEffect
-    }
-    
-    init(
-        name: LocalizedStringKey,
-        type: CriticalInjuryType,
-        isDeadly: Bool,
-        remainingHealingTime: HealingTime,
-        healingTimeDie: Die?,
-        remainingTimeLimit: Int?,
-        timeLimitDie: Die?,
-        effect: LocalizedStringKey
-    ) {
-        self.name = name
-        self.type = type
-        self.isDeadly = isDeadly
-        self.remainingHealingTime = remainingHealingTime
-        self.healingTimeDie = healingTimeDie
-        self.remainingTimeLimit = remainingTimeLimit
-        self.timeLimitDie = timeLimitDie
-        self.effect = effect
     }
 }

@@ -53,7 +53,7 @@ enum HelmetOption: CaseIterable {
         }
     }
     
-    var description: LocalizedStringKey {
+    var effect: LocalizedStringKey {
         switch self {
         case .studdedLeatherCap, .openHelmet, .closedHelmet:
             return .empty
@@ -84,7 +84,7 @@ enum HelmetOption: CaseIterable {
         }
     }
     
-    var requiredTools: [Tool] {
+    var requiredTools: [ToolOption] {
         switch self {
         case .closedHelmet, .greatHelm:
             return []
@@ -116,6 +116,7 @@ enum HelmetOption: CaseIterable {
     func toArmor() -> Armor {
         return Armor(
             name: name,
+            type: .helmet,
             weight: weight,
             price: price,
             supply: supply,
@@ -126,9 +127,9 @@ enum HelmetOption: CaseIterable {
                 special: specialRequirements,
                 quarterDays: quarterDaysToMake
             ),
+            effect: effect,
             armorRating: armorRating,
-            armorType: armorType,
-            description: description
+            armorType: armorType
         )
     }
     

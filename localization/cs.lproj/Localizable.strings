@@ -474,9 +474,15 @@ zdvojnásobí cenu. Protijed stojí základní cenu.";
 "range" = "Vzdálenost";
 "comment" = "Poznámky";
 
+"description" = "Popis";
+"body" = "Tělo";
+"face" = "Tvář";
+"clothing" = "Oblečení";
+"inventory" = "Vybavení";
+
 "ridingAnimal" = "Jezdecké zvíře";
 
-"criticalInjuries" = "Kritická zranění:";
+"criticalInjuries" = "Kritická zranění";
 "criticalInjuriesPermanent" = "permanentní";
 
 "criticalInjuriesNonTypicalDamage" = "Netypické zranění";
@@ -484,9 +490,9 @@ zdvojnásobí cenu. Protijed stojí základní cenu.";
 "criticalInjuriesNonTypicalDamageEffect" = "V bezvědomí, dokud neumřeš nebo tě někdo NEVYLÉČÍ.";
 "criticalInjuriesPushedDamageEffect" = "Žádné";
 
-
-
-
+"edit" = "Upravit";
+"done" = "Hotovo";
+"delete" = "Smazat";
 
 
 

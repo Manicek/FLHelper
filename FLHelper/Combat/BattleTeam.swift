@@ -5,7 +5,7 @@
 import Foundation
 import SwiftUI
 
-class BattleTeam {
+struct BattleTeam {
     var members: [Entity]
     var color: Color
     

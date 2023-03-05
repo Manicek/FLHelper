@@ -4,7 +4,7 @@
 
 import SwiftUI
 
-enum Tool: CaseIterable {
+enum ToolOption: CaseIterable {
     case saw
     case hammer
     case sledgeHammer
@@ -84,7 +84,7 @@ enum Tool: CaseIterable {
         }
     }
     
-    var requiredTools: [Tool] {
+    var requiredTools: [ToolOption] {
         switch self {
         case .saw, .hammer, .pickaxe, .shovel, .timberAxe, .pliers, .needleAndThread:
             return []
@@ -114,8 +114,8 @@ enum Tool: CaseIterable {
         }
     }
     
-    func toItem() -> Item {
-        Item(
+    func toTool() -> Tool {
+        Tool(
             name: name,
             type: .tool,
             weight: weight,
@@ -127,11 +127,12 @@ enum Tool: CaseIterable {
                 tools: requiredTools,
                 special: specialRequirements,
                 quarterDays: quarterDaysToMake
-            )
+            ),
+            effect: .empty
         )
     }
     
     static var defaultItems: [Item] {
-        allCases.map { $0.toItem() }
+        allCases.map { $0.toTool() }
     }
 }

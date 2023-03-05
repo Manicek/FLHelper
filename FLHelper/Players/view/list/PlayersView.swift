@@ -11,7 +11,9 @@ struct PlayersView: View {
         ForEach(viewModel.playerCharacters, id: \.name) { character in
             ScrollView {
                 VStack {
-                    NavigationLink(destination: PlayerDetailView(player: character)) {
+                    NavigationLink(
+                        destination: PlayerDetailView(viewModel: PlayerDetailViewModel(player: character))
+                    ) {
                         ZStack {
                             RoundedRectangle(cornerRadius: 20)
                                 .foregroundColor(.accentColor)

@@ -4,38 +4,21 @@
 
 import Foundation
 
-class Entity {
-    var name: String
-    var age: Int
-    var gender: Gender
-    var speed: Int
-    var attributes: [Attribute: Int]
-    let maxAttributes: [Attribute: Int]
-    var skills: [Skill: Int]
-    var talents: [Talent: Int]
-    var inventory: Inventory
+protocol Entity {
+    var name: String { get set }
+    var age: Int { get set }
+    var gender: Gender { get set }
+    var speed: Int { get set }
+    var attributes: [Attribute: Int] { get set }
+    var maxAttributes: [Attribute: Int] { get set }
+    var skills: [Skill: Int] { get set }
+    var talents: [Talent: Int] { get set }
+    var inventory: Inventory { get set }
     
-    init(
-        name: String,
-        age: Int,
-        gender: Gender,
-        speed: Int,
-        attributes: [Attribute : Int],
-        skills: [Skill : Int],
-        talents: [Talent : Int],
-        inventory: Inventory
-    ) {
-        self.name = name
-        self.age = age
-        self.gender = gender
-        self.speed = speed
-        self.attributes = attributes
-        self.maxAttributes = attributes
-        self.skills = skills
-        self.talents = talents
-        self.inventory = inventory
-    }
-    
+    func isOverEncumbered() -> Bool
+}
+
+extension Entity {
     func isOverEncumbered() -> Bool {
         var inventorySlots = Double(maxAttributes[.strength] ?? 2) * 2
         if let packRatLevel = talents[.packRat] {

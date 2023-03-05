@@ -4,7 +4,7 @@
 
 import Foundation
 
-class Campaign {
+struct Campaign {
     let id = UUID()
     let name: String
     var playerCharacters: [PlayerCharacter]

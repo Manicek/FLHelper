@@ -4,7 +4,7 @@
 
 import Foundation
 
-class Battlefield {
+struct Battlefield {
     let zones: [Zone]
     
     init(zones: [Zone]) {

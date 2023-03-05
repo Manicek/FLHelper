@@ -89,7 +89,7 @@ enum RangedWeaponOption: CaseIterable {
         }
     }
     
-    var requiredTools: [Tool] {
+    var requiredTools: [ToolOption] {
         []
     }
     
@@ -184,6 +184,7 @@ enum RangedWeaponOption: CaseIterable {
                 special: specialRequirements,
                 quarterDays: quarterDaysToMake
             ),
+            effect: .empty,
             range: range,
             grip: grip,
             features: features,

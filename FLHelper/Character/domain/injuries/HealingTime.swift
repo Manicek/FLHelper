@@ -4,7 +4,7 @@
 
 import Foundation
 
-class HealingTime {
+struct HealingTime {
     let isPermanent: Bool
     let days: Int?
     

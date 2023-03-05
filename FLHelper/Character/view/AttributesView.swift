@@ -5,9 +5,13 @@
 import SwiftUI
 
 struct AttributesView: View {
+    @Environment(\.isEditing) var isEditing
+    
     let showTitle: Bool
     let max: [Attribute: Int]
-    let current: [Attribute: Int]
+    @Binding var current: [Attribute: Int]
+    
+    var onAttributeChanged: (Attribute, Int) -> Void
     
     var usedAttributes: [Attribute] {
         Attribute.allCases.filter { attribute in
@@ -55,8 +59,22 @@ struct AttributesView: View {
     
     private func attributeHeartsView(_ attribute: Attribute) -> some View {
         HStack(alignment: .bottom, spacing: 0) {
+            if isEditing {
+                Button {
+                    onAttributeChanged(attribute, -1)
+                } label: {
+                    Image(.minusCircle)
+                }
+            }
             ForEach((1...(max[attribute] ?? 2)), id: \.self) { value in
                 Image(value <= (current[attribute] ?? 0) ? .heartFilled : .heart)
+            }
+            if isEditing {
+                Button {
+                    onAttributeChanged(attribute, 1)
+                } label: {
+                    Image(.plusCircle)
+                }
             }
             Spacer()
         }

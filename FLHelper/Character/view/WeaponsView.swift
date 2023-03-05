@@ -22,6 +22,7 @@ struct WeaponsView: View {
             WeaponsHeaderView()
             ForEach(weapons) { weapon in
                 WeaponRowView(weapon: weapon)
+                    .playerDetailTextFont()
                     .frame(height: 40)
                     .background(
                         weapon == mainHandWeapon || weapon == offHandWeapon ? Color.tableRowBackground : Color.clear
@@ -36,10 +37,15 @@ struct WeaponsView: View {
 private struct WeaponsHeaderView: View {
     var body: some View {
         TextLeading(.weaponHeaderWeapons)
+            .playerDetailSectionTitleFont()
         TextLeading(.weaponHeaderBonus)
+            .playerDetailSectionSubtitleFont()
         TextLeading(.weaponHeaderDamage)
+            .playerDetailSectionSubtitleFont()
         TextLeading(.weaponHeaderRange)
+            .playerDetailSectionSubtitleFont()
         TextLeading(.weaponHeaderComment)
+            .playerDetailSectionSubtitleFont()
     }
 }
 

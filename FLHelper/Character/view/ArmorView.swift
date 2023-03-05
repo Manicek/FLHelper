@@ -24,7 +24,7 @@ struct ArmorView: View {
                 bonus: bodyArmor?.armorRating
             )
             ArmorLineView(
-                title: Shield.name,
+                title: Shield.typeName,
                 name: shield?.name ?? .empty,
                 imageName: Shield.systemImageName,
                 bonus: shield?.bonus

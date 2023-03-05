@@ -4,7 +4,24 @@
 
 import Foundation
 
-class PlayerCharacter: Character {
+struct PlayerCharacter: Character {
+    var name: String
+    var kin: Kin
+    var profession: Profession
+    var age: Int
+    var gender: Gender
+    var reputation: Int
+    var attributes: [Attribute: Int]
+    var maxAttributes: [Attribute: Int]
+    var skills: [Skill: Int]
+    var speed: Int
+    var talents: [Talent: Int]
+    var inventory: Inventory
+    var conditions: [CharacterCondition: Bool]
+    var injuries: [CriticalInjury]
+    var animal: Animal
+    var equippedItems: EquippedItems
+    var characterDescription: CharacterDescription
     var willpower: Int
     var experience: Int
     var pride: String?
@@ -12,46 +29,44 @@ class PlayerCharacter: Character {
 
     init(
         name: String,
-        age: Int,
-        gender: Gender,
-        attributes: [Attribute : Int],
-        skills: [Skill : Int],
-        talents: [Talent : Int],
-        inventory: Inventory,
         kin: Kin,
         profession: Profession,
+        age: Int,
+        gender: Gender,
         reputation: Int,
-        money: Money,
-        consumables: [Consumable: Die],
+        attributes: [Attribute: Int],
+        skills: [Skill: Int],
+        talents: [Talent: Int],
+        inventory: Inventory,
         injuries: [CriticalInjury],
-        animal: Animal?,
+        animal: Animal,
         equippedItems: EquippedItems,
+        characterDescription: CharacterDescription,
         willpower: Int,
         experience: Int,
         pride: String?,
         darkSecret: String
     ) {
+        self.name = name
+        self.kin = kin
+        self.profession = profession
+        self.age = age
+        self.gender = gender
+        self.reputation = reputation
+        self.attributes = attributes
+        self.maxAttributes = attributes
+        self.skills = skills
+        self.speed = 1
+        self.talents = talents
+        self.inventory = inventory
+        self.conditions = [.sleepy: false, .cold: false, .hungry: false, .thirsty: false]
+        self.injuries = injuries
+        self.animal = animal
+        self.equippedItems = equippedItems
+        self.characterDescription = characterDescription
         self.willpower = willpower
         self.experience = experience
         self.pride = pride
         self.darkSecret = darkSecret
-        super.init(
-            name: name,
-            age: age,
-            gender: gender,
-            speed: 1,
-            attributes: attributes,
-            skills: skills,
-            talents: talents,
-            inventory: inventory,
-            kin: kin,
-            profession: profession,
-            reputation: reputation,
-            money: money,
-            consumables: consumables,
-            injuries: injuries,
-            animal: animal,
-            equippedItems: equippedItems
-        )
     }
 }

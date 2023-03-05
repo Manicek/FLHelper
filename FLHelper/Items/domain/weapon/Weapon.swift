@@ -4,53 +4,23 @@
 
 import SwiftUI
 
-class Weapon: Item {
+struct Weapon: Item, Identifiable, Equatable {
+    let id = UUID()
+    var name: LocalizedStringKey
+    var type: ItemType
+    var weight: Weight
+    var price: Price
+    var supply: Supply
+    var craftingRequirements: CraftingRequirements
+    var effect: LocalizedStringKey
     let range: Range
     let grip: WeaponGrip
     let features: [WeaponFeature]
     var bonus: Int
     var damage: Int
     
-    init(
-        name: LocalizedStringKey,
-        type: ItemType,
-        weight: Weight,
-        price: Price,
-        supply: Supply,
-        craftingRequirements: CraftingRequirements,
-        range: Range,
-        grip: WeaponGrip,
-        features: [WeaponFeature],
-        bonus: Int,
-        damage: Int
-    ) {
-        self.range = range
-        self.grip = grip
-        self.features = features
-        self.bonus = bonus
-        self.damage = damage
-        super.init(
-            name: name,
-            type: type,
-            weight: weight,
-            price: price,
-            supply: supply,
-            craftingRequirements: craftingRequirements
-        )
-    }
-    
-    static func == (lhs: Weapon, rhs: Weapon) -> Bool {
+    static func ==(lhs: Weapon, rhs: Weapon) -> Bool {
         lhs.name == rhs.name
         && lhs.type == rhs.type
-        && lhs.weight == rhs.weight
-        && lhs.price == rhs.price
-        && lhs.supply == rhs.supply
-        && lhs.craftingRequirements == rhs.craftingRequirements
-        && lhs.effect == rhs.effect
-        && lhs.range == rhs.range
-        && lhs.grip == rhs.grip
-        && lhs.features == rhs.features
-        && lhs.bonus == rhs.bonus
-        && lhs.damage == rhs.damage
     }
 }

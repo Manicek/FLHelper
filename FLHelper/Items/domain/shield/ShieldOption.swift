@@ -49,7 +49,7 @@ enum ShieldOption: CaseIterable {
         }
     }
     
-    var requiredTools: [Tool] {
+    var requiredTools: [ToolOption] {
         switch self {
         case .smallShield, .largeShield: return []
         }
@@ -78,6 +78,7 @@ enum ShieldOption: CaseIterable {
     func toShield() -> Shield {
         Shield(
             name: name,
+            type: .shield,
             weight: weight,
             price: price,
             supply: supply,
@@ -88,6 +89,7 @@ enum ShieldOption: CaseIterable {
                 special: specialRequirements,
                 quarterDays: quarterDaysToMake
             ),
+            effect: .empty,
             bonus: bonus
         )
     }

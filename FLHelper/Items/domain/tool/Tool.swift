@@ -4,7 +4,7 @@
 
 import SwiftUI
 
-struct Shield: Item {
+struct Tool: Item {
     var name: LocalizedStringKey
     var type: ItemType
     var weight: Weight
@@ -12,8 +12,4 @@ struct Shield: Item {
     var supply: Supply
     var craftingRequirements: CraftingRequirements
     var effect: LocalizedStringKey
-    var bonus: Int
-    
-    static let systemImageName: SystemImageName = .shield
-    static let typeName: LocalizedStringKey = .itemsShield
 }

@@ -138,7 +138,7 @@ enum MeleeWeaponOption: CaseIterable {
         }
     }
     
-    var requiredTools: [Tool] {
+    var requiredTools: [ToolOption] {
         []
     }
     
@@ -253,6 +253,7 @@ enum MeleeWeaponOption: CaseIterable {
                 special: specialRequirements,
                 quarterDays: quarterDaysToMake
             ),
+            effect: .empty,
             range: range,
             grip: grip,
             features: features,

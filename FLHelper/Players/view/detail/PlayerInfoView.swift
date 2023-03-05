@@ -4,7 +4,7 @@
 
 import SwiftUI
 
-struct PlayerDescriptionView: View {
+struct PlayerInfoView: View {
     let player: PlayerCharacter
     
     var body: some View {

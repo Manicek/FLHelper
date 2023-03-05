@@ -62,7 +62,7 @@ extension View {
     }
     func playerDetailSectionSubtitleFont() -> some View {
         textCase(.uppercase)
-            .appFont(16)
+            .systemFontBold(12)
     }
     func playerDetailItemFont() -> some View { appFont(24) }
     func playerDetailTextFont() -> some View { appFont(18) }

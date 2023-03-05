@@ -4,7 +4,7 @@
 
 import Foundation
 
-class EquippedItems {
+struct EquippedItems {
     var helmet: Armor?
     var bodyArmor: Armor?
     var shield: Shield?

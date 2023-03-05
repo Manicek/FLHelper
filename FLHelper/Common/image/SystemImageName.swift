@@ -22,6 +22,8 @@ enum SystemImageName: String {
     case cupAndSaucer = "cup.and.saucer"
     case forkKnifeCircle = "fork.knife.circle"
     case snowflake = "snowflake"
+    case minusCircle = "minus.circle"
+    case plusCircle = "plus.circle"
 }
 
 extension Image {

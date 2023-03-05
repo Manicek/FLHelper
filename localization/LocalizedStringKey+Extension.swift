@@ -8,6 +8,15 @@ extension LocalizedStringKey {
     // MARK: - Special
     static let empty: LocalizedStringKey = "-"
     
+    // MARK: - Common
+    static let commonName: LocalizedStringKey = "name"
+    static let commonDay: LocalizedStringKey = "day"
+    static let commonDaysSome: LocalizedStringKey = "daysSome"
+    static let commonDaysMany: LocalizedStringKey = "daysMany"
+    static let commonEdit: LocalizedStringKey = "edit"
+    static let commonDone: LocalizedStringKey = "done"
+    static let commonDelete: LocalizedStringKey = "delete"
+    
     // MARK: - MainView titles
     static let mainViewTitlePlayers: LocalizedStringKey = "players"
     static let mainViewTitlePlaces: LocalizedStringKey = "places"
@@ -41,6 +50,11 @@ extension LocalizedStringKey {
     static let characterRank: LocalizedStringKey = "rank"
     static let characterWillpower: LocalizedStringKey = "willpower"
     static let characterExperience: LocalizedStringKey = "experience"
+    static let characterDescription: LocalizedStringKey = "description"
+    static let characterBody: LocalizedStringKey = "body"
+    static let characterFace: LocalizedStringKey = "face"
+    static let characterClothing: LocalizedStringKey = "clothing"
+    static let characterInventory: LocalizedStringKey = "inventory"
     
     // MARK: - Attributes
     static let attributes: LocalizedStringKey = "attributes"
@@ -528,12 +542,6 @@ extension LocalizedStringKey {
     static let itemEffectParalyzingPoisonOrAntidote: LocalizedStringKey = "itemEffectPoisonOrAntidote"
     static let itemEffectSleepingPoisonOrAntidote: LocalizedStringKey = "itemEffectPoisonOrAntidote"
     static let itemEffectHallucinogenicPoisonOrAntidote: LocalizedStringKey = "itemEffectPoisonOrAntidote"
-    
-    // MARK: - Common
-    static let commonName: LocalizedStringKey = "name"
-    static let commonDay: LocalizedStringKey = "day"
-    static let commonDaysSome: LocalizedStringKey = "daysSome"
-    static let commonDaysMany: LocalizedStringKey = "daysMany"
     
     // MARK: - Critical injuries
     static let criticalInjuries: LocalizedStringKey = "criticalInjuries"

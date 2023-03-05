@@ -245,7 +245,7 @@ enum Goods: CaseIterable {
         }
     }
     
-    var requiredTools: [Tool] {
+    var requiredTools: [ToolOption] {
         switch self {
         case .arrowsIronHead, .arrowsWoodenHead, .quiver, .grapplingHook, .rope10Meters, .tallowCandle, .oilLamp,
                 .lantern, .torches, .sack, .bandages, .lampOil, .inkAndQuill, .parchment, .blanket, .sleepingFur,
@@ -351,8 +351,8 @@ enum Goods: CaseIterable {
         }
     }
     
-    func toItem() -> Item {
-        Item(
+    func toGoodsItem() -> GoodsItem {
+        GoodsItem(
             name: name,
             type: .tool,
             weight: weight,
@@ -370,6 +370,6 @@ enum Goods: CaseIterable {
     }
     
     static var defaultItems: [Item] {
-        allCases.map { $0.toItem() }
+        allCases.map { $0.toGoodsItem() }
     }
 }

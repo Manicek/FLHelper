@@ -4,7 +4,7 @@
 
 import Foundation
 
-class Battle {
+struct Battle {
     var round: Int = 0
     var teams: [BattleTeam]
     var combatants: [Combatant]

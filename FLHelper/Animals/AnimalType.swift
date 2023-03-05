@@ -5,6 +5,7 @@
 import SwiftUI
 
 enum AnimalType {
+    case empty
     case bear
     case wolf
     case fox
@@ -27,6 +28,7 @@ enum AnimalType {
     
     var name: LocalizedStringKey {
         switch self {
+        case .empty: return .empty
         case .bear: return .animalBear
         case .wolf: return .animalWolf
         case .fox: return .animalFox

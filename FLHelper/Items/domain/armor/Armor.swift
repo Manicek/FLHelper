@@ -34,31 +34,14 @@ enum ArmorType {
 
 // MARK: - Armor
 
-class Armor: Item {
+struct Armor: Item {
+    var name: LocalizedStringKey
+    var type: ItemType
+    var weight: Weight
+    var price: Price
+    var supply: Supply
+    var craftingRequirements: CraftingRequirements
+    var effect: LocalizedStringKey
     var armorRating: Int
     var armorType: ArmorType
-    var description: LocalizedStringKey
-    
-    init(
-        name: LocalizedStringKey,
-        weight: Weight,
-        price: Price,
-        supply: Supply,
-        craftingRequirements: CraftingRequirements,
-        armorRating: Int,
-        armorType: ArmorType,
-        description: LocalizedStringKey
-    ) {
-        self.armorRating = armorRating
-        self.armorType = armorType
-        self.description = description
-        super.init(
-            name: name,
-            type: armorType.itemType,
-            weight: weight,
-            price: price,
-            supply: supply,
-            craftingRequirements: craftingRequirements
-        )
-    }
 }
