@@ -52,7 +52,7 @@ extension LocalizedStringKey {
     static let characterRank: LocalizedStringKey = "rank"
     static let characterWillpower: LocalizedStringKey = "willpower"
     static let characterExperience: LocalizedStringKey = "experience"
-    static let characterDescription: LocalizedStringKey = "description"
+    static let characterVisuals: LocalizedStringKey = "visuals"
     static let characterBody: LocalizedStringKey = "body"
     static let characterFace: LocalizedStringKey = "face"
     static let characterClothing: LocalizedStringKey = "clothing"

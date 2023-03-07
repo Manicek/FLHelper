@@ -5,36 +5,52 @@
 import SwiftUI
 
 struct ConditionsView: View {
+    @Environment(\.isEditing) var isEditing
+    
     let conditions: [CharacterCondition: Bool]
     
+    var onChangeCondition: (CharacterCondition) -> Void
+    
     var body: some View {
-        HStack(spacing: 4) {
-            ConditionView(condition: .sleepy, isActive: conditions[.sleepy] == true)
-            ConditionView(condition: .cold, isActive: conditions[.cold] == true)
-            ConditionView(condition: .hungry, isActive: conditions[.hungry] == true)
-            ConditionView(condition: .thirsty, isActive: conditions[.thirsty] == true)
-        }
+        VStack {
+            Text(.conditions)
+                .playerDetailSectionTitleFont()
+            HStack(spacing: 0) {
+                ForEach(CharacterCondition.allCases, id: \.self) { condition in
+                    ConditionView(
+                        condition: condition, isActive: conditions[condition] == true, onChangeCondition: onChangeCondition
+                    )
+                }.environment(\.isEditing, isEditing)
+            }
+        }.fixedSize()
     }
 }
 
 // MARK: - ConditionView
 
 private struct ConditionView: View {
-    enum Constants {
-        static let size: CGFloat = 84
-    }
+    @Environment(\.isEditing) var isEditing
     
     let condition: CharacterCondition
     let isActive: Bool
+    var onChangeCondition: (CharacterCondition) -> Void
     
     var body: some View {
-        VStack {
-            Image(condition.systemImageName)
-                .font(.system(size: 40))
-            Text(condition.name)
-                .playerDetailTextFont()
+        ZStack {
+            VStack {
+                Button {
+                    if isEditing {
+                        onChangeCondition(condition)
+                    }
+                } label: {
+                    Image(condition.systemImageName)
+                        .systemFontRegular(40)
+                }
+                Text(condition.name)
+                    .playerDetailTextFont()
+                    .frame(minWidth: 72)
+            }
+            .opacity(isActive ? 1 : 0.3)
         }
-        .opacity(isActive ? 1 : 0.3)
-        .frame(width: Constants.size, height: Constants.size)
     }
 }

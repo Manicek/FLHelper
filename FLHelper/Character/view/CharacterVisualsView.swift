@@ -4,16 +4,16 @@
 
 import SwiftUI
 
-struct CharacterDescriptionView: View {
+struct CharacterVisualsView: View {
     let character: Character
     
     var body: some View {
         VStack {
-            TextLeading(.characterDescription)
+            TextLeading(.characterVisuals)
                 .playerDetailSectionTitleFont()
-            LineView(title: .characterBody, value: character.characterDescription.body)
-            LineView(title: .characterFace, value: character.characterDescription.face)
-            LineView(title: .characterClothing, value: character.characterDescription.clothing)
+            LineView(title: .characterBody, value: character.characterVisuals.body)
+            LineView(title: .characterFace, value: character.characterVisuals.face)
+            LineView(title: .characterClothing, value: character.characterVisuals.clothing)
         }
     }
 }

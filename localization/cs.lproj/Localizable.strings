@@ -151,6 +151,7 @@
 "goodsPlural" = "Zboží";
 "miscellaneousPlural" = "Různé";
 
+"consumables" = "Spotřební předměty";
 "food" = "Jídlo";
 "water" = "Voda";
 "arrows" = "Šípy";
@@ -474,7 +475,7 @@ zdvojnásobí cenu. Protijed stojí základní cenu.";
 "range" = "Vzdálenost";
 "comment" = "Poznámky";
 
-"description" = "Popis";
+"visuals" = "Vzhled";
 "body" = "Tělo";
 "face" = "Tvář";
 "clothing" = "Oblečení";

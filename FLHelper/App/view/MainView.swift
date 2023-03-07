@@ -10,6 +10,12 @@ struct MainView: View {
     }
     
     var body: some View {
+        PlayerDetailView(
+            viewModel: PlayerDetailViewModel(player: FLPlayersRepository().getTestPlayerCharacters().first!)
+        )
+    }
+    
+    var bodyActual: some View {
         NavigationView {
             VStack(alignment: .leading, spacing: 32) {
                 HStack {

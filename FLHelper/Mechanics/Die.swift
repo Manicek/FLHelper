@@ -5,6 +5,9 @@
 import SwiftUI
 
 enum Die {
+    static let lowestDie: Die = .d6
+    static let highestDie: Die = .d12
+    
     case d6
     case d8
     case d10
@@ -45,12 +48,12 @@ enum Die {
         }
     }
     
-    var higherDie: Die? {
+    var higherDie: Die {
         switch self {
         case .d6: return .d8
         case .d8: return .d10
         case .d10: return .d12
-        case .d12: return nil
+        case .d12: return .d12
         }
     }
     

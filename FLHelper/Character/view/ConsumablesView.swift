@@ -5,33 +5,57 @@
 import SwiftUI
 
 struct ConsumablesView: View {
+    @Environment(\.isEditing) var isEditing
+    
     let consumables: [Consumable: Die]
+    var onChangeConsumableDie: (Consumable, Direction) -> Void
     
     var body: some View {
-        HStack(spacing: 4) {
-            ConsumableView(consumable: .food, die: consumables[.food])
-            ConsumableView(consumable: .water, die: consumables[.water])
-            ConsumableView(consumable: .arrows, die: consumables[.arrows])
-            ConsumableView(consumable: .torches, die: consumables[.torches])
-        }
+        VStack {
+            Text(.consumables)
+                .playerDetailSectionTitleFont()
+            HStack(spacing: 4) {
+                ForEach(Consumable.allCases, id: \.self) { consumable in
+                    ConsumableView(
+                        consumable: consumable, die: consumables[consumable], onChangeConsumableDie: onChangeConsumableDie
+                    ).environment(\.isEditing, isEditing)
+                }
+            }
+        }.fixedSize()
     }
 }
 
 // MARK: - ConsumableView
 
 private struct ConsumableView: View {
-    enum Constants {
-        static let size: CGFloat = 72
-    }
+    @Environment(\.isEditing) var isEditing
     
     let consumable: Consumable
     let die: Die?
+    var onChangeConsumableDie: (Consumable, Direction) -> Void
     
     var body: some View {
         VStack {
-            Image(die?.systemImageName ?? .square).font(.system(size: 40))
-            Text(consumable.name).playerDetailTextFont()
+            HStack(spacing: 0) {
+                if isEditing {
+                    MinusButton(size: 20) {
+                        onChangeConsumableDie(consumable, .decrease)
+                    }.padding(.leading, 4)
+                }
+                
+                Image(die?.systemImageName ?? .square)
+                    .systemFontRegular(40)
+                
+                if isEditing {
+                    PlusButton(size: 20) {
+                        onChangeConsumableDie(consumable, .increase)
+                    }.padding(.trailing, 4)
+                }
+            }
+            
+            Text(consumable.name)
+                .playerDetailTextFont()
+                .frame(minWidth: 72)
         }
-        .frame(width: Constants.size, height: Constants.size)
     }
 }

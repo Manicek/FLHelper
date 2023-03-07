@@ -22,7 +22,7 @@ struct SkillsView: View {
             }
             Divider()
             ForEach(Skill.allCases, id: \.self) { skill in
-                HStack(alignment: .bottom, spacing: 0) {
+                HStack(spacing: 0) {
                     Text(skill.name)
                         .playerDetailItemFont()
                     Text(" (")
@@ -46,10 +46,8 @@ struct SkillsView: View {
                             .frame(minWidth: 30, maxWidth: 30)
                     }
                     if isEditing {
-                        Button {
+                        PlusButton {
                             onIncreaseSkill(skill)
-                        } label: {
-                            Image(.plusCircle)
                         }
                     }
                     Divider()

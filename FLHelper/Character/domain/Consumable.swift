@@ -4,7 +4,7 @@
 
 import SwiftUI
 
-enum Consumable {
+enum Consumable: CaseIterable {
     case food
     case water
     case arrows

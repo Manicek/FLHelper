@@ -11,6 +11,9 @@ struct PlayerDetailView: View {
         HStack {
             VStack {
                 PlayerHeaderView(player: viewModel.player)
+                ConditionsView(conditions: viewModel.player.conditions) { condition in
+                    viewModel.onChangeCondition(condition: condition)
+                }.environment(\.isEditing, viewModel.isEditing)
                 Spacer()
                 HStack {
                     AttributesView(
@@ -32,10 +35,11 @@ struct PlayerDetailView: View {
             }.fixedSize(horizontal: true, vertical: false)
             VStack {
                 PlayerInfoView(player: viewModel.player)
-                ConditionsView(conditions: viewModel.player.conditions)
-                ConsumablesView(consumables: viewModel.player.inventory.consumables)
                 CriticalInjuriesView(injuries: viewModel.player.injuries)
                 Spacer()
+                ConsumablesView(consumables: viewModel.player.inventory.consumables) { consumable, direction in
+                    viewModel.onChangeConsumableDie(consumable: consumable, direction: direction)
+                }.environment(\.isEditing, viewModel.isEditing)
                 InventoryView(showTitle: true, inventory: viewModel.player.inventory)
                 ArmorView(
                     helmet: viewModel.player.equippedItems.helmet,
@@ -49,8 +53,8 @@ struct PlayerDetailView: View {
                 )
             }
             VStack {
-                HStack {
-                    CharacterDescriptionView(character: viewModel.player)
+                HStack(alignment: .top) {
+                    CharacterVisualsView(character: viewModel.player)
                     VStack {
                         HStack {
                             Spacer()
@@ -62,7 +66,6 @@ struct PlayerDetailView: View {
                             .fixedSize(horizontal: false, vertical: true)
                     }
                 }
-                Spacer()
                 HStack {
                     VStack {
                         OwnedAnimalView(

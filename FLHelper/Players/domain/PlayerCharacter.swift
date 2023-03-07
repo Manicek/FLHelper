@@ -21,7 +21,7 @@ struct PlayerCharacter: Character {
     var injuries: [CriticalInjury]
     var animal: Animal
     var equippedItems: EquippedItems
-    var characterDescription: CharacterDescription
+    var characterVisuals: CharacterVisuals
     var willpower: Int
     var experience: Int
     var pride: String?
@@ -41,7 +41,7 @@ struct PlayerCharacter: Character {
         injuries: [CriticalInjury],
         animal: Animal,
         equippedItems: EquippedItems,
-        characterDescription: CharacterDescription,
+        characterVisuals: CharacterVisuals,
         willpower: Int,
         experience: Int,
         pride: String?,
@@ -63,7 +63,7 @@ struct PlayerCharacter: Character {
         self.injuries = injuries
         self.animal = animal
         self.equippedItems = equippedItems
-        self.characterDescription = characterDescription
+        self.characterVisuals = characterVisuals
         self.willpower = willpower
         self.experience = experience
         self.pride = pride

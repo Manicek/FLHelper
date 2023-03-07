@@ -96,4 +96,27 @@ class PlayerDetailViewModel: ObservableObject {
             onIgnoreExperienceForTalent(talent: talent)
         }
     }
+    
+    // MARK: - Consumables
+    
+    func onChangeConsumableDie(consumable: Consumable, direction: Direction) {
+        if let die = player.inventory.consumables[consumable] {
+            switch direction {
+            case .increase:
+                player.inventory.consumables[consumable] = die.higherDie
+            case .decrease:
+                player.inventory.consumables[consumable] = die.lowerDie
+            }
+        } else {
+            if direction == .increase {
+                player.inventory.consumables[consumable] = .lowestDie
+            }
+        }
+    }
+    
+    // MARK: - Conditions
+    
+    func onChangeCondition(condition: CharacterCondition) {
+        player.conditions[condition]?.toggle()
+    }
 }

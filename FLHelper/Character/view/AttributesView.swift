@@ -22,7 +22,7 @@ struct AttributesView: View {
     var body: some View {
         VStack(alignment: .center, spacing: 2) {
             if showTitle {
-                TextLeading(.attributes)
+                Text(.attributes)
                     .playerDetailSectionTitleFont()
             }
             HStack {
@@ -60,20 +60,16 @@ struct AttributesView: View {
     private func attributeHeartsView(_ attribute: Attribute) -> some View {
         HStack(alignment: .bottom, spacing: 0) {
             if isEditing {
-                Button {
+                MinusButton {
                     onAttributeChanged(attribute, -1)
-                } label: {
-                    Image(.minusCircle)
                 }
             }
             ForEach((1...(max[attribute] ?? 2)), id: \.self) { value in
                 Image(value <= (current[attribute] ?? 0) ? .heartFilled : .heart)
             }
             if isEditing {
-                Button {
+                PlusButton {
                     onAttributeChanged(attribute, 1)
-                } label: {
-                    Image(.plusCircle)
                 }
             }
             Spacer()

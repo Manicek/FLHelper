@@ -12,7 +12,7 @@ protocol Character: Entity {
     var injuries: [CriticalInjury] { get set }
     var animal: Animal { get set }
     var equippedItems: EquippedItems { get set }
-    var characterDescription: CharacterDescription { get set }
+    var characterVisuals: CharacterVisuals { get set }
     var weapons: [Weapon] { get }
 }
 

@@ -4,7 +4,7 @@
 
 import Foundation
 
-struct CharacterDescription {
+struct CharacterVisuals {
     var face: String?
     var body: String?
     var clothing: String?
