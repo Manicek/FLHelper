@@ -16,6 +16,14 @@ struct TextLeading: View {
         self.key = key
     }
     
+    init(_ integer: Int) {
+        self.string = "\(integer)"
+    }
+    
+    init(_ double: Double) {
+        self.string = "\(double)"
+    }
+    
     var body: some View {
         if let string = string {
             HStack {

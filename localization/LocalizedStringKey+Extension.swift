@@ -23,6 +23,7 @@ extension LocalizedStringKey {
     static let mainViewTitlePlayers: LocalizedStringKey = "players"
     static let mainViewTitlePlaces: LocalizedStringKey = "places"
     static let mainViewTitleCombat: LocalizedStringKey = "combat"
+    static let mainViewTitleShopping: LocalizedStringKey = "shopping"
     static let mainViewTitleTables: LocalizedStringKey = "tables"
     static let mainViewTitleRolling: LocalizedStringKey = "rolling"
     static let mainViewTitleTalents: LocalizedStringKey = "talents"
@@ -363,6 +364,9 @@ extension LocalizedStringKey {
     static let animalSnake: LocalizedStringKey = "snake"
     static let animalScorpion: LocalizedStringKey = "scorpion"
     static let animalSpider: LocalizedStringKey = "spider"
+    static let animalMouse: LocalizedStringKey = "mouse"
+    static let animalCrow: LocalizedStringKey = "crow"
+    static let animalRabbit: LocalizedStringKey = "rabbit"
     
     // MARK: - Dice
     static let d6: LocalizedStringKey = "d6"
@@ -563,19 +567,35 @@ extension LocalizedStringKey {
     static let playerDetailIgnoreExperienceOnce: LocalizedStringKey = "ignoreExperienceOnce"
     static let playerDetailIgnoreExperienceForAll: LocalizedStringKey = "ignoreExperienceForAll"
     
+    // MARK: - Rolling category
+    static let rollingCategoryTravelling: LocalizedStringKey = "travelling"
+    static let rollingCategoryCombat: LocalizedStringKey = "combat"
     
+    // MARK: - Rolling options header
+    static let rollingOptionHeaderRollFor: LocalizedStringKey = "rollFor"
+    static let rollingOptionHeaderSkill: LocalizedStringKey = "skill"
+    static let rollingOptionHeaderRelatedTalents: LocalizedStringKey = "relatedTalents"
+    static let rollingOptionHeaderRequirements: LocalizedStringKey = "requirements"
+    static let rollingOptionHeaderBonuses: LocalizedStringKey = "bonuses"
+    static let rollingOptionHeaderSuccess: LocalizedStringKey = "success"
+    static let rollingOptionHeaderFailure: LocalizedStringKey = "failure"
     
+    // MARK: - Hunting
+    static let huntingSearch: LocalizedStringKey = "huntingSearch"
+    static let huntingByTrap: LocalizedStringKey = "huntingByTrap"
+    static let huntingByShooting: LocalizedStringKey = "huntingByShooting"
+    static let huntingByTrapRequirement: LocalizedStringKey = "huntingByTrapRequirement"
+    static let huntingByShootingRequirement: LocalizedStringKey = "rangedWeapon"
+    static let huntingNeedWeapon: LocalizedStringKey = "weapon"
+    static let huntingNeedWeaponOrTrap: LocalizedStringKey = "weaponOrTrap"
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    // MARK: - Table header
+    static let tableHeaderD6: LocalizedStringKey = "d6"
+    static let tableHeaderAnimal: LocalizedStringKey = "animal"
+    static let tableHeaderDifficulty: LocalizedStringKey = "difficulty"
+    static let tableHeaderNeeds: LocalizedStringKey = "needs"
+    static let tableHeaderMeat: LocalizedStringKey = "meat"
+    static let tableHeaderPelt: LocalizedStringKey = "materialPelt"
     
     
     

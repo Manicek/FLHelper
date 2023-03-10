@@ -22,7 +22,7 @@ struct ItemsView: View {
     }
     
     var body: some View {
-        ScrollView {
+        ScrollView(showsIndicators: false) {
             LazyVGrid(columns: columns, spacing: 0) {
                 ItemsHeaderView(itemType: viewModel.itemType)
                     .textCase(.uppercase)
@@ -34,7 +34,7 @@ struct ItemsView: View {
                 }
             }
         }
-        .padding(20)
+        .padding(.horizontal, 20)
     }
 }
 
@@ -65,32 +65,5 @@ private struct ItemColumnsView: View {
                 self.largestHeight = height
             }
         }
-    }
-}
-
-private struct VStackWrappedView<Content> : View where Content : View {
-    let content: Content
-    @Binding var minHeight: CGFloat
-    var onUpdateHeight: (CGFloat) -> (Void)
-    
-    init(_ content: Content, _ minHeight: Binding<CGFloat>, onUpdateHeight: @escaping (CGFloat) -> Void) {
-        self.content = content
-        self._minHeight = minHeight
-        self.onUpdateHeight = onUpdateHeight
-    }
-    
-    var body: some View {
-        VStack {
-            Spacer()
-            content
-            Spacer()
-        }
-        .frame(minHeight: minHeight)
-        .background(
-            GeometryReader { geometry -> Color in
-                onUpdateHeight(geometry.frame(in: .global).height)
-                return .clear
-            }
-        )
     }
 }

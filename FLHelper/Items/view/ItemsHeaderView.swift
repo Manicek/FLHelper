@@ -9,13 +9,13 @@ struct ItemsHeaderView: View {
     
     var body: some View {
         switch itemType {
-        case .meleeWeapon, .rangedWeapon, .shield, .bodyArmor, .helmet:
+        case .meleeWeapon, .rangedWeapon:
             TextLeading(.itemHeaderWeapon)
             CommonHeadersView()
         case .tool:
             TextLeading(.itemHeaderTools)
             CommonHeadersView()
-        case .goods, .miscellaneous:
+        case .shield, .bodyArmor, .helmet, .goods, .miscellaneous:
             TextLeading(.itemHeaderItem)
             CommonHeadersView()
             TextLeading(.itemHeaderEffect)

@@ -10,12 +10,6 @@ struct MainView: View {
     }
     
     var body: some View {
-        PlayerDetailView(
-            viewModel: PlayerDetailViewModel(player: FLPlayersRepository().getTestPlayerCharacters().first!)
-        )
-    }
-    
-    var bodyActual: some View {
         NavigationView {
             VStack(alignment: .leading, spacing: 32) {
                 HStack {
@@ -40,13 +34,13 @@ struct MainView: View {
                     NavigationLink(destination: EmptyView()) {
                         MainViewLinkView(title: .mainViewTitleCombat)
                     }
-                    NavigationLink(destination: TablesView()) {
-                        MainViewLinkView(title: .mainViewTitleTables)
+                    NavigationLink(destination: ShoppingView()) {
+                        MainViewLinkView(title: .mainViewTitleShopping)
                     }
                 }.frame(maxWidth: .infinity)
                 
                 HStack {
-                    NavigationLink(destination: EmptyView()) {
+                    NavigationLink(destination: RollingCategoriesView()) {
                         MainViewLinkView(title: .mainViewTitleRolling)
                     }
                     NavigationLink(destination: EmptyView()) {
@@ -60,6 +54,12 @@ struct MainView: View {
                     }
                     NavigationLink(destination: EmptyView()) {
                         MainViewLinkView(title: .mainViewTitleNPCs)
+                    }
+                }.frame(maxWidth: .infinity)
+                
+                HStack {
+                    NavigationLink(destination: EmptyView()) {
+                        MainViewLinkView(title: .mainViewTitleTables)
                     }
                 }.frame(maxWidth: .infinity)
             }

@@ -15,6 +15,7 @@
 "encounters" = "Místa";
 "npcs" = "Nehráčské postavy";
 "places" = "Místa";
+"shopping" = "Nákupy";
 "players" = "Hráči";
 "rolling" = "Házení";
 "tables" = "Tabulky";
@@ -321,6 +322,9 @@
 "snake" = "Had";
 "scorpion" = "Štír";
 "spider" = "Pavouk";
+"mouse" = "Myš";
+"crow" = "Vrána";
+"rabbit" = "Zajíc";
 
 "d6" = "k6";
 "d8" = "k8";
@@ -501,6 +505,23 @@ zdvojnásobí cenu. Protijed stojí základní cenu.";
 "ignoreExperienceOnce" = "Zlepšit zadarmo";
 "ignoreExperienceForAll" = "Ignorovat všechny zkušenosti";
 
+"travelling" = "Cestování";
 
+"huntingByTrapRequirement" = "Lovecká past, zvíře musí být chytitelné do pasti";
 
+"huntingSearch" = "Lov - Hledání kořisti";
+"huntingByTrap" = "Lov - Chytání do pasti";
+"huntingByShooting" = "Lov - Střelba";
 
+"rollFor" = "Hod na";
+"skill" = "Dovednost";
+"relatedTalents" = "Související talenty";
+"requirements" = "Požadavky";
+"bonuses" = "Bonusy";
+"success" = "Úspěch";
+"failure" = "Neúspěch";
+
+"animal" = "Zvíře";
+"difficulty" = "Obtížnost";
+"needs" = "Potřeby";
+"meat" = "Maso";

@@ -4,7 +4,7 @@
 
 import SwiftUI
 
-struct TablesView: View {
+struct ShoppingView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 32) {

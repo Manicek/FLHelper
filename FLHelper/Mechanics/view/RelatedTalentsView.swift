@@ -4,15 +4,15 @@
 
 import SwiftUI
 
-struct RequiredTalentsView: View {
-    let item: Item
+struct RelatedTalentsView: View {
+    let option: RollingOption
     
     var body: some View {
-        if item.craftingRequirements.talents.isEmpty {
+        if option.relatedTalents.isEmpty {
             TextLeading(.empty)
         } else {
             VStack {
-                ForEach(item.craftingRequirements.talents, id: \.self) { talent in
+                ForEach(option.relatedTalents, id: \.self) { talent in
                     TextLeading(talent.name)
                 }
             }
