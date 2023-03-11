@@ -61,8 +61,16 @@ enum RollingOption: CaseIterable {
         }
     }
     
+    @ViewBuilder
     var successResultView: some View {
-        TextLeading(.empty)
+        switch self {
+        case .huntingSearch:
+            RollingNavigationLink(destination: HuntingSearchTablesView())
+        case .huntingByTrap:
+            TextLeading(.empty)
+        case .huntingByShooting:
+            TextLeading(.empty)
+        }
     }
     
     var failureResultView: some View {

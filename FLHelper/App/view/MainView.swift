@@ -40,7 +40,7 @@ struct MainView: View {
                 }.frame(maxWidth: .infinity)
                 
                 HStack {
-                    NavigationLink(destination: RollingCategoriesView()) {
+                    NavigationLink(destination: RollingOptionsView(viewModel: RollingOptionsViewModel())) {
                         MainViewLinkView(title: .mainViewTitleRolling)
                     }
                     NavigationLink(destination: EmptyView()) {

@@ -5,21 +5,41 @@
 import SwiftUI
 
 struct RollingOptionsView: View {
-    let category: RollingCategory
+    @StateObject var viewModel: RollingOptionsViewModel
     private let columns = Array(repeating: GridItem(.flexible(), spacing: 0), count: 7)
     
     var body: some View {
-        ScrollView(showsIndicators: false) {
-            LazyVGrid(columns: columns, spacing: 0) {
-                RollingOptionsHeaderView()
-                    .textCase(.uppercase)
-                    .tableHeaderFont()
+        VStack {
+            HStack {
+                RollingOptionFilterButton(
+                    isSelected: $viewModel.showCombatOptions,
+                    title: .rollingCategoryCombat
+                ) {
+                    viewModel.toggleCombatOptions()
+                }
                 
-                ForEach(RollingOption.allCases.filter { $0.category == category }, id: \.self) { rollingOption in
-                    RollingOptionColumnsView(option: rollingOption)
+                RollingOptionFilterButton(
+                    isSelected: $viewModel.showTravellingOptions,
+                    title: .rollingCategoryTravelling
+                ) {
+                    viewModel.toggleTravellingOptions()
+                }
+                
+                Spacer()
+            }
+            ScrollView(showsIndicators: false) {
+                LazyVGrid(columns: columns, spacing: 0) {
+                    RollingOptionsHeaderView()
+                        .textCase(.uppercase)
+                        .tableHeaderFont()
+                    
+                    ForEach(viewModel.options, id: \.self) { rollingOption in
+                        RollingOptionColumnsView(option: rollingOption)
+                    }
                 }
             }
-        }.padding(.horizontal, 20)
+        }
+        .padding(.horizontal, 20)
     }
 }
 

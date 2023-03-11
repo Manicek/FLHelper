@@ -32,37 +32,33 @@ private struct SystemFontModifier: ViewModifier {
 extension View {
     // MARK: - Generic
 
-    func systemFontRegular(_ size: CGFloat) -> some View {
-        modifier(SystemFontModifier(size: size, weight: .regular)).foregroundColor(.text)
+    func systemFontRegular(_ size: CGFloat, color: Color = .text) -> some View {
+        modifier(SystemFontModifier(size: size, weight: .regular)).foregroundColor(color)
     }
     
-    func systemFontBold(_ size: CGFloat) -> some View {
-        modifier(SystemFontModifier(size: size, weight: .bold)).foregroundColor(.text)
+    func systemFontBold(_ size: CGFloat, color: Color = .text) -> some View {
+        modifier(SystemFontModifier(size: size, weight: .bold)).foregroundColor(color)
     }
     
     func appFont(_ size: CGFloat, color: Color = .text) -> some View {
         modifier(FontModifier(fontName: .regular, size: size)).foregroundColor(color)
     }
     
-    func italicFont(_ size: CGFloat) -> some View {
-        modifier(FontModifier(fontName: .italic, size: size)).foregroundColor(.text)
+    func italicFont(_ size: CGFloat, color: Color = .text) -> some View {
+        modifier(FontModifier(fontName: .italic, size: size)).foregroundColor(color)
     }
     
-    func scFont(_ size: CGFloat) -> some View {
-        modifier(FontModifier(fontName: .regularSC, size: size)).foregroundColor(.text)
+    func scFont(_ size: CGFloat, color: Color = .text) -> some View {
+        modifier(FontModifier(fontName: .regularSC, size: size)).foregroundColor(color)
     }
     
     // MARK: - Player
     
     func playerDetailTitle() -> some View { appFont(60) }
     func playerDetailSubtitle() -> some View { appFont(40) }
-    func playerDetailSectionTitleFont() -> some View {
-        textCase(.uppercase)
-            .appFont(24, color: .black)
-    }
+    func playerDetailSectionTitleFont() -> some View { textCase(.uppercase).appFont(24, color: .black) }
     func playerDetailSectionSubtitleFont() -> some View {
-        textCase(.uppercase)
-            .systemFontBold(12)
+        textCase(.uppercase).systemFontBold(12)
     }
     func playerDetailItemFont() -> some View { appFont(24) }
     func playerDetailTextFont() -> some View { appFont(18) }
@@ -70,4 +66,5 @@ extension View {
     // MARK: - Tables
     
     func tableHeaderFont() -> some View { systemFontBold(14) }
+    func tableLinkFont() -> some View { systemFontRegular(20, color: .white) }
 }

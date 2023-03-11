@@ -597,7 +597,8 @@ extension LocalizedStringKey {
     static let tableHeaderMeat: LocalizedStringKey = "meat"
     static let tableHeaderPelt: LocalizedStringKey = "materialPelt"
     
-    
+    // MARK: - Table
+    static let tableLink: LocalizedStringKey = "tableLink"
     
     
     

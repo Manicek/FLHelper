@@ -5,15 +5,14 @@
 import SwiftUI
 
 struct HuntingSearchTablesView: View {
-    
-    
-    
     var body: some View {
-        EmptyView()
+        VStack {
+            SuccessTableView()
+        }
     }
 }
 
-// MARK: -
+// MARK: - SuccessTableView
 
 private struct SuccessTableView: View {
     private let columns = Array(repeating: GridItem(.flexible(), spacing: 0), count: 6)
@@ -26,14 +25,16 @@ private struct SuccessTableView: View {
                 .tableHeaderFont()
             ForEach(options.indices, id: \.self) { index in
                 let option = options[index]
-                SuccessColumnView(option: option)
+                SuccessColumnsView(option: option)
                     .background(index % 2 == 1 ? Color.tableRowBackground : Color.clear)
             }
         }
     }
 }
 
-private struct SuccessColumnView: View {
+// MARK: - SuccessColumnsView
+
+private struct SuccessColumnsView: View {
     let option: HuntingSearchSuccessResultOption
     @State var largestHeight: CGFloat = 0
     
@@ -56,6 +57,8 @@ private struct SuccessColumnView: View {
         }
     }
 }
+
+// MARK: - SuccessTableHeaderView
 
 private struct SuccessTableHeaderView: View {
     var body: some View {

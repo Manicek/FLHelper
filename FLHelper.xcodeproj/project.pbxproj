@@ -91,7 +91,6 @@
 		FF4D76B129B8D2FB001FCC1D /* RollingOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4D76B029B8D2FB001FCC1D /* RollingOption.swift */; };
 		FF4D76B329B8D56A001FCC1D /* RollingCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4D76B229B8D56A001FCC1D /* RollingCategory.swift */; };
 		FF4D76B529B8D815001FCC1D /* RollingOptionsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4D76B429B8D815001FCC1D /* RollingOptionsHeaderView.swift */; };
-		FF4D76B729B8D876001FCC1D /* RollingCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4D76B629B8D876001FCC1D /* RollingCategoriesView.swift */; };
 		FF4D76B929B8DB99001FCC1D /* RelatedTalentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4D76B829B8DB99001FCC1D /* RelatedTalentsView.swift */; };
 		FF4D76BB29B8E2CC001FCC1D /* VstackWrappedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4D76BA29B8E2CC001FCC1D /* VstackWrappedView.swift */; };
 		FF4D76C129BA9349001FCC1D /* HuntingSearchTablesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4D76C029BA9349001FCC1D /* HuntingSearchTablesView.swift */; };
@@ -140,6 +139,9 @@
 		FFD2DCF929831BB5001EFCAA /* SkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD2DCF829831BB5001EFCAA /* SkillsView.swift */; };
 		FFD2DCFB29831D91001EFCAA /* IMFellGreatPrimer-RegularSC.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFD2DCFA29831D91001EFCAA /* IMFellGreatPrimer-RegularSC.ttf */; };
 		FFD2DCFD29832A1F001EFCAA /* TalentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD2DCFC29832A1F001EFCAA /* TalentsView.swift */; };
+		FFE8B10B29BD289000B8269F /* RollingNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE8B10A29BD289000B8269F /* RollingNavigationLink.swift */; };
+		FFE8B10D29BD34C000B8269F /* RollingOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE8B10C29BD34C000B8269F /* RollingOptionsViewModel.swift */; };
+		FFE8B10F29BD367E00B8269F /* RollingOptionFilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE8B10E29BD367E00B8269F /* RollingOptionFilterButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -252,7 +254,6 @@
 		FF4D76B029B8D2FB001FCC1D /* RollingOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingOption.swift; sourceTree = "<group>"; };
 		FF4D76B229B8D56A001FCC1D /* RollingCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingCategory.swift; sourceTree = "<group>"; };
 		FF4D76B429B8D815001FCC1D /* RollingOptionsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingOptionsHeaderView.swift; sourceTree = "<group>"; };
-		FF4D76B629B8D876001FCC1D /* RollingCategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingCategoriesView.swift; sourceTree = "<group>"; };
 		FF4D76B829B8DB99001FCC1D /* RelatedTalentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedTalentsView.swift; sourceTree = "<group>"; };
 		FF4D76BA29B8E2CC001FCC1D /* VstackWrappedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VstackWrappedView.swift; sourceTree = "<group>"; };
 		FF4D76C029BA9349001FCC1D /* HuntingSearchTablesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuntingSearchTablesView.swift; sourceTree = "<group>"; };
@@ -302,6 +303,9 @@
 		FFD2DCF829831BB5001EFCAA /* SkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsView.swift; sourceTree = "<group>"; };
 		FFD2DCFA29831D91001EFCAA /* IMFellGreatPrimer-RegularSC.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IMFellGreatPrimer-RegularSC.ttf"; sourceTree = "<group>"; };
 		FFD2DCFC29832A1F001EFCAA /* TalentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalentsView.swift; sourceTree = "<group>"; };
+		FFE8B10A29BD289000B8269F /* RollingNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingNavigationLink.swift; sourceTree = "<group>"; };
+		FFE8B10C29BD34C000B8269F /* RollingOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingOptionsViewModel.swift; sourceTree = "<group>"; };
+		FFE8B10E29BD367E00B8269F /* RollingOptionFilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingOptionFilterButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -656,8 +660,10 @@
 			children = (
 				FF4D76AD29B8CC34001FCC1D /* RollingOptionsView.swift */,
 				FF4D76B429B8D815001FCC1D /* RollingOptionsHeaderView.swift */,
-				FF4D76B629B8D876001FCC1D /* RollingCategoriesView.swift */,
 				FF4D76B829B8DB99001FCC1D /* RelatedTalentsView.swift */,
+				FFE8B10A29BD289000B8269F /* RollingNavigationLink.swift */,
+				FFE8B10C29BD34C000B8269F /* RollingOptionsViewModel.swift */,
+				FFE8B10E29BD367E00B8269F /* RollingOptionFilterButton.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1107,7 +1113,7 @@
 				FF11098229A4FC5E00E9F3FC /* RequiredTalentsView.swift in Sources */,
 				FF7DDE382987DDBC00FD9D43 /* CharacterCondition.swift in Sources */,
 				FFB5877729AE86AE00C3DAD2 /* CriticalInjury.swift in Sources */,
-				FF4D76B729B8D876001FCC1D /* RollingCategoriesView.swift in Sources */,
+				FFE8B10F29BD367E00B8269F /* RollingOptionFilterButton.swift in Sources */,
 				FF1A869D2981C41B0056076C /* Campaign.swift in Sources */,
 				FF11098A29A52E8E00E9F3FC /* ItemPriceView.swift in Sources */,
 				FF11098E29A5320200E9F3FC /* Goods.swift in Sources */,
@@ -1117,6 +1123,7 @@
 				FF1A86B62981D4640056076C /* PersistenceController.swift in Sources */,
 				FF11098829A4FCA100E9F3FC /* ItemsHeaderView.swift in Sources */,
 				FF11093F299EF7B800E9F3FC /* WeaponGrip.swift in Sources */,
+				FFE8B10B29BD289000B8269F /* RollingNavigationLink.swift in Sources */,
 				FF4431D22980530B00890D7C /* Animal.swift in Sources */,
 				FF110927299D300700E9F3FC /* ItemType.swift in Sources */,
 				FF4432332980B5E500890D7C /* PlayersRepository.swift in Sources */,
@@ -1133,6 +1140,7 @@
 				FF11096D29A2FF3900E9F3FC /* Money.swift in Sources */,
 				FF4431FA298089CA00890D7C /* Battle.swift in Sources */,
 				FF1F147229A94D2D007891AA /* EquippedItems.swift in Sources */,
+				FFE8B10D29BD34C000B8269F /* RollingOptionsViewModel.swift in Sources */,
 				FF1F147029A94596007891AA /* String+ImageNames.swift in Sources */,
 				FF4431F62980897300890D7C /* Battlefield.swift in Sources */,
 				FF4431E02980591C00890D7C /* AnimalType.swift in Sources */,
